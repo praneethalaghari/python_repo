@@ -42,7 +42,7 @@ while choice == 'y' or choice == 'Y':
             break
         continue
 
-    
+
 
     if 1 in win_records.values() and 2 in win_records.values():
         print("Congratulations!!! Winner is :",list(win_records.keys())[list(win_records.values()).index(2)])
