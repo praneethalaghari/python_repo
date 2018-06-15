@@ -1,6 +1,9 @@
-def abc(lis):
-    print(sorted(lis))
-    print(lis.sort())
+import pymysql
 
-list_A = [3, 2, 5, 1, 4]
-abc(list_A)
+db = pymysql.connect("https://databases.000webhost.com","id1577436_olineexams","booki123","SAMPLE")
+
+cursor = db.cursor()
+cursor.execute("SELECT VERSION()")
+data = cursor.fetchone()
+print("Database version",data)
+db.close()

@@ -38,6 +38,6 @@ if __name__ == '__main__':
 
 
     list_B = random.sample(range(0, 9), 6)
-    print(list_B)
     num_bin = int(input('Enter number to search'))
     binary_search(list_B,num_bin)
+    print(list_B)
