@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <script>
+   var is_mobile = /symbian|tizen|midp|uc(web|browser)|MSIE (5.0|6.0|7.0|8.0)|tablet/i.test(navigator.userAgent);	if(is_mobile && window.location.hostname != "www1.cricbuzz.com") window.location.hostname = "m.cricbuzz.com";
+  </script>
+  <style>
+   body{background:#E3E6E3; font-family: helvetica,"Segoe UI",Arial,sans-serif;color:#222;font-size:14px; line-height: 1.5; margin:0;}	body, .cb-comm-pg, .cb-hm-mid {min-height:1000px}	.container{width:980px;margin:0 auto;}	.page{max-width: 980px;margin: 0 auto;position: relative;}	.cb-col-8 {width:8%;}	.cb-col-10 {width:10%;}	.cb-col-14 {width:14%;}	.cb-col-16 {width:16%;}	.cb-col-20 {width:20%;}	.cb-col-25 {width:25%;}	.cb-col-27 {width:27%;}	.cb-col-33 {width:33%;}	.cb-col-40 {width:40%;}	.cb-col-46 {width:46%;}	.cb-col-47 {width:47%;}	.cb-col-50 {width:50%;}	.cb-col-60 {width:60%;}	.cb-col-66 {width:66%;}	.cb-col-67 {width:67%;}	.cb-col-73 {width:73%;}	.cb-col-75 {width:75%;}	.cb-col-84 {width:84%;}	.cb-col-80 {width:80%;}	.cb-col-90{width:90%;}	.cb-col-100 {width:100%;}	.cb-col {display: inline-block;box-sizing: border-box;float: left; min-height: 1px;}	h1 {font-size: 36px;line-height: 42px; margin:0;}	h2 {font-size: 24px; margin:0; line-height: 30px;}	h3 {font-size: 18px;line-height: 24px; margin:0; }	h4 {font-size: 16px; margin:0; }	h5 {font-size: 14px; margin: 0;}	.cb-font-18 {font-size:18px;}	img{border: 0;}	a {text-decoration: none; color:#222;}	a, a:hover, a:active, a:focus {outline: medium none;}	.text-center {text-align: center;}	.cb-nws-lft-col{padding:15px 20px;}	.cb-nws-dtl-lft-col {padding: 10px 30px 0 30px;border-right: 1px solid #ecebeb ;}	.cb-nws-lst-rt{padding-left: 10px;}	.cb-srs-lst-itm {padding: 10px 0;}	.cb-lst-itm-sm{padding:10px 0 5px;}	.cb-scrd-lft-col{padding:15px 10px;} .cb-col-rt{padding: 10px;}	.text-white{color: #fff;}	.cb-scrd-hdr-rw, .cb-nav-pill-1.active {background: #028062 ;color: #fff;}	.cb-nav{position:relative; height:48px;background: #009270;}	.cb-hm-mnu-itm{padding: 16px 8px 11px; color:#fff; display:inline-block;}	.cb-hm-text{padding:10px 20px;}	.cb-hm-rght{padding: 15px;}	.cb-subnav .cb-sub-navigation {display: none; position: absolute;}	.cb-mat-mnu{background:#4a4a4a; width:980px; font-size: 0;}	.cb-mat-mnu-itm{font-size:12px; color:#fff; padding:10px; cursor: pointer; display:inline-block; max-width: 140px;}	.cb-mat-mnu-ttl{background: #333; padding: 10px 20px;}	.cb-mat-mnu-wrp{margin-bottom: 10px;}	.cb-ovr-flo{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}	.cb-mat-mnu-all{text-align: center; float: right; width:60px;}	.cb-nav-main{border-bottom:1px solid #e3e6e3;padding:0 0 5px 20px;}	.cb-nav-bar{padding-top:10px;clear:both;}	.cb-lst-itm, .cb-bg-white{background: #fff;}	.cb-nav-tab.active, .cb-nav-tab-hm.active{ font-weight: bold; color: #028062;}	.cb-nav-tab.active {border-bottom: 3px solid #028062; line-height: 24px; }	.cb-nav-tab-hm.active{ border-bottom:2px solid #028062; line-height: 22px;}	.cb-nav-tab{margin-right:20px;padding-bottom:6px;}	.cb-nav-tab-hm{margin-right:15px;padding-bottom:6px;}	.cb-nav-hdr{padding-top:15px}	.cb-nav-subhdr{padding:5px 0 10px 0;}	.cb-lv-scr-mtch-hdr{line-height: 21px;font-size: 16px;}	.disp-none{display:none;}	.disp-blck{display:block;}	.cb-font-24{font-size: 24px;}	.line-ht30{line-height: 30px;}	.line-ht24{line-height: 24px;}	.cb-hm-scg-blk{background: #fff; margin-bottom: 5px; height:90px;}	.mrgn-btm-5{margin-bottom : 5px;}	#scagTabContent .show{display: block; visibility: visible;}	#scagTabContent .hide{display: none; visibility: hidden;}	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important;}	.cb-hm-lft{margin-bottom:5px;padding:0 15px;}	.cb-hm-lft-hdr{margin:0; padding:15px 15px 0; color: #009270;} .cb-hm-mid {border-left: 5px solid #e3e6e3 ;border-right: 5px solid #e3e6e3 ;padding: 0 15px;} .cb-mtch-blk {border-right: 1px solid #ecebeb ;line-height: 1.4;margin: 15px 0;padding: 0 20px;}	.crd-cntxt{font-size: 12px; color:#666; padding-bottom: 10px;}	.big-crd-main{border-top: 1px solid #ecebeb;padding:15px 0 5px; margin-bottom: 1px;clear: both;} .big-crd-reltd-itm {margin: 0 0 10px; width:100%; display: inline-block;}	.cb-nws-time{font-size:12px; padding-bottom: 5px;}	.cb-nws-hdln-ancr{padding-bottom: 5px;}	.cb-hmscg-bwl-txt, .cb-hmscg-bat-txt{font-weight:bold; padding-bottom:4px; height:18px;}	.cb-hmscg-bwl-txt{color:#666;}	.sml-crd-main{padding: 15px 0 5px; width: 100%;}	.big-crd-hdln{margin: 10px 0;}	.big-crd-rltd-txt {font-weight: bold; margin:10px 0; color:#1866DB;} .cb-nws-intr {color: #666;padding-bottom: 5px;} .cb-lv-scrs-well {background: #f5f5f5 ;display: inline-block;margin: 10px 0;padding: 10px 5px;} .cb-schdl-hdr {margin: 0;padding: 15px 0 10px 10px;} .cb-lst-itm-lg {padding: 20px 0;} .cb-left-pad {padding: 20px 10px 0;}	.cb-nav-pill-1 {background: #CFE0DB;border-radius: 20px;color: #222;cursor: pointer;margin-right: 15px;padding: 5px 20px;} .cb-mtch-lst {padding: 15px 0;}	.cb-nws-min-cntr{padding: 10px; background: #f5f5f5; color:#333; margin:10px 0 15px;}	.sml-crd-subtxt{margin:0 10px 10px;}	/*-------------------------Live Pages -----------------------*/	.cb-scrcrd-status{padding:0 0 10px 10px;}	.cb-scrd-hdr-rw{padding:8px 10px;}	.cb-bg-gray{background: #ecebeb;}	.cb-lv-grn-strip{background: #ecebeb;}	.cb-min-hdr-rw, .cb-scrd-sub-hdr{padding: 4px 10px; font-size: 12px; color: #666;}	.cb-scrd-itms{padding: 4px 10px; font-size: 13px;}	.cb-text-link {color: #1866DB;}	.text-bold{font-weight: bold;}	.text-normal{font-weight: normal;}	.cb-mat-fct-itm{padding: 5px 0;}	.cb-min-bat-rw{padding-bottom: 5px;}	.cb-nws-sub-txt, .cb-nws-sub-txt, .cb-font-12{font-size:12px;}	.cb-font-16{font-size:16px;}	.cb-font-20{font-size:20px;}	.cb-min-inf{padding-top:10px; margin-left: -10px; display: inline-block;}	.cb-min-itm-rw{padding:5px 10px 0;}	.text-right{text-align:right;}	.cb-key-st-lst{padding: 10px 0 0 5px; }	.cb-min-prw-time{padding:20px 0 0;}	.cb-toss-sts{padding: 10px 0 30px;}	.cb-min-rcnt{padding: 7px 10px; margin: 0 -10px 0;}	.cb-key-lst-wrp{border: 1px solid #ecebeb; padding-bottom: 15px; margin-right: -10px;}	.cb-min-tm{font-size: 18px; font-weight: bold;}	.cb-min-stts{padding: 20px 0;}	.cb-mom-itm{padding: 0 0 10px;}	.cb-lv-grn-strip {padding: 10px 10px 5px;}	.cb-ovr-num{padding-top:2px;}	.cb-min-pad{padding-left: 5px;}	/*Upcoming Series*/	.cb-mnth{margin-top: 10px; padding: 0 10px;}	.cb-sch-lst-itm {padding:10px 0; margin-left: 20px;border-bottom: 1px solid #ecebeb;}	/*Matches By Day*/	.cb-mtchs-dy{padding:20px 20px 20px 10px ;}	.cb-mtchs-dy-tm,.cb-mtchs-dy-vnu{padding:20px 20px 20px 0px;}	/*Schedule Teams*/	.cb-lv-upcom-strip{padding: 5px 10px;background: #ecebeb;}	/*Archives*/	.cb-srs-cat{padding:10px; color:#028062; }	.pad-left{padding-left:30px;}	.cb-arcv-yr{font-size:20px; padding: 0 0 5px 10px;font-weight: bold}	.cb-yr-tmline{padding: 2px 15px 15px 0;}	.cb-sch-tms-widgt{padding: 5px 10px; margin:5px 2px 2px 2px; background: #f5f5f5; border-radius: 0; border:0; display: inline-block;}	/*Photos*/	.cb-thmb-dark {background: #333333; box-shadow:none; border-radius:0; border:none; padding:0;color:#CCC;}	.cb-pht-main {padding:20px 15px;margin: 0 -10px;}	.cb-pht-block{padding:9px;float:left;height:280px;box-sizing: border-box;} .cb-gallery-pht-block{padding: 9px 9px 9px 16px;}	.img-responsive{height:auto; max-width:100%;}	.center-block{margin-right: auto;margin-left: auto;}	.cb-schdl{padding:0 10px;line-height: 1.5;}	.cb-caret-up, .cb-caret-down{display: inline-block; width: 0; height: 0; margin-left: 4px; margin-bottom: 1px; border-right: 4px solid transparent; border-left: 4px solid transparent;}	.cb-caret-up{border-bottom: 4px solid;}	.cb-caret-down{border-top: 4px solid;}	.cb-hm-rt-itm{margin: 0 0 5px; padding: 10px 10px 5px;}	.cb-hmscg-tm-nm{display:inline-block; width: 60px;}	.pull-right,.cb-all-mtch-tab{float:right;}	.cb-skin-ads-close{display: none;}	.cb-nws-sub-txt{padding-top:10px;}	.nws-dtl-hdln{margin-top:10px;}	.cb-min-lv{min-height:270px}	.cb-min-comp{min-height:150px;}	.cb-ttl-vts{margin-top:20px;}	.cb-poll-radio{width: 5%;margin:4px 10px 0 0;}	.cb-mini-tim{padding-bottom:20px;}	.cb-com-ln{margin: 0 0 10px; line-height: 24px;}	.cb-comm-static{min-height:31px; margin: 0 -10px 10px;}	.cb-com-ovr-sum-ad{min-height: 31px;}	.cb-comm-static-anchr{margin:5px 10px; display: block;}	.ad-unit-rendered{margin-bottom: 5px;}	.cb-mm-wrp { max-height: 0px; -webkit-transition: max-height 0.35s ease; transition: max-height 0.35s ease; overflow: hidden; }	.cb-mm-wrp.down { max-height: 1000px; transition: max-height 0.75s ease; -webkit-transition: max-height 0.75s ease; overflow: hidden;} .cb-srs-hstry-dtl {padding:10px 15px;margin-top:20px; border-radius: 4px;}	.cb-qck-lnk{margin-bottom: 5px; padding:10px 15px;}	.cb-qck-hdr{padding-right: 15px; border-right: 1px solid #ecebeb ;}	.cb-qck-ancr{margin-left: 15px;}	.cb-lst-vid-rw{padding-bottom: 0; height: 64px; border: 1px solid #ecebeb; margin-right: -10px;}	.cb-auth-img{border-radius: 100%;}	.cb-expt-athr{vertical-align: top; padding: 5px 0 0 0; display: inline-block; font-size: 16px}	.inline-block{display: inline-block;}	.cb-exprt-athr-hdr{text-align: right;font-size: 42px;font-family: bodani; color: #fff;padding-right: 15px;line-height:44px;text-transform:uppercase;}	.cb-exprt-athr-hdr-tag{text-align: right;font-size: 24px;font-family: bodani; color: #fff;padding-right: 15px;font-style:italic;}	.cb-athr-wgt-wrp{border:1px solid #ecebeb; padding:15px; margin-bottom:20px;background:#f5f5f5;}	.cb-exprt-athr-hdr-img{background: url("//i.cricketcb.com/statics/site/images/harsha-banner.jpg") no-repeat scroll; height:80px;}	.cb-overflow-hidden{overflow: hidden;}	/*Videos*/	.cb-vid-sm-ply-api {color: #fff;line-height: 34px;font-size: 18px;margin-left: 3px;}	.cb-vid-sml-card-api {margin-top: 10px;height: auto;padding: 0 12px 0 11px;}	.cb-cat-head-wrap {padding: 0 12px 0 11px;}	.cb-cat-head-text {margin-top: 5px;line-height: 20px;}	.cb-more-btn {padding: 8px 20px;border-radius: 2px;color: #fff;background: #009270;border: 0;cursor: pointer;}	.cb-cat-head-link {float: right;padding: 5px 25px;margin-top: 10px;border-radius: 4px;}	.cb-pos-rel{position: relative;}	.cb-videos-cat {border-bottom: 1px solid #ecebeb;padding: 10px 3px 15px 4px;}	.cb-cat-head-text-wrap {float: left;}	.cb-cat-head-count {margin: 0;color: #666;}	h2.cb-cat-head-text{font-size : 18px}	.cb-vid-sml-card-api-head {font-size: 14px;font-weight: bold;line-height: 18px;max-height: 55px;margin: 2px 0 5px;overflow: hidden;}	.cb-cen {position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);-moz-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%);-o-transform: translateX(-50%) translateY(-50%);background: #222;text-align: center;height: 35px;width: 35px;border-radius: 50px;}	.padding-handling-errors{padding: 20px 0px 10px 15px;border-bottom: 1px solid #ecebeb;}	.cb-col .cb-align-cen{float: none; text-align: center; padding: 7px 25px; margin-top: 20px;}	.cb-align-cen{padding-top: 10px;}
+  </style>
+  <script>
+   function getCookie(c_name){	var i,x,y,ARRcookies=document.cookie.split(";");	for (i=0;i<ARRcookies.length;i++){	x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));	y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);	x=x.replace(/^\s+|\s+$/g,"");	if (x==c_name){	return unescape(y);	}	}	}	var cbads_value = getCookie("cbzads");	if(cbads_value != null && cbads_value.indexOf('IN|AS') >= 0){	document.write("<style>.cb-geo-in-50{height:50px}</style>")	}
+  </script>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+   <meta content="" name="author"/>
+   <link href="//i.cricketcb.com/statics/site/images/cric_ball.ico" rel="shortcut icon" type="image/x-icon"/>
+   <meta content="125255339112-d594jen12o0j854sufu8jfn2gbbnaskj.apps.googleusercontent.com" name="google-signin-client_id"/>
+   <link href="//i.cricketcb.com/statics/site/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="https://chrome.google.com/webstore/detail/cricbuzz/opljecakjchbhhikbeifamamnpcdbgem" rel="chrome-webstore-item"/>
+   <title itemprop="name">
+    Cricket scorecard - India vs Afghanistan, Only Test, Afghanistan tour of India, 2018 | Cricbuzz.com
+   </title>
+   <meta content="Catch live and fully detailed scorecard of India vs Afghanistan, Only Test, Jun 14, Afghanistan tour of India, 2018 on Cricbuzz" itemprop="description" name="description"/>
+   <link href="android-app://com.cricbuzz.android/http/www.cricbuzz.com/live-cricket-scorecard/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" rel="alternate"/>
+   <link href="//m.cricbuzz.com/live-cricket-scorecard/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" media="only screen and (max-width: 640px)" rel="alternate"/>
+   <meta content="index, follow" name="robots"/>
+   <meta content="index, follow" name="googlebot"/>
+   <meta content="google89fd37b1258ef4b9.html" name="google-site-verification"/>
+   <meta content="fd560568b43f31382de30f628c8430bd" name="p:domain_verify"/>
+   <meta content="A509FA8BAE50018F9DF2553AEDEDF77B" name="msvalidate.01"/>
+   <meta content="Cricket scorecard - India vs Afghanistan, Only Test, Afghanistan tour of India, 2018" property="og:title"/>
+   <meta content="Catch live and fully detailed scorecard of India vs Afghanistan, Only Test, Jun 14, Afghanistan tour of India, 2018 on Cricbuzz" property="og:description"/>
+   <meta content="30119633160" property="fb:app_id"/>
+   <meta content="Cricbuzz" property="og:site_name"/>
+   <meta content="Cricket scorecard - India vs Afghanistan, Only Test, Jun 14, Afghanistan tour of India, 2018 - Cricbuzz" property="twitter:title"/>
+   <meta content="Catch live and fully detailed scorecard of India vs Afghanistan, Only Test, Afghanistan tour of India, 2018 on Cricbuzz" property="twitter:description"/>
+   <meta content="@cricbuzz" name="twitter:site"/>
+   <meta content="cricbuzz.com" name="twitter:domain"/>
+   <meta content="Cricbuzz" name="twitter:app:name:iphone"/>
+   <meta content="360466413" name="twitter:app:id:iphone"/>
+   <meta content="Cricbuzz" name="twitter:app:name:googleplay"/>
+   <meta content="com.cricbuzz.android" name="twitter:app:id:googleplay"/>
+   <meta content="on" name="twitter:widgets:csp"/>
+   <meta content="178697151159" property="fb:pages">
+    <meta content="" name="keywords"/>
+    <meta content="" name="news_keywords"/>
+    <link href="http://www.cricbuzz.com/live-cricket-scorecard/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" rel="canonical"/>
+    <meta content="none" name="msapplication-config">
+     <script>
+      var PAGE_NAME = "scorecard-page";	var CBQueue = CBQueue || [];	var CBQueueOnLoad = CBQueueOnLoad || [];	/*CBQueue.push(function(){roadblock(2,{country:["US","CA", "ZA", "AU"], continent:["EU"]});});*/	CBQueue.push(function(){roadblock(2,{country:["US"]});});	_udn = "cricbuzz.com";
+     </script>
+     <script>
+      (function(w){	"use strict";	var loadCSS = function( href, before, media ){	var doc = w.document;	var ss = doc.createElement( "link" );	var ref;	if( before ){	ref = before;	}	else {	var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;	ref = refs[ refs.length - 1];	}	var sheets = doc.styleSheets;	ss.rel = "stylesheet";	ss.href = href;	ss.media = "only x";	ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );	var onloadcssdefined = function( cb ){	var resolvedHref = ss.href;	var i = sheets.length;	while( i-- ){	if( sheets[ i ].href === resolvedHref ){	return cb();	}	}	setTimeout(function() {	onloadcssdefined( cb );	});	};	ss.onloadcssdefined = onloadcssdefined;	onloadcssdefined(function() {	ss.media = media || "all";	});	return ss;	};	if( typeof module !== "undefined" ){	module.exports = loadCSS;	}	else {	w.loadCSS = loadCSS;	}	}( typeof global !== "undefined" ? global : this ));	loadCSS( "//s.cricketcb.com/site/style.201806121330.css" );
+     </script>
+     <noscript>
+      <link href="//s.cricketcb.com/site/style.201806121330.css" rel="stylesheet" type="text/css"/>
+     </noscript>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <a href="https://plus.google.com/104502282508811467249" rel="publisher">
+  </a>
+  <a class="cb-skin-ads-link cb-skin-ads-link-fixed ad-skin" href="Javascript:void(0)" id="ad-skin" target="_blank">
+  </a>
+  <a class="cb-skin-ads-close cb-font-18 ad-skin-close" href="Javascript:void(0)" style="position:fixed; z-index:1001; color:#FFF; background:#000; padding:2px 5px; right:2px;">
+   
+  </a>
+  <header id="top" itemscope="" itemtype="http://schema.org/WPHeader" style="z-index: 1000;position: relative;padding-top:10px;width:980px;margin:0 auto;">
+   <div class="container">
+    <div class="ad-unit text-center center-block" id="leaderboard" style="min-height:90px;margin-bottom:10px;">
+    </div>
+    <div class="ad-unit" id="countdown" style="margin:-10px 15px 0px;float:right;position:absolute;">
+    </div>
+    <div class="toi-branding toi-referral">
+    </div>
+    <nav class="cb-nav cb-col cb-col-100" id="cb-main-menu">
+     <a class="cb-hm-text" href="/" target="_self">
+      <img alt="Cricbuzz Logo" height="30" itemprop="image" src="//i.cricketcb.com/statics/site/images/cbz-logo.png" style="bottom: -4px; position: relative;" title="Cricbuzz Logo" width="101"/>
+     </a>
+     <a class="cb-hm-mnu-itm" href="/cricket-match/live-scores" target="_self" title="Live Cricket Score">
+      Live Scores
+     </a>
+     <a class="cb-hm-mnu-itm" href="/cricket-schedule/series" target="_self" title="Cricket Schedule">
+      Schedule
+     </a>
+     <a class="cb-hm-mnu-itm" href="/cricket-scorecard-archives" target="_self" title="Cricket Scorecard Archives">
+      Archives
+     </a>
+     <div class="cb-subnav cb-hm-mnu-itm feature-button cursor-pointer" id="newsDropDown">
+      <a class="text-white" href="/cricket-news" target="_self">
+       News
+      </a>
+      <span class="cb-caret-down">
+      </span>
+      <nav class="cb-sub-navigation">
+       <a class="cb-subnav-item" href="/cricket-news" target="_self" title="Latest Cricket News">
+        All Stories
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/latest-news" target="_self" title="Latest Cricket News">
+        Latest News
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/info/" target="_self" title="Latest Cricket Topics">
+        Topics
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/spotlight" target="_self" title="Cricket Editorials and Specials">
+        Spotlight
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/editorial-list" target="_self" title="Latest Cricket Opinions &amp; Editorials">
+        Opinions
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/specials" target="_self" title="Latest Cricket Specials">
+        Specials
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/stats-analysis" target="_self" title="Latest Cricket Stats &amp; Analysis">
+        Stats &amp; Analysis
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/interviews" target="_self" title="Latest Cricket Player Interviews">
+        Interviews
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/editorial/live-blogs" target="_self" title="Latest Cricket Match live blogs">
+        Live Blogs
+       </a>
+       <a class="cb-subnav-item" href="/cricket-news/experts/harsha-bhogle/170" target="_self" title="Articles and Videos by Harsha Bhogle">
+        Harsha Bhogle
+       </a>
+      </nav>
+     </div>
+     <div class="cb-subnav cb-hm-mnu-itm feature-button cursor-pointer" id="seriesDropDown">
+      <a class="text-white" href="/cricket-series" target="_self">
+       Series
+      </a>
+      <span class="cb-caret-down">
+      </span>
+      <nav class="cb-sub-navigation">
+       <a class="cb-subnav-item" href="/cricket-series/2672/afghanistan-tour-of-india-2018" title="Afghanistan tour of India, 2018">
+        Afghanistan tour of India, 2018
+       </a>
+       <a class="cb-subnav-item" href="/cricket-series/2618/australia-tour-of-england-2018" title="Australia tour of England, 2018">
+        Australia tour of England, 2018
+       </a>
+       <a class="cb-subnav-item" href="/cricket-series/2652/sri-lanka-tour-of-west-indies-2018" title="Sri Lanka tour of West Indies, 2018">
+        Sri Lanka tour of West Indies, 2018
+       </a>
+       <a class="cb-subnav-item" href="/cricket-series/2658/royal-london-one-day-cup-2018" title="Royal London One-Day Cup, 2018">
+        Royal London One-Day Cup, 2018
+       </a>
+       <a class="cb-subnav-item" href="/cricket-series/2659/county-championship-division-one-2018" title="County Championship Division One, 2018">
+        County Championship Division One, 2018
+       </a>
+       <a class="cb-subnav-item" href="/cricket-series/2660/county-championship-division-two-2018" title="County Championship Division Two, 2018">
+        County Championship Division Two, 2018
+       </a>
+      </nav>
+     </div>
+     <div class="cb-subnav cb-hm-mnu-itm feature-button cursor-pointer" id="teamDropDown">
+      <a class="text-white" href="/cricket-team" target="_self">
+       Teams
+      </a>
+      <span class="cb-caret-down">
+      </span>
+      <nav class="cb-sub-navigation cb-sub-lg">
+       <div class="cb-sub-lg-outer">
+        <div class="cb-sub-lg-sec">
+         <h4 class="cb-sub-lg-sec-head">
+          Test Teams
+         </h4>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/india/2" title="India Cricket Team">
+          India
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/pakistan/3" title="Pakistan Cricket Team">
+          Pakistan
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/australia/4" title="Australia Cricket Team">
+          Australia
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/sri-lanka/5" title="Sri Lanka Cricket Team">
+          Sri Lanka
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/bangladesh/6" title="Bangladesh Cricket Team">
+          Bangladesh
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/england/9" title="England Cricket Team">
+          England
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/windies/10" title="Windies Cricket Team">
+          Windies
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/south-africa/11" title="South Africa Cricket Team">
+          South Africa
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/zimbabwe/12" title="Zimbabwe Cricket Team">
+          Zimbabwe
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/new-zealand/13" title="New Zealand Cricket Team">
+          New Zealand
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/ireland/27" title="Ireland Cricket Team">
+          Ireland
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/afghanistan/96" title="Afghanistan Cricket Team">
+          Afghanistan
+         </a>
+        </div>
+        <div class="cb-sub-lg-sec">
+         <h4 class="cb-sub-lg-sec-head">
+          Associate
+         </h4>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/united-arab-emirates/7" title="United Arab Emirates Cricket Team">
+          United Arab Emirates
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/hong-kong/8" title="Hong Kong Cricket Team">
+          Hong Kong
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/kenya/14" title="Kenya Cricket Team">
+          Kenya
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/united-states-of-america/15" title="United States of America Cricket Team">
+          United States of America
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/scotland/23" title="Scotland Cricket Team">
+          Scotland
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/netherlands/24" title="Netherlands Cricket Team">
+          Netherlands
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/bermuda/25" title="Bermuda Cricket Team">
+          Bermuda
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/canada/26" title="Canada Cricket Team">
+          Canada
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/uganda/44" title="Uganda Cricket Team">
+          Uganda
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/malaysia/71" title="Malaysia Cricket Team">
+          Malaysia
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/nepal/72" title="Nepal Cricket Team">
+          Nepal
+         </a>
+         <a class="cb-subnav-item cb-sub-lg-sec-item" href="/cricket-team/germany/77" title="Germany Cricket Team">
+          Germany
+         </a>
+        </div>
+       </div>
+       <a class="cb-sub-lg-more" href="/cricket-team" target="_self">
+        More...
+       </a>
+      </nav>
+     </div>
+     <div class="cb-subnav cb-hm-mnu-itm feature-button cursor-pointer" id="videosDropDown">
+      <a class="text-white" href="/cricket-videos" target="_self">
+       Videos
+      </a>
+      <span class="cb-caret-down">
+      </span>
+      <nav class="cb-sub-navigation">
+       <a class="cb-subnav-item" href="/cricket-videos" title="All Cricket Videos">
+        All Videos
+       </a>
+       <a class="cb-subnav-item" href="/cricket-videos/categories" title="Cricket Videos Categories">
+        Categories
+       </a>
+       <a class="cb-subnav-item" href="/cricket-videos/playlists" title="Cricket Videos Playlists">
+        Playlists
+       </a>
+      </nav>
+     </div>
+     <a class="cb-hm-mnu-itm" href="/cricket-photo-gallery" target="_self" title="Photo Gallery">
+      Photos
+     </a>
+     <a class="cb-hm-mnu-itm" href="/cricket-stats/icc-rankings" target="_self" title="ICC Rankings">
+      Rankings
+     </a>
+     <div class="cb-subnav cb-hm-mnu-itm feature-button cursor-pointer">
+      More
+      <span class="cb-caret-down">
+      </span>
+      <nav class="cb-sub-navigation" style="right:0px;">
+       <a class="cb-subnav-item" href="/mobileapps" target="_self" title="Mobile Apps">
+        Mobile Apps
+       </a>
+       <a class="cb-subnav-item" href="/careers" target="_self" title="Careers">
+        Careers
+       </a>
+       <a class="cb-subnav-item" href="/info/contact" target="_self" title="Contact Us">
+        Contact Us
+       </a>
+      </nav>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <div class="page">
+   <div id="fb-root">
+   </div>
+   <div class="container" id="page-wrapper" style="display:inline-block;">
+    <div class="ad-unit shosh-embed" id="shosh" style="height:0; width:980px; text-align:center;">
+    </div>
+    <span class="ad-unit" id="skin_left" style="overflow:hidden; position:fixed;top:0;left:calc(50% - 635px);margin-right:3px;z-index:-99;">
+    </span>
+    <div class="html-refresh" disable-first-load="true" timeout="300000" url="/api/html/matches-menu">
+     <div class="cb-col cb-col-100 mrgn-btm-5">
+      <nav class="cb-mat-mnu" ng-init="direction='up'">
+       <a class="cb-mat-mnu-itm cb-ovr-flo cb-mat-mnu-ttl" href="/cricket-match/live-scores" id="live-scores-link" title="">
+        MATCHES
+       </a>
+       <a class="cb-mat-mnu-itm cb-ovr-flo" href="/live-cricket-scores/19346/wi-vs-sl-2nd-test-sri-lanka-tour-of-west-indies-2018" target="_self" title="Windies v Sri Lanka,2nd Test - Stumps">
+        WI vs SL - Stumps
+       </a>
+       <a class="cb-mat-mnu-itm cb-ovr-flo" href="/live-cricket-scores/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" target="_self" title="India v Afghanistan,Only Test - IND Won">
+        IND vs AFG - IND Won
+       </a>
+       <a class="cb-mat-mnu-itm cb-ovr-flo" href="/live-cricket-scores/18872/eng-vs-aus-2nd-odi-australia-tour-of-england-2018" target="_self" title="England v Australia,2nd ODI - ENG Won">
+        ENG vs AUS - ENG Won
+       </a>
+       <a class="cb-mat-mnu-itm cb-ovr-flo" href="/live-cricket-scores/20159/ire-vs-sco-3rd-match-scotland-netherlands-ireland-t20i-tri-series-2018" target="_self" title="Ireland v Scotland,3rd Match - IRE Won">
+        IRE vs SCO - IRE Won
+       </a>
+       <a class="cb-mat-mnu-itm cb-ovr-flo" href="/live-cricket-scores/20160/ire-vs-sco-4th-match-scotland-netherlands-ireland-t20i-tri-series-2018" target="_self" title="Ireland v Scotland,4th Match - Preview">
+        IRE vs SCO - Preview
+       </a>
+       <span ng-click="(direction=='up')?direction = 'down' : direction = 'up'">
+        <a class="cb-mat-mnu-itm cb-mat-mnu-all" id="match-dropdown" ng-class="{true:'cb-mat-mnu-cls'}[direction=='down']">
+         <span ng-bind="(direction=='up') ? 'ALL': 'CLOSE'">
+         </span>
+         <span ng-class="(direction=='up') ? 'cb-caret-down' : 'cb-caret-up'">
+         </span>
+        </a>
+       </span>
+      </nav>
+      <div id="matchmenu">
+       <div class="cb-mm-wrp {{direction}}">
+        <div class="cb-scg-drp-dwn cb-col cb-col-100 cb-mnu-{{direction}}">
+         <nav class="nav cb-mm-nvtb" ng-init="option= 'all'">
+          <a class="cb-nav-pill-2 {{(option=='all')?'active':''}}" ng-click="option='all'" style="margin-right: 20px;">
+           All
+          </a>
+          <a class="cb-nav-pill-2 {{(option=='live')?'active':''}}" ng-click="option='live'" style="margin-right: 20px;">
+           Live Now
+          </a>
+          <a class="cb-nav-pill-2 {{(option=='today')?'active':''}}" ng-click="option='today'" style="margin-right: 20px;">
+           Today
+          </a>
+         </nav>
+         <style>
+          .cb-nt-{{option}}{opacity:0.4!important;}
+         </style>
+         <ul class="cb-scg-drp-dwn-ul">
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mm-typ">
+             INTERNATIONAL
+            </div>
+            <div class="cb-scg-srs-nm">
+             SL tour of WI
+            </div>
+            <div class="cb-mtch-all cb-nt-live ">
+             <a href="/live-cricket-scores/19346/wi-vs-sl-2nd-test-sri-lanka-tour-of-west-indies-2018" target="_self" title="Windies v Sri Lanka,2nd Test - Stumps">
+              <span class="cb-mm-mtch-tm">
+               Windies vs Sri Lanka
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              2nd Test
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-scg-srs-nm">
+             AFG tour of IND
+            </div>
+            <div class="cb-mtch-all cb-nt-live cb-nt-today">
+             <a href="/live-cricket-scores/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" target="_self" title="India v Afghanistan,Only Test - IND Won">
+              <span class="cb-mm-mtch-tm">
+               India vs Afghanistan
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              Only Test
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-scg-srs-nm">
+             AUS tour of ENG
+            </div>
+            <div class="cb-mtch-all cb-nt-live cb-nt-today">
+             <a href="/live-cricket-scores/18872/eng-vs-aus-2nd-odi-australia-tour-of-england-2018" target="_self" title="England v Australia,2nd ODI - ENG Won">
+              <span class="cb-mm-mtch-tm">
+               England vs Australia
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              2nd ODI
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-scg-srs-nm">
+             SCO, NED, IRE T20I Tri-Series
+            </div>
+            <div class="cb-mtch-all cb-nt-live cb-nt-today">
+             <a href="/live-cricket-scores/20159/ire-vs-sco-3rd-match-scotland-netherlands-ireland-t20i-tri-series-2018" target="_self" title="Ireland v Scotland,3rd Match - IRE Won">
+              <span class="cb-mm-mtch-tm">
+               Ireland vs Scotland
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              3rd Match
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mtch-all cb-nt-live ">
+             <a href="/live-cricket-scores/20160/ire-vs-sco-4th-match-scotland-netherlands-ireland-t20i-tri-series-2018" target="_self" title="Ireland v Scotland,4th Match - Preview">
+              <span class="cb-mm-mtch-tm">
+               Ireland vs Scotland
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              4th Match
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mm-typ">
+             DOMESTIC
+            </div>
+            <div class="cb-scg-srs-nm">
+             IND A Tri Series in ENG, 2018
+            </div>
+            <div class="cb-mtch-all cb-nt-live ">
+             <a href="/live-cricket-scores/20363/engxi-vs-inda-1st-practice-match-india-a-tri-series-in-england-2018" target="_self" title="England XI v India A,1st practice match - Preview">
+              <span class="cb-mm-mtch-tm">
+               England XI vs India A
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              1st practice match
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-mtch-all cb-nt-live ">
+             <a href="/live-cricket-scores/20364/warks-vs-wia-2nd-practice-match-india-a-tri-series-in-england-2018" target="_self" title="Warwickshire v Windies A,2nd practice match - Preview">
+              <span class="cb-mm-mtch-tm">
+               Warwickshire vs Windies A
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              2nd practice match
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="cb-lst-mtch cb-lst-dom">
+           <div style="display:inline-block">
+            <div class="cb-scg-srs-nm">
+             Royal London
+            </div>
+            <div class="cb-mtch-all cb-nt-live ">
+             <a href="/live-cricket-scores/19603/worcs-vs-kent-1st-semi-final-royal-london-one-day-cup-2018" target="_self" title="Worcestershire v Kent,1st Semi Final - Preview">
+              <span class="cb-mm-mtch-tm">
+               Worcestershire vs Kent
+              </span>
+              <span class="cb-mm-liv-tag">
+              </span>
+             </a>
+             <div class="cb-mm-mtch-nm">
+              1st Semi Final
+             </div>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script>
+     var matchId = "19956";	var seriesId = "2672";
+    </script>
+    <div class="cb-col cb-col-100" id="strip_wrapper">
+     <div class="pull-left ad-unit" id="large_strip">
+     </div>
+     <div class="pull-right ad-unit" id="small_strip">
+     </div>
+     <div class="pull-left ad-unit" id="super_strip">
+     </div>
+    </div>
+    <div class="cb-col cb-col-100 cb-bg-white">
+     <div class="cb-nav-main cb-col-100 cb-col cb-bg-white" itemscope="" itemtype="http://schema.org/SportsEvent">
+      <h1 class="cb-nav-hdr cb-font-18 line-ht24" itemprop="name">
+       India vs Afghanistan, Only Test - Live Cricket Score, Commentary
+      </h1>
+      <span content="Follow India vs Afghanistan, Only Test, Jun 14, Afghanistan tour of India, 2018 with live Cricket score, ball by ball commentary updates on Cricbuzz" itemprop="description">
+      </span>
+      <div class="cb-nav-subhdr cb-font-12">
+       <span class="text-bold">
+        Series:
+       </span>
+       <a href="/cricket-series/2672/afghanistan-tour-of-india-2018" title="Afghanistan tour of India, 2018">
+        <span class="text-hvr-underline text-gray">
+         Afghanistan tour of India, 2018
+        </span>
+       </a>
+       <span class="text-bold pad-left">
+        Venue:
+       </span>
+       <a href="/cricket-series/2672/afghanistan-tour-of-india-2018/venues/27/mchinnaswamy-stadium" itemprop="location" itemscope="" itemtype="http://schema.org/Place" title="M.Chinnaswamy Stadium, Bengaluru">
+        <span class="text-hvr-underline text-gray">
+         <span itemprop="name">
+          M.Chinnaswamy Stadium,
+         </span>
+         <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">
+           Bengaluru
+          </span>
+         </span>
+        </span>
+       </a>
+       <span class="text-bold pad-left">
+        Date &amp; Time:
+       </span>
+       <span content="2018-06-14T04:00:00+00:00" itemprop="startDate">
+        <span>
+         Jun 14
+        </span>
+        <span>
+         -
+        </span>
+        <span>
+         Jun 18
+        </span>
+        ,
+        <span>
+         09:30 AM
+        </span>
+        <span>
+         LOCAL
+        </span>
+        <span content="2018-06-18" itemprop="endDate">
+        </span>
+       </span>
+      </div>
+      <nav class="cb-nav-bar" role="navigation">
+       <a class="cb-nav-tab " href="/live-cricket-scores/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Live Scores &amp; Commentary">
+        Commentary
+       </a>
+       <a class="cb-nav-tab active" href="/live-cricket-scorecard/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Scorecard">
+        Scorecard
+       </a>
+       <a class="cb-nav-tab " href="/cricket-match-highlights/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" target="_self" title="India vs Afghanistan, Only Test Highlights">
+        Highlights
+       </a>
+       <a class="cb-nav-tab " href="/live-cricket-full-commentary/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Full Commentary">
+        Full Commentary
+       </a>
+       <a class="cb-nav-tab " href="/live-cricket-match-blog/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Live Blog">
+        Live Blog
+       </a>
+       <a class="cb-nav-tab " href="/cricket-match-facts/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Match Facts">
+        Match Facts
+       </a>
+       <a class="cb-nav-tab " href="/cricket-match-news/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test News">
+        News
+       </a>
+       <a class="cb-nav-tab " href="/cricket-match-photos/19956/ind-vs-afg-only-test-afghanistan-tour-of-india-2018" title="India vs Afghanistan, Only Test Photos">
+        Photos
+       </a>
+      </nav>
+     </div>
+     <div class="cb-col cb-col-67 cb-scrd-lft-col html-refresh" ng-init="seriesId='2672';" timeout="30000" url="/api/html/cricket-scorecard/19956">
+      <div class="cb-col cb-scrcrd-status cb-col-100 cb-text-complete">
+       India won by an innings and 262 runs
+      </div>
+      <div id="innings_1">
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-hdr-rw">
+         <span>
+          India 1st Innings
+         </span>
+         <span class="pull-right">
+          474-10(104.5)
+         </span>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-27 text-bold">
+          Batsman
+         </div>
+         <div class="cb-col cb-col-33">
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          B
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4s
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          6s
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          SR
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1597/murali-vijay" title="View profile of Murali Vijay">
+           Murali Vijay
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Wafadar
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          105
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          153
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          15
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          68.63
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1446/shikhar-dhawan" title="View profile of Shikhar Dhawan">
+           Shikhar Dhawan
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Nabi b Ahmadzai
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          107
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          96
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          19
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          111.46
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8733/lokesh-rahul" title="View profile of Lokesh Rahul">
+           Lokesh Rahul
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ahmadzai
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          54
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          64
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          8
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          84.38
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1448/cheteshwar-pujara" title="View profile of Cheteshwar Pujara">
+           Cheteshwar Pujara
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Nabi b Mujeeb
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          35
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          52
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          67.31
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1447/ajinkya-rahane" title="View profile of Ajinkya Rahane">
+           Ajinkya Rahane (c)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Rashid Khan
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          10
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          45
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          22.22
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/145/dinesh-karthik" title="View profile of Dinesh Karthik">
+           Dinesh Karthik (wk)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           run out ((sub)Nasir Jamal/Zazai)
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          22
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          18.18
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/9647/hardik-pandya" title="View profile of Hardik Pandya">
+           Hardik Pandya
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Zazai b Wafadar
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          71
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          94
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          10
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          75.53
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1593/ravichandran-ashwin" title="View profile of Ravichandran Ashwin">
+           Ravichandran Ashwin
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Zazai b Ahmadzai
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          18
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          39
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          46.15
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/587/ravindra-jadeja" title="View profile of Ravindra Jadeja">
+           Ravindra Jadeja
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Rahmat b Nabi
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          20
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          31
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          64.52
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/702/ishant-sharma" title="View profile of Ishant Sharma">
+           Ishant Sharma
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Rashid Khan
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          8
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          13
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          61.54
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/1858/umesh-yadav" title="View profile of Umesh Yadav">
+           Umesh Yadav
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           not out
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          26
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          21
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          123.81
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Extras
+         </div>
+         <div class="cb-col cb-col-8 text-bold cb-text-black text-right">
+          16
+         </div>
+         <div class="cb-col-32 cb-col">
+          (b 1, lb 12, w 2, nb 1, p 0)
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Total
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-black text-right">
+          474
+         </div>
+         <div class="cb-col-32 cb-col">
+          (10 wkts, 104.5 Ov)
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray text-bold">
+        Fall of Wickets
+       </div>
+       <div class="cb-col cb-col-100 cb-col-rt cb-font-13">
+        168-1 (
+        <a class="cb-text-link" href="/profiles/1446/shikhar-dhawan" title="View profile of Shikhar Dhawan">
+         Shikhar Dhawan
+        </a>
+        , 28.4),280-2 (
+        <a class="cb-text-link" href="/profiles/1597/murali-vijay" title="View profile of Murali Vijay">
+         Murali Vijay
+        </a>
+        , 51.5),284-3 (
+        <a class="cb-text-link" href="/profiles/8733/lokesh-rahul" title="View profile of Lokesh Rahul">
+         Lokesh Rahul
+        </a>
+        , 52.1),318-4 (
+        <a class="cb-text-link" href="/profiles/1447/ajinkya-rahane" title="View profile of Ajinkya Rahane">
+         Ajinkya Rahane
+        </a>
+        , 66.3),328-5 (
+        <a class="cb-text-link" href="/profiles/1448/cheteshwar-pujara" title="View profile of Cheteshwar Pujara">
+         Cheteshwar Pujara
+        </a>
+        , 69.5),334-6 (
+        <a class="cb-text-link" href="/profiles/145/dinesh-karthik" title="View profile of Dinesh Karthik">
+         Dinesh Karthik
+        </a>
+        , 74.5),369-7 (
+        <a class="cb-text-link" href="/profiles/1593/ravichandran-ashwin" title="View profile of Ravichandran Ashwin">
+         Ravichandran Ashwin
+        </a>
+        , 85.5),436-8 (
+        <a class="cb-text-link" href="/profiles/587/ravindra-jadeja" title="View profile of Ravindra Jadeja">
+         Ravindra Jadeja
+        </a>
+        , 98.5),440-9 (
+        <a class="cb-text-link" href="/profiles/9647/hardik-pandya" title="View profile of Hardik Pandya">
+         Hardik Pandya
+        </a>
+        , 99.2),474-10 (
+        <a class="cb-text-link" href="/profiles/702/ishant-sharma" title="View profile of Ishant Sharma">
+         Ishant Sharma
+        </a>
+        , 104.5)
+       </div>
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-40 text-bold">
+          Bowler
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          O
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          M
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-right">
+          W
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          NB
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          WD
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          ECO
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+           Yamin Ahmadzai
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          19
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          7
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          51
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          2.68
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/12197/wafadar" title="View profile of Wafadar">
+           Wafadar
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          21
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          5
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          100
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          4.76
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+           Mohammad Nabi
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          13
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          65
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          5.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+           Rashid Khan
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          34.5
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          154
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          4.42
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+           Mujeeb Ur Rahman
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          15
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          75
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          5.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+           Asghar Stanikzai (c)
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          16
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          8.00
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="innings_2">
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-hdr-rw">
+         <span>
+          Afghanistan 1st Innings
+         </span>
+         <span class="pull-right">
+          109-10(27.5)
+         </span>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-27 text-bold">
+          Batsman
+         </div>
+         <div class="cb-col cb-col-33">
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          B
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4s
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          6s
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          SR
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3014/mohammad-shahzad" title="View profile of Mohammad Shahzad">
+           Mohammad Shahzad
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           run out (Hardik Pandya)
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          14
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          18
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          77.78
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/7614/javed-ahmadi" title="View profile of Javed Ahmadi">
+           Javed Ahmadi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ishant
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          8
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          12.50
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8571/rahmat-shah" title="View profile of Rahmat Shah">
+           Rahmat Shah
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Umesh
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          14
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          15
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          93.33
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8278/afsar-zazai" title="View profile of Afsar Zazai">
+           Afsar Zazai (wk)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ishant
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          10
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          60.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8277/hashmatullah-shahidi" title="View profile of Hashmatullah Shahidi">
+           Hashmatullah Shahidi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Ashwin
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          11
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          24
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          45.83
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+           Asghar Stanikzai (c)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ashwin
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          11
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          14
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          78.57
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+           Mohammad Nabi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Ishant b Ashwin
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          24
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          44
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          54.55
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+           Rashid Khan
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Umesh b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          7
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          14
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          50.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+           Yamin Ahmadzai
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Ravindra Jadeja b Ashwin
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          9
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+           Mujeeb Ur Rahman
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           st Karthik b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          15
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          9
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          166.67
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/12197/wafadar" title="View profile of Wafadar">
+           Wafadar
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           not out
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          300.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Extras
+         </div>
+         <div class="cb-col cb-col-8 text-bold cb-text-black text-right">
+          0
+         </div>
+         <div class="cb-col-32 cb-col">
+          (b 0, lb 0, w 0, nb 0, p 0)
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Total
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-black text-right">
+          109
+         </div>
+         <div class="cb-col-32 cb-col">
+          (10 wkts, 27.5 Ov)
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray text-bold">
+        Fall of Wickets
+       </div>
+       <div class="cb-col cb-col-100 cb-col-rt cb-font-13">
+        15-1 (
+        <a class="cb-text-link" href="/profiles/3014/mohammad-shahzad" title="View profile of Mohammad Shahzad">
+         Mohammad Shahzad
+        </a>
+        , 4),21-2 (
+        <a class="cb-text-link" href="/profiles/7614/javed-ahmadi" title="View profile of Javed Ahmadi">
+         Javed Ahmadi
+        </a>
+        , 5.2),35-3 (
+        <a class="cb-text-link" href="/profiles/8571/rahmat-shah" title="View profile of Rahmat Shah">
+         Rahmat Shah
+        </a>
+        , 8.2),35-4 (
+        <a class="cb-text-link" href="/profiles/8278/afsar-zazai" title="View profile of Afsar Zazai">
+         Afsar Zazai
+        </a>
+        , 9.1),50-5 (
+        <a class="cb-text-link" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+         Asghar Stanikzai
+        </a>
+        , 12.3),59-6 (
+        <a class="cb-text-link" href="/profiles/8277/hashmatullah-shahidi" title="View profile of Hashmatullah Shahidi">
+         Hashmatullah Shahidi
+        </a>
+        , 16.4),78-7 (
+        <a class="cb-text-link" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+         Rashid Khan
+        </a>
+        , 21.3),87-8 (
+        <a class="cb-text-link" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+         Yamin Ahmadzai
+        </a>
+        , 24.5),88-9 (
+        <a class="cb-text-link" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+         Mohammad Nabi
+        </a>
+        , 26.3),109-10 (
+        <a class="cb-text-link" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+         Mujeeb Ur Rahman
+        </a>
+        , 27.5)
+       </div>
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-40 text-bold">
+          Bowler
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          O
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          M
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-right">
+          W
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          NB
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          WD
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          ECO
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/1858/umesh-yadav" title="View profile of Umesh Yadav">
+           Umesh Yadav
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          18
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          3.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/702/ishant-sharma" title="View profile of Ishant Sharma">
+           Ishant Sharma
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          5
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          28
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          5.60
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/9647/hardik-pandya" title="View profile of Hardik Pandya">
+           Hardik Pandya
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          5
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          18
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          3.60
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/1593/ravichandran-ashwin" title="View profile of Ravichandran Ashwin">
+           Ravichandran Ashwin
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          8
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          27
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          3.38
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/587/ravindra-jadeja" title="View profile of Ravindra Jadeja">
+           Ravindra Jadeja
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          3.5
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          18
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          4.70
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="innings_3">
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-hdr-rw">
+         <span>
+          Afghanistan 2nd Innings
+         </span>
+         <span class="pull-right">
+          103-10(38.4)
+         </span>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-27 text-bold">
+          Batsman
+         </div>
+         <div class="cb-col cb-col-33">
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          B
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4s
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          6s
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          SR
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3014/mohammad-shahzad" title="View profile of Mohammad Shahzad">
+           Mohammad Shahzad
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Karthik b Umesh
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          13
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          17
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          76.47
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/7614/javed-ahmadi" title="View profile of Javed Ahmadi">
+           Javed Ahmadi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Dhawan b Umesh
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          11
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          27.27
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8571/rahmat-shah" title="View profile of Rahmat Shah">
+           Rahmat Shah
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c A Rahane b Ishant
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          66.67
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+           Mohammad Nabi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           lbw b Umesh
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8277/hashmatullah-shahidi" title="View profile of Hashmatullah Shahidi">
+           Hashmatullah Shahidi
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           not out
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          36
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          88
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          40.91
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+           Asghar Stanikzai (c)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Dhawan b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          25
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          58
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          43.10
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/8278/afsar-zazai" title="View profile of Afsar Zazai">
+           Afsar Zazai (wk)
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          9
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          11.11
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+           Rashid Khan
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          12
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          9
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          133.33
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+           Yamin Ahmadzai
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ishant
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          15
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          6.67
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+           Mujeeb Ur Rahman
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           c Umesh b Ravindra Jadeja
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          8
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          37.50
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-27 ">
+          <a class="cb-text-link" href="/profiles/12197/wafadar" title="View profile of Wafadar">
+           Wafadar
+          </a>
+         </div>
+         <div class="cb-col cb-col-33">
+          <span class="text-gray">
+           b Ashwin
+          </span>
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          7
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right" style="padding-right:10px;">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0.00
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Extras
+         </div>
+         <div class="cb-col cb-col-8 text-bold cb-text-black text-right">
+          5
+         </div>
+         <div class="cb-col-32 cb-col">
+          (b 4, lb 1, w 0, nb 0, p 0)
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms">
+         <div class="cb-col cb-col-60">
+          Total
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-black text-right">
+          103
+         </div>
+         <div class="cb-col-32 cb-col">
+          (10 wkts, 38.4 Ov)
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray text-bold">
+        Fall of Wickets
+       </div>
+       <div class="cb-col cb-col-100 cb-col-rt cb-font-13">
+        19-1 (
+        <a class="cb-text-link" href="/profiles/3014/mohammad-shahzad" title="View profile of Mohammad Shahzad">
+         Mohammad Shahzad
+        </a>
+        , 3.6),22-2 (
+        <a class="cb-text-link" href="/profiles/7614/javed-ahmadi" title="View profile of Javed Ahmadi">
+         Javed Ahmadi
+        </a>
+        , 5.1),22-3 (
+        <a class="cb-text-link" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+         Mohammad Nabi
+        </a>
+        , 5.5),24-4 (
+        <a class="cb-text-link" href="/profiles/8571/rahmat-shah" title="View profile of Rahmat Shah">
+         Rahmat Shah
+        </a>
+        , 6.3),61-5 (
+        <a class="cb-text-link" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+         Asghar Stanikzai
+        </a>
+        , 23.4),62-6 (
+        <a class="cb-text-link" href="/profiles/8278/afsar-zazai" title="View profile of Afsar Zazai">
+         Afsar Zazai
+        </a>
+        , 25.3),82-7 (
+        <a class="cb-text-link" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+         Rashid Khan
+        </a>
+        , 29.2),85-8 (
+        <a class="cb-text-link" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+         Yamin Ahmadzai
+        </a>
+        , 32.5),98-9 (
+        <a class="cb-text-link" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+         Mujeeb Ur Rahman
+        </a>
+        , 35.6),103-10 (
+        <a class="cb-text-link" href="/profiles/12197/wafadar" title="View profile of Wafadar">
+         Wafadar
+        </a>
+        , 38.4)
+       </div>
+       <div class="cb-col cb-col-100 cb-ltst-wgt-hdr">
+        <div class="cb-col cb-col-100 cb-scrd-sub-hdr cb-bg-gray">
+         <div class="cb-col cb-col-40 text-bold">
+          Bowler
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          O
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          M
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          R
+         </div>
+         <div class="cb-col cb-col-8 text-bold text-right">
+          W
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          NB
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          WD
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          ECO
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/702/ishant-sharma" title="View profile of Ishant Sharma">
+           Ishant Sharma
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          7
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          17
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          2
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          2.43
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/1858/umesh-yadav" title="View profile of Umesh Yadav">
+           Umesh Yadav
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          7
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          1
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          26
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          3
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          3.71
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/9647/hardik-pandya" title="View profile of Hardik Pandya">
+           Hardik Pandya
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          2
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          6
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          1.50
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/1593/ravichandran-ashwin" title="View profile of Ravichandran Ashwin">
+           Ravichandran Ashwin
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          11.4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          3
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          32
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          1
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          2.74
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-scrd-itms ">
+         <div class="cb-col cb-col-40">
+          <a class="cb-text-link" href="/profiles/587/ravindra-jadeja" title="View profile of Ravindra Jadeja">
+           Ravindra Jadeja
+          </a>
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          9
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          3
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          17
+         </div>
+         <div class="cb-col cb-col-8 text-right text-bold">
+          4
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-8 text-right">
+          0
+         </div>
+         <div class="cb-col cb-col-10 text-right">
+          1.89
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="cb-col cb-col-100">
+       <div class="cb-col cb-col-100 cb-scrd-hdr-rw">
+        Match Info
+       </div>
+       <div class="cb-col cb-col-100 cb-font-13">
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Match
+         </div>
+         <div class="cb-col cb-col-73">
+          Ind vs Afg, Only Test, Afghanistan tour of India, 2018
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Date
+         </div>
+         <div class="cb-col cb-col-73">
+          Thursday, June 14, 2018 - Monday, June 18, 2018
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Toss
+         </div>
+         <div class="cb-col cb-col-73">
+          India won the toss and opt to bat
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Time
+         </div>
+         <div class="cb-col cb-col-73">
+          04:00 AM GMT
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Venue
+         </div>
+         <div class="cb-col cb-col-73">
+          M.Chinnaswamy Stadium, Bengaluru
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Umpires
+         </div>
+         <div class="cb-col cb-col-73">
+          Chris Gaffaney,Paul Reiffel
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Third Umpire
+         </div>
+         <div class="cb-col cb-col-73">
+          Rod Tucker
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-mtch-info-itm">
+         <div class="cb-col cb-col-27">
+          Match Referee
+         </div>
+         <div class="cb-col cb-col-73">
+          Andy Pycroft
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm">
+         IndiaSquad
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm">
+         <div class="cb-col cb-col-27 ">
+          Playing XI
+         </div>
+         <div class="cb-col cb-col-73 ">
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1446/shikhar-dhawan" title="View profile of Shikhar Dhawan">
+           Shikhar Dhawan
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1597/murali-vijay" title="View profile of Murali Vijay">
+           Murali Vijay
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1448/cheteshwar-pujara" title="View profile of Cheteshwar Pujara">
+           Cheteshwar Pujara
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1447/ajinkya-rahane" title="View profile of Ajinkya Rahane">
+           Ajinkya Rahane (c)
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8733/lokesh-rahul" title="View profile of Lokesh Rahul">
+           Lokesh Rahul
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/145/dinesh-karthik" title="View profile of Dinesh Karthik">
+           Dinesh Karthik (wk)
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9647/hardik-pandya" title="View profile of Hardik Pandya">
+           Hardik Pandya
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1593/ravichandran-ashwin" title="View profile of Ravichandran Ashwin">
+           Ravichandran Ashwin
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/587/ravindra-jadeja" title="View profile of Ravindra Jadeja">
+           Ravindra Jadeja
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/702/ishant-sharma" title="View profile of Ishant Sharma">
+           Ishant Sharma
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/1858/umesh-yadav" title="View profile of Umesh Yadav">
+           Umesh Yadav
+          </a>
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm">
+         <div class="cb-col cb-col-27 ">
+          Bench
+         </div>
+         <div class="cb-col cb-col-73 ">
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8257/karun-nair" title="View profile of Karun Nair">
+           Karun Nair
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8292/kuldeep-yadav" title="View profile of Kuldeep Yadav">
+           Kuldeep Yadav
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8683/shardul-thakur" title="View profile of Shardul Thakur">
+           Shardul Thakur
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9715/navdeep-saini" title="View profile of Navdeep Saini">
+           Navdeep Saini
+          </a>
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm cb-minfo-tm2-nm">
+         AfghanistanSquad
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm">
+         <div class="cb-col cb-col-27 ">
+          Playing XI
+         </div>
+         <div class="cb-col cb-col-73 ">
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/3014/mohammad-shahzad" title="View profile of Mohammad Shahzad">
+           Mohammad Shahzad
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/7614/javed-ahmadi" title="View profile of Javed Ahmadi">
+           Javed Ahmadi
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8571/rahmat-shah" title="View profile of Rahmat Shah">
+           Rahmat Shah
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/3004/asghar-stanikzai" title="View profile of Asghar Stanikzai">
+           Asghar Stanikzai (c)
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8278/afsar-zazai" title="View profile of Afsar Zazai">
+           Afsar Zazai (wk)
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/3007/mohammad-nabi" title="View profile of Mohammad Nabi">
+           Mohammad Nabi
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8277/hashmatullah-shahidi" title="View profile of Hashmatullah Shahidi">
+           Hashmatullah Shahidi
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/10738/rashid-khan" title="View profile of Rashid Khan">
+           Rashid Khan
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/12071/mujeeb-ur-rahman" title="View profile of Mujeeb Ur Rahman">
+           Mujeeb Ur Rahman
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9609/yamin-ahmadzai" title="View profile of Yamin Ahmadzai">
+           Yamin Ahmadzai
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/12197/wafadar" title="View profile of Wafadar">
+           Wafadar
+          </a>
+         </div>
+        </div>
+        <div class="cb-col cb-col-100 cb-minfo-tm-nm">
+         <div class="cb-col cb-col-27 ">
+          Bench
+         </div>
+         <div class="cb-col cb-col-73 ">
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9612/sayed-shirzad" title="View profile of Sayed Shirzad">
+           Sayed Shirzad
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/10828/zahir-khan" title="View profile of Zahir Khan">
+           Zahir Khan
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9849/ihsanullah-janat" title="View profile of Ihsanullah Janat">
+           Ihsanullah Janat
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/8031/amir-hamza" title="View profile of Amir Hamza">
+           Amir Hamza
+          </a>
+          ,
+          <a class="margin0 text-black text-hvr-underline" href="/profiles/9846/nasir-jamal" title="View profile of Nasir Jamal">
+           Nasir Jamal
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="cb-col cb-col-33 cb-col-rt">
+      <div class="ad-unit cb-col cb-col-100" id="mpu" style="min-height:250px;">
+      </div>
+      <div class="cb-col cb-col-100">
+       <h4 class="cb-mdl-hdr">
+        PLAYER SEARCH
+       </h4>
+       <div class="cb-plyr-srch-wrap cb-related-module cb-col cb-col-100" id="playerSearchWidget" ng-controller="playerSearchWidget" ng-init="init()" style="margin:10px 0;">
+        <form action="/profiles" method="POST" name="form" ng-cloak="" ng-submit="submit_search($event)" novalidate="">
+         <div class="cb-plyr-srch-inp-wrap">
+          <div class="cb-plyr-srch-inp-col">
+           <input autocomplete="off" class="cb-plyr-inp-new" id="player_search_input" name="cbserarch" ng-focus="showDropdown()" ng-keydown="onKeyPress($event)" ng-minlength="2" ng-model="searchText" pattern=".{2,}" placeholder="Search Player" type="text"/>
+           <div class="cb-plyr-srch-backdrop" ng-click="hideDropdown()" ng-show="dropdownVisible">
+           </div>
+           <div class="cb-plyr-srch-box" id="playerSearchBox" ng-show="dropdownVisible &amp;&amp; searchText.length &gt; 1">
+            <p ng-if="filtered_data.length == 0">
+             Loading...
+            </p>
+            <a class="cb-plyr-srch-box-item {{selectedIndex == $index?'active':''}}" data-index="{{$index}}" ng-href="{{results.url}}" ng-if="filtered_data.length &gt; 0" ng-mouseover="onHoverItem($event)" ng-repeat="results in filtered_data track by $index" ng-show="searchText.length &gt;=2">
+             <div class="cb-plyr-srch-item-image">
+              <img class="img-responsive cb-srch-plyr-img" ng-attr-alt="{{results.name}}" ng-attr-title="{{results.name}}" ng-cloak="" ng-src="//i.cricketcb.com/stats/img/faceImages/{{results.id}}.jpg" style="border-radius:50%;">
+              </img>
+             </div>
+             <p class="cb-plyr-srch-item-text" ng-bind="results.name">
+             </p>
+            </a>
+           </div>
+          </div>
+          <button class="cb-srch-btn text-white" ng-click="form.$submitted = true" type="submit">
+           GO
+          </button>
+         </div>
+         <div ng-show="form.$submitted || form.cbserarch.$touched">
+          <div class="text-red" ng-show="form.cbserarch.$error.minlength || searchText.length &lt; 2">
+           Please enter atleast 2 characters.
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div class="ad-unit cb-col cb-nav-hdr" id="mpu2">
+      </div>
+      <div class="cb-col cb-col-100 cb-sr-hist-pad" gtm-label="scorecard" id="latest-news-mod">
+       <h4 class="cb-ltst-hdr">
+        LATEST NEWS
+       </h4>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147411/we-have-some-good-strikers-of.jpg" itemprop="url"/>
+         <a href="/cricket-news/102622/ireland-vs-scotland-vs-netherlands-cricket-tri-sries-every-player-in-group-has-a-lot-to-offer-in-t20s-graham-ford-ireland-coach" title="Every player in group has a lot to offer in T20s: Ford">
+          <img alt='"We have some good strikers of the ball in the squad and good athletes, attributes which are important in T20 cricket" - Ford' class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147411/we-have-some-good-strikers-of.jpg" style="padding:0px;" title='"We have some good strikers of the ball in the squad and good athletes, attributes which are important in T20 cricket" - Ford' width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102622/ireland-vs-scotland-vs-netherlands-cricket-tri-sries-every-player-in-group-has-a-lot-to-offer-in-t20s-graham-ford-ireland-coach" title="Every player in group has a lot to offer in T20s: Ford">
+           Every player in group has a lot to offer in T20s: Ford
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           1h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <span ad-content='&lt;div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm" style="border-bottom: 1px solid #ecebeb"&gt;&lt;div class="cb-col cb-col-33"&gt;&lt;a rel="noreferrer" target="_blank" href="[[clk]]"&gt;&lt;img style="width:90px;height:70px;" src="[[img]]" &gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container"&gt;&lt;a rel="nofollow" target="_blank" href="[[clk]]" class="cb-nws-hdln-ancr text-hvr-underline"&gt;&lt;div class="cb-list-intro-text" style="height: 66px; overflow: hidden;"&gt;[[text]]&lt;/div&gt;&lt;div class="cb-list-sub-text ad-native-sponsor"&gt;[[sponsor]]&lt;img src="[[logo]]" class="pull-right" style="height:14px;" /&gt;&lt;/div&gt;&lt;/a&gt;&lt;div style="float:right;margin-top:-85px;"&gt;&lt;a rel="noreferrer" target="_blank" href="[[adchoicesClickURL]]"&gt;&lt;img src="[[adchoicesImgURL]]"/&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;' ad-loaded="false" class="ad-native ng-cloak" id="native_latest_news" ng-if='$root.$GEO.continent != "EU"'>
+       </span>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147410/jason-roy-cracked-a-fine-hundr.jpg" itemprop="url"/>
+         <a href="/cricket-news/102621/england-vs-australia-2nd-odi-jason-roy-pleased-after-playing-favourite-england-innings" title="Roy pleased after playing 'favourite' England innings">
+          <img alt="Jason Roy cracked a fine hundred in England's 38-run win in Cardiff." class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147410/jason-roy-cracked-a-fine-hundr.jpg" style="padding:0px;" title="Jason Roy cracked a fine hundred in England's 38-run win in Cardiff." width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102621/england-vs-australia-2nd-odi-jason-roy-pleased-after-playing-favourite-england-innings" title="Roy pleased after playing 'favourite' England innings">
+           Roy pleased after playing 'favourite' England innings
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           2h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147409/as-we-always-do-were-looking.jpg" itemprop="url"/>
+         <a href="/cricket-news/102620/australia-tour-of-england-2018-we-had-to-fight-hard-and-keep-fighting-jos-buttler" title="We had to fight hard and keep fighting: Buttler ">
+          <img alt="&quot;As we always do we're looking to strive to get better. We actually got into a position where we probably could have got a few more.&quot;" class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147409/as-we-always-do-were-looking.jpg" style="padding:0px;" title="&quot;As we always do we're looking to strive to get better. We actually got into a position where we probably could have got a few more.&quot;" width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102620/australia-tour-of-england-2018-we-had-to-fight-hard-and-keep-fighting-jos-buttler" title="We had to fight hard and keep fighting: Buttler ">
+           We had to fight hard and keep fighting: Buttler
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           4h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147407/coming-in-after-34-overs-at-n.jpg" itemprop="url"/>
+         <a href="/cricket-news/102619/australia-tour-of-england-2018-marsh-proves-hes-australias-man-for-a-crisis" title="Marsh proves his standing as Australia's crisis-man">
+          <img alt="Coming in after 3.4 overs at number three, Marsh was not removed from the crease until the 46th over." class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147407/coming-in-after-34-overs-at-n.jpg" style="padding:0px;" title="Coming in after 3.4 overs at number three, Marsh was not removed from the crease until the 46th over." width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102619/australia-tour-of-england-2018-marsh-proves-hes-australias-man-for-a-crisis" title="Marsh proves his standing as Australia's crisis-man">
+           Marsh proves his standing as Australia's crisis-man
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           6h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147392/shane-dowrich-stroked-his-sixt.jpg" itemprop="url"/>
+         <a href="/cricket-news/102618/sri-lanka-cricket-team-close-in-on-parity-in-drama-filled-day-vs-windies-2nd-test-day-3" title="Sri Lanka close in on parity in drama-filled day">
+          <img alt="Shane Dowrich stroked his sixth Test fifty." class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147392/shane-dowrich-stroked-his-sixt.jpg" style="padding:0px;" title="Shane Dowrich stroked his sixth Test fifty." width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102618/sri-lanka-cricket-team-close-in-on-parity-in-drama-filled-day-vs-windies-2nd-test-day-3" title="Sri Lanka close in on parity in drama-filled day">
+           Sri Lanka close in on parity in drama-filled day
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           8h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-lst-itm cb-lst-itm-sm">
+        <div class="cb-col cb-col-33" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+         <meta content="100" itemprop="width"/>
+         <meta content="77" itemprop="height"/>
+         <meta content="http://api.cricbuzz.com/a/img/v1/100x77/i1/c147377/sri-lanka-players-refused-to-t.jpg" itemprop="url"/>
+         <a href="/cricket-news/102617/when-teams-protested-against-umpiring-decisions" title="When teams protested against umpiring decisions">
+          <img alt="Sri Lanka players refused to take the field on Day 3 of the 2nd Test against Windies in protest against the umpire's call to change the ball" class="cb-lst-img lazy-loading" height="77" itemprop="image" source="//api.cricbuzz.com/a/img/v1/100x77/i1/c147377/sri-lanka-players-refused-to-t.jpg" style="padding:0px;" title="Sri Lanka players refused to take the field on Day 3 of the 2nd Test against Windies in protest against the umpire's call to change the ball" width="100"/>
+         </a>
+        </div>
+        <div class="cb-col-67 cb-nws-lst-rt cb-col cb-col-text-container">
+         <div class="cb-ltst-wgt-hdr">
+          <a class="cb-nws-hdln-ancr text-hvr-underline" href="/cricket-news/102617/when-teams-protested-against-umpiring-decisions" title="When teams protested against umpiring decisions">
+           When teams protested against umpiring decisions
+          </a>
+         </div>
+         <div>
+          <span class="cb-nws-time">
+           11h ago
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="cb-col cb-col-100 cb-more-btn-cntnr">
+        <a class="cb-more-btn" href="/cricket-news" role="button" title="Click to view more News">
+         More News
+        </a>
+       </div>
+      </div>
+      <style>
+       .cb-topic-header{margin-left:0px!important;} .cb-list-heading{font-weight:normal!important}
+      </style>
+      <div class="ad-unit cb-col" id="mpu3">
+      </div>
+     </div>
+    </div>
+    <style>
+     .kaltura-play{display:none;}
+    </style>
+    <script>
+     var is_video_enabled = false;	CBQueueOnLoad.push(function(){	var is_video_enabled = _GEO.country == "US" || _GEO.country == "CA"; if(is_video_enabled){	_ele("body").append("<style>.kaltura-play{display:inline-block;}</style>");	}	});
+    </script>
+    <span class="ad-unit" id="skin_right" style="overflow:hidden;position:fixed;top:0;left:calc(50% + 490px);margin-left:3px;z-index:-99;">
+    </span>
+   </div>
+  </div>
+  <div ng-cloak="" ng-if='$root.$GEO.continent == "EU"'>
+   <div class="feedback-bar text-center cb-col-100 disp-none feedback-menu" id="feedback-bar" ng-controller="FeedbackCtrl" ng-init="show_feedback_menu();">
+    <span class="feedback-txt">
+     We use cookies to improve your experience on our site and to show you non-personalized ads. Find out more in our
+     <a href="/info/privacy" style="color:#4A90E2;">
+      privacy policy
+     </a>
+     and
+     <a href="/info/privacy#cookie_policy" style="color:#4A90E2;">
+      cookie policy
+     </a>
+    </span>
+    <button class="cb-feedback-btn blue-btn cb-cursor" id="close_feedback_btn" ng-click="close_feedback();">
+     OK
+    </button>
+   </div>
+  </div>
+  <footer id="FooterWraper" itemscope="" itemtype="http://schema.org/WPFooter">
+   <div class="cb-footer cb-col-100 cb-col">
+    <div class="cb-ftr-cntnr">
+     <div class="cb-col-25 cb-col">
+      <a class="center-block" href="/">
+       <div class="cb-ftr-logo cb-ico">
+       </div>
+      </a>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       MOBILE SITE &amp; APPS
+      </div>
+      <ul class="cb-ftr-ul">
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="http://m.cricbuzz.com">
+         <span class="cb-mobile-site cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          m.cricbuzz.com
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://play.google.com/store/apps/details?id=com.cricbuzz.android" target="_blank">
+         <span class="cb-app-android cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Android
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://itunes.apple.com/app/id360466413" target="_blank">
+         <span class="cb-app-ios cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          iOS
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://www.windowsphone.com/en-us/store/app/cricbuzz/d349db5c-d4e9-4498-ba6f-b9059e452965" target="_blank">
+         <span class="cb-app-windows cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Windows Mobile
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://appworld.blackberry.com/webstore/content/64558" target="_blank">
+         <span class="cb-app-blackberry cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Blackberry
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://chrome.google.com/webstore/detail/cricbuzz/opljecakjchbhhikbeifamamnpcdbgem" target="_blank">
+         <span class="cb-app-chrome cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Chrome Extension
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       FOLLOW US ON
+      </div>
+      <ul class="cb-ftr-ul">
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://www.facebook.com/cricbuzz" target="_blank">
+         <span class="cb-social-fb cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          facebook
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://twitter.com/cricbuzz" target="_blank">
+         <span class="cb-social-twitter cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          twitter
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw" target="_blank">
+         <span class="cb-social-ytbe cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          youtube
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://plus.google.com/+cricbuzz/" target="_blank">
+         <span class="cb-social-gplus cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          google+
+         </span>
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="https://in.pinterest.com/cricbuzz/" target="_blank">
+         <span class="cb-social-pinterest cb-ico">
+         </span>
+         <span class="cb-footer-list-rt">
+          Pinterest
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cb-col-25 cb-col">
+      <div class="text-left cb-font-16 text-bold">
+       COMPANY
+      </div>
+      <ul class="cb-ftr-ul">
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="/careers">
+         Careers
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="/info/advertise">
+         Advertise
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="/info/privacy" rel="nofollow">
+         Privacy Policy
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="/info/termsofuse" rel="nofollow">
+         Terms of Use
+        </a>
+       </li>
+       <li class="cb-ftr-lst">
+        <a class="text-white" href="/product-blog/cricbuzz-mobile-apps-tv-ad-cricket-ka-keeda">
+         Cricbuzz TV Ads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cb-col-100 cb-col cb-ftr-cpyrght">
+       2018 Cricbuzz.com, Times Internet Limited. All rights reserved |
+      <a class="cb-ftr-cpyrght text-hvr-underline" href="http://timesofindia.indiatimes.com/" target="_blank">
+       The Times of India
+      </a>
+      |
+      <a class="cb-ftr-cpyrght text-hvr-underline" href="http://navbharattimes.indiatimes.com/" target="_blank">
+       Navbharat Times
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script type="text/javascript">
+   var script_tag = document.getElementsByTagName('script')[0];	(function() {	var cmin = document.createElement('script'); cmin.type = 'text/javascript'; cmin.async = true;	cmin.src = '//i.cricketcb.com/statics/site/js/cricbuzz.min.201806121330.js';	script_tag.parentNode.insertBefore(cmin, script_tag);	})();
+  </script>
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-PGNCT7" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);	})(window,document,'script','dataLayer','GTM-PGNCT7');
+  </script>
+  <script>
+   window.onerror = function(message, file, line) {	var sFormattedMessage = '[' + file + ' (' + line + ')] ' + message;	dataLayer.push({'EventAction': "Application",'EventLabel': sFormattedMessage,'event': 'Exceptions'});	}
+  </script>
+ </body>
+</html>
