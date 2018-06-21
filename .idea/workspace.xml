@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfd1d41-43df-46a3-ac6f-764387cd9b11" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Webscraping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_pandas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/Names.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/hello" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_17.py" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/Practice/problem_17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/txt1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/txt2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/uybh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/work less.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/work_less.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,23 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Webscraping.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_web_scrapping.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            <state relative-caret-position="219">
+              <caret line="252" column="27" lean-forward="true" selection-start-line="252" selection-start-column="27" selection-end-line="252" selection-end-column="27" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -49,39 +29,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cricbuzz_prettified" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50371">
-              <caret line="2952" column="28" selection-start-line="2952" selection-start-column="28" selection-end-line="2952" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cricbuzz_prettified.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="clean_temp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/clean_temp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="476">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problem_17.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_17.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +54,16 @@
     <findStrings>
       <find>&lt;p</find>
       <find>104502282508811467249</find>
+      <find>1st</find>
+      <find>hit</find>
+      <find>batsman</find>
+      <find>34.5</find>
+      <find>2.68</find>
     </findStrings>
+    <replaceStrings>
+      <replace>bowler</replace>
+      <replace>2nd</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,14 +96,17 @@
         <option value="$PROJECT_DIR$/GERRIT/Practice/problem_26.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/Django/sample.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/problem_17.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/test.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/Webscraping.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py" />
+        <option value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_pandas.py" />
+        <option value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py" />
+        <option value="$PROJECT_DIR$/GERRIT/Practice/test.py" />
+        <option value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping/__init__.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="12" />
     <option name="width" value="1346" />
@@ -151,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,11 +136,17 @@
               <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
+              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="cricbuzz_web_scrapping" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,8 +166,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_web_scrapping">
-    <configuration name="problem_26" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_repo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="cricbuzz_pandas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,31 +197,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/problem_26.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_pandas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_repo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/Django" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/Django/sample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="sdfjh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cricbuzz_web_scrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,7 +215,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +233,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Praneeth Alaghari\python_repo\GERRIT\Practice\Webscraping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,26 +251,26 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Praneeth Alaghari\python_repo\GERRIT\Practice\cricbuzz_web_scrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.problem_26" />
-      <item itemvalue="Python.sample" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.test_web_scrapping" />
-      <item itemvalue="Python.sdfjh" />
+      <item itemvalue="Python.cricbuzz_pandas" />
+      <item itemvalue="Python.cricbuzz_web_scrapping" />
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_web_scrapping" />
-        <item itemvalue="Python.sdfjh" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.sample" />
-        <item itemvalue="Python.problem_26" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.cricbuzz_web_scrapping" />
+        <item itemvalue="Python.cricbuzz_pandas" />
+        <item itemvalue="Python.test_web_scrapping" />
       </list>
     </recent_temporary>
   </component>
@@ -316,13 +289,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49739584" visible="true" weight="0.24304539" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30047694" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30047694" />
       <window_info id="Structure" order="1" sideWeight="0.5026042" side_tool="true" weight="0.24962406" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290938" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -340,22 +314,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="374">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,9 +328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="9" selection-start-line="7" selection-end-line="7" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,50 +619,55 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2952" column="28" selection-start-line="2952" selection-start-column="28" selection-end-line="2952" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/clean_temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_17.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="119">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified">
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50371">
-          <caret line="2952" column="28" selection-start-line="2952" selection-start-column="28" selection-end-line="2952" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/clean_temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="219">
+          <caret line="252" column="27" lean-forward="true" selection-start-line="252" selection-start-column="27" selection-end-line="252" selection-end-column="27" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

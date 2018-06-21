@@ -54,7 +54,6 @@ for spd in batsmen_tmp:
         for items in batsmen_data:
             #data_of_batsman_1st_inn.append(items.text)
             if i%4 == 0:
-                print('hit')
                 balls_of_batsman_1st_inn.append(items.text)
             elif i%4 ==1:
                 fours_of_batsman_1st_inn.append(items.text)
@@ -72,8 +71,8 @@ print(sixes_of_batsman_1st_inn)
 print(strike_rate_of_batsman_1st_inn)
 
 
-for i,j,k,l,m,n in zip(name_of_batsman_1st_inn,score_of_batsman_1st_inn,balls_of_batsman_1st_inn,fours_of_batsman_1st_inn,sixes_of_batsman_1st_inn,strike_rate_of_batsman_1st_inn):
-    print(i,j,k,l,m,n)
+#for i,j,k,l,m,n in zip(name_of_batsman_1st_inn,score_of_batsman_1st_inn,balls_of_batsman_1st_inn,fours_of_batsman_1st_inn,sixes_of_batsman_1st_inn,strike_rate_of_batsman_1st_inn):
+#    print(i,j,k,l,m,n)
 
 '''
 bowler = webpage_content.find_all('div', id="innings_1", class_='cb-col cb-col-100 cb-scrd-itms')
@@ -84,3 +83,47 @@ for itr_bowler in bowler:
     for items in bowler_data:
         print(items)
 '''
+
+name_of_batsman_2nd_inn = []
+score_of_batsman_2nd_inn = []
+balls_of_batsman_2nd_inn = []
+fours_of_batsman_2nd_inn = []
+sixes_of_batsman_2nd_inn = []
+strike_rate_of_batsman_2nd_inn = []
+
+batsmen_tmp = webpage_content.find_all('div', {"id": "innings_2"})
+for spd in batsmen_tmp:
+    batsmen = spd.find_all(class_="cb-col cb-col-100 cb-scrd-itms")
+    for itr_batsmen in batsmen:
+        i = 0
+        for ita in itr_batsmen.find_all('a',href=True):
+            name_of_batsman_2nd_inn.append(ita.text)
+        batsmen_score = itr_batsmen.find_all(class_='cb-col cb-col-8 text-right text-bold')
+        for items in batsmen_score:
+            score_of_batsman_2nd_inn.append(items.text)
+        batsmen_data = itr_batsmen.find_all(class_='cb-col cb-col-8 text-right')
+        for items in batsmen_data:
+            #data_of_batsman_2nd_inn.append(items.text)
+            if i%4 == 0:
+                print('hit')
+                balls_of_batsman_2nd_inn.append(items.text)
+            elif i%4 ==1:
+                fours_of_batsman_2nd_inn.append(items.text)
+            elif i%4 ==2:
+                sixes_of_batsman_2nd_inn.append(items.text)
+            elif i%4 ==3:
+                strike_rate_of_batsman_2nd_inn.append(items.text)
+            i += 1
+
+print(name_of_batsman_2nd_inn)
+print(score_of_batsman_2nd_inn)
+print(balls_of_batsman_2nd_inn)
+print(fours_of_batsman_2nd_inn)
+print(sixes_of_batsman_2nd_inn)
+print(strike_rate_of_batsman_2nd_inn)
+
+
+#for i,j,k,l,m,n in zip(name_of_batsman_2nd_inn,score_of_batsman_2nd_inn,balls_of_batsman_2nd_inn,fours_of_batsman_2nd_inn,sixes_of_batsman_2nd_inn,strike_rate_of_batsman_2nd_inn):
+#    print(i,j,k,l,m,n)
+
+
