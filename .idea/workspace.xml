@@ -2,46 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfd1d41-43df-46a3-ac6f-764387cd9b11" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP/mail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GERRIT/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Binary_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Bubble_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Insertion_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Linear_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Merge_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Quick_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Selection_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/production.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Practice/Fibanocci_series.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/clean_temp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_pandas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_13.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_14.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_15.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_16.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_17.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_18.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_19.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_20.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_21.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_22.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_23.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_24.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_25.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_26.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/problem_9.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/python_12.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/python_classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/random_password_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/Practice/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/Practice/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/DEV/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,20 +26,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py">
+      <file leaf-file-name="old_settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/old_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="82">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Webscraping.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/production.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="local.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/local.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -89,6 +91,7 @@
       <find>34.5</find>
       <find>2.68</find>
       <find>1st</find>
+      <find>develop</find>
     </findStrings>
     <replaceStrings>
       <replace>bowler</replace>
@@ -101,14 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_6.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_7.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_8.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_9.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_10.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_11.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/python_12.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_13.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/problem_14.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/problem_15.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/python_classes.py" />
@@ -145,6 +140,21 @@
         <option value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Server.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP/mail.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/test.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Linear_search.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Binary_search.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Bubble_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Insertion_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/test.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Selection_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Practice/Fibanocci_series.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Quick_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/merge_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Merge_sort.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/old_settings.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/production.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/local.py" />
       </list>
     </option>
   </component>
@@ -159,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,26 +186,52 @@
               <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_repo" type="462c0819:PsiDirectoryNode" />
               <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="DEV" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_repo" type="462c0819:PsiDirectoryNode" />
               <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail_SMTP" type="462c0819:PsiDirectoryNode" />
+              <item name="DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
+              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
+              <item name="DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="trydjango1-11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
+              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
+              <item name="DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="trydjango1-11" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
+              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
+              <item name="DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="trydjango1-11" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Praneeth Alaghari/python_repo/GERRIT/Practice/problem_19.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/GERRIT/Practice/problem_8.py" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -213,8 +250,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="Chatroom_Client_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.old_settings">
+    <configuration name="Merge_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -222,17 +259,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Merge_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Chatroom_Client_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,35 +277,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Algorithms/Quick_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Chatroom_Server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_repo" />
-      <option name="INTERPRETER_OPTIONS" value="-s" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Server.py" />
-      <option name="PARAMETERS" value="&quot;portnumber&quot; &quot;port_name&quot;" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="mail" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,17 +295,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP/mail.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="old_settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,30 +313,48 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/Practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/Practice/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/old_settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_repo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/sample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Chatroom_Server" />
-      <item itemvalue="Python.Chatroom_Client_1" />
-      <item itemvalue="Python.Chatroom_Client_2" />
-      <item itemvalue="Python.mail" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.Quick_sort" />
+      <item itemvalue="Python.Merge_sort" />
+      <item itemvalue="Python.sample" />
+      <item itemvalue="Python.base" />
+      <item itemvalue="Python.old_settings" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.mail" />
-        <item itemvalue="Python.Chatroom_Client_2" />
-        <item itemvalue="Python.Chatroom_Client_1" />
-        <item itemvalue="Python.Chatroom_Server" />
+        <item itemvalue="Python.old_settings" />
+        <item itemvalue="Python.base" />
+        <item itemvalue="Python.sample" />
+        <item itemvalue="Python.Merge_sort" />
+        <item itemvalue="Python.Quick_sort" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49739584" visible="true" weight="0.2470238" />
@@ -343,11 +380,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30033004" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30033004" />
       <window_info id="Structure" order="1" sideWeight="0.5026042" side_tool="true" weight="0.24962406" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.42244226" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39965096" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -361,330 +398,147 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_6.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_20.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_21.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_22.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_23.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_25.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_24.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_26.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Django/sample.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_9.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_13.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_14.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_15.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_8.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_16.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/clean_temp.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_17.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Web_Scrapping/cricbuzz_web_scrapping/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Jupoiter.ipynb" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client_2.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client_3.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Server.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Server.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Client.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Server.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_1.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_2.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP/mail.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py" />
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Linear_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="187">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_9.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Binary_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#247#262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_8.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Bubble_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Insertion_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/python_12.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_11.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Selection_sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <caret line="14" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_10.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Practice/Fibanocci_series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Quick_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Algorithms/Merge_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/sample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_7.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/local.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_6.py">
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/old_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/random_password_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_18.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python3.6.5/Lib/encodings/cp1252.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_20.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_21.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_22.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_23.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_25.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_24.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_26.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Django/sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_13.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_14.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_15.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_prettified">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2952" column="28" selection-start-line="2952" selection-start-column="28" selection-end-line="2952" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/clean_temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/problem_17.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/cricbuzz_web_scrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server.py" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Web_Scrapping/cricbuzz_web_scrapping/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="245" column="30" selection-start-line="245" selection-start-column="30" selection-end-line="245" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Jupoiter.ipynb" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client_2.py" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client_3.py" />
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chat_Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Client-Server-Programming/Chatroom_Client_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Mail_SMTP/mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/Practice/Webscraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="82">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
         </state>
       </provider>
     </entry>
