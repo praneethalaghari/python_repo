@@ -1,0 +1,15 @@
+Webscrapping
+Server-Client Programming
+Django - video The Codex, CodingEntrepreneurs
+
+
+Interview topics:
+
+map
+filter
+reduce
+lambda
+list comprehensions
+generators
+decorators
+Algorithms

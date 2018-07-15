@@ -1,0 +1,69 @@
+Required arguments are those parameters which are definitely to be passed during function call as they are defined in function definition
+They are to be provided in order.
+These are also called Non-Key word arguments
+Variable length keyword args : one star
+
+Examples :
+
+	def empl(name,age):
+	     self.name = name
+	     self.age = age
+	     print("Name :",name)
+	     print("Age :",age)
+
+
+	emp1("Praneeth",25)  ///given in order
+	output here will be
+
+	     Name : Praneeth
+	     Age  : 25
+
+	emp1(25, "Praneeth")  ///given un-ordered
+	output here will be
+
+	     Name : 25
+	     Age  : Praneeth
+      
+
+Keyword arguments are those parameters which are definitely to be passed during function call as they are defined in function definition
+They need not be provided in order.
+Keyword arguments are identified by parameter name
+Variable length keyword args : two star
+
+	def empl(name,age):
+	     self.name = name
+	     self.age = age
+	     print("Name :",name)
+	     print("Age :",age)
+
+	emp1(name = "Praneeth",age = 25)  ///This is keyword args given in order
+	output here will be
+
+	     Name : Praneeth
+	     Age  : 25
+
+
+	emp1(age = 25,name = "Praneeth")  ///given in un-order
+	output here will be
+
+	     Name : Praneeth
+	     Age  : 25
+
+
+Default agrumnets is an argument that assumes a default value if a value is not provided in the function call for that argument
+
+	def empl(name,age = 15):
+	     self.name = name
+	     self.age = age
+	     print("Name :",name)
+	     print("Age :",age)
+
+	emp1(name = "Praneeth")  ///This is keyword args given in order
+	output here will be
+
+	     Name : Praneeth
+	     Age  : 15
+
+Note :  Python dont allow Non Keyword arguments after keyword arguments
+
+       Eg : emp1(name = "Praneeth",50)  ///This will result in error due to above statement 

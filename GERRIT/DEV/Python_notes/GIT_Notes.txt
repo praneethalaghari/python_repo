@@ -1,0 +1,40 @@
+Git is a version control system.(Helps in moving from one version to another version)
+
+Why we need Git ?
+
+Suppose you are writing a book, and completed 1st chapter.and asked other person to team to complete 2nd chapter then we need to wait till 2nd chapter is completed in the book.Until then we cant modify anything in book.So here we are wasting time
+If we made changes(say corrected few typos) in chapter 1 then when friends copy arrives then there will be complete mismatch.and some one has to verify from first and do changes again
+Inorder to avoid this, GIT has been introduced.It will check if there are any difference in two files while pushing code if there it will raise merge conflict.thus both can work at a time
+
+
+Uses :
+
+1. Allows to work on same file by different people.
+
+  Eg : One person make changes in a file and stored(push) to a repository then other person can update to the latest version and continue work in same file
+  i.e progr_v1 to progr_v2
+
+  Allows to work on same file among teams.
+
+2. Allows to move accross different versions
+
+  Eg : If a code is changed and it is fault then if we need to move to older version of file then we can go to previous branch and get that code
+
+3. Make seperate branches for different feauture development(tmp branches MRs/TRs)
+
+
+****************************************************
+How to create a branch and track it for push/pull :
+****************************************************
+
+After creating a local branch using command :
+
+   git checkout -b branch_name
+
+To make it track it has to be pushed on origin :
+  
+  git push -u origin branch_name
+
+Now to git fetch --all
+
+Now check using git branch --all

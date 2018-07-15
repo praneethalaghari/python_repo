@@ -1,0 +1,12 @@
+Python is high level language
+
+- helps in reducing lines,complexity of code
+- reduce confuse in code
+- memory efficient
+
+
+Since i already know low level programming lang like C++.. i know the basics of high level functions such as
+sort,max,find etc.. so it is not that is dont know how its made of.. but it will help me better(faster) to use them in applications.Its an advantage compared to who dont work on low-level language
+
+And another important reason is that python deals with Datascience,Machine learning which contains algorithms which in turn contains complex numbers,calculus,Probability theoy calculations which i already experienced in my btech level(I am electronics background) 
+Hence that experience would be helpful and will get satisfaction that i am using my past exp 

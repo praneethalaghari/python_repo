@@ -1,0 +1,120 @@
+Python 
+
+
+How can a variable be dynamically datatyped in python?
+Because they are treated as objects not like variables
+Size,range etc concepts of datatypes are not there in python (like c++,java)datatypes because all the datatypes are implemented as objects only
+eg : a variable 'a' with int type will have size of 4 bytes in c++/java but in python it is considered as object hence it has not size,range 
+
+Should be careful regarding indentation especially in if statements
+there should be : after if condition
+unlike C++ we should use 'and' instead of '&&'
+
+In object-oriented programming, variables at the class level are referred to as class variables, whereas variables at the object level are called instance variables.
+
+
+C++  - if, else, else if
+PHP  - if, else, elseif
+Perl - if, else, elsif
+Python - if, else, elif 
+
+In Python there is 'not' operator along with '!'
+In Python there should be only one constructor per class :
+
+
+In C++ you’d write
+
+class C {
+    C() { cout << "No arguments\n"; }
+    C(int i) { cout << "Argument is " << i << "\n"; }
+}
+
+in Python you have to write a single constructor that handles all cases, using either default arguments or type or capability tests. For example:
+
+class C:
+    def __init__(self, i=None):
+        if i is None:
+            print "No arguments"
+        else:
+            print "Argument is", i
+
+ 
+
+
+Python Applications -
+
+Artificial intelligence - provide intelligence to machines
+Machine learning - automating application of AI by making machine learning themselves 
+Web development - Amazon
+Game development (pygame package)
+data analytics - Big data (along with java)
+data visualisation - bar graphs,charts, (eg : koinex(stock market)) 
+
+Python has frame works like - FLASK and DJANGO
+
+
+
+
+
+
+
+For explaining concept of Classes,Objects,Inheritence,class variables,instance variables :
+
+Suppose in a class there are 100 students out of which 30 students - English medium
+                                                       30 students - Hindi medium
+ 						       30 students - Telugu medium
+						       10 students - Sanskrit medium
+
+
+for this we'll create a class student
+
+class student:                             #class "student" which is a prototype,blueprint for object s1
+    school = "Visakha Model High School"   #Since all the 100 students belong to same school so this is common for every one i.e class level
+                                           #Since it also assigned with data.. it can also be called as data member
+
+    def __init__(self,name,section,roll_no):
+           self.name = name
+           self.section = section
+           self.roll_no = roll_no          #These are instance variables as each student has different name,section,roll_no. each instance has its own variables
+                                           #This is a constructor and can be written for each object seperately too..  like student s1   s1.name="abc",s1.section="A"
+
+class english_students(student):           #Syntax for inheriting english_student from parent class student
+    medium = "English"                     #This is a class varible for this class because students(objects) created in this class has this property in common
+   
+    def __init__(self,name,section,roll_no,english_marks):  # So here we are adding a new instance variable i.e english_marks which is specific to english_students
+           self.name = name
+           self.section = section
+           self.roll_no = roll_no
+           self.english_marks = english_marks  #here instead of redundance i.e writing all self.x code again from parent class we can simply use like this :)
+                                               ''' (self.name = name
+           				       self.section = section
+                                               self.roll_no = roll_no) into  super.__init__(self,name,section,roll_no) '''
+                                                
+                                               '''   def __init__(self,name,section,roll_no,english_marks):  # So here we are adding a new instance variable i.e english_marks which is specific to english_students
+           						   super.__init__(self,name,section,roll_no)	
+                                                           self.english_marks = english_marks
+                                                      ''' 
+
+s1 = student("ABC",'A',1)                  #Syntax for creating an object here s1 is an object passing instance variables
+s2 = english_students("DEF",'B',2,84)      #Similarly for Hindi and Telugu 
+
+
+ 
+
+
+Algorithms : vids by joe james
+
+Time complexity - sensitive to time.
+Space complexity - sensitive to memory.
+
+if any sorting involves nested if loops i,e if inside if then it takes much time. (Eg: Bubble sort,Selection sort,Insertion sort) but these are not space complex since these iterate and not store any array in memory
+if any sorting involves arrays i.e divide and conquer tech then it takes less time but consumes more memory (Eg : quick sort, merge sort) 
+
+divide and conquer strategy is best suited for large datasets and time complex applications
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+    no underscores is a public one.
+
+    a single underscore is private, however, still accessible from outside.
+
+    double underscores is strongly private and not accessible from outside.
+
+
+
+
+
+if a variable is given one underscore that means it is private and is only accessible in the members of the class but the private object can be accessible outside the class through any method of that class
+Eg :
+
+class Person:
+     def __init__(self,name,age):
+         self._name = name      # here _name is private variable
+  
+     def getname(self):
+         return self._name      # _name is accessbile to getname()    
+
+
+P1 = Person("Praneeth",24)
+
+print(P1._name)  # This will throw error like.. no attribute name for Person instance as _name is private 
+print(P1.getname()) # This will print name even though it is private (Hence accessible partially outside the class) because of using methods of the class 
