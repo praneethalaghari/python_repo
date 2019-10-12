@@ -1,0 +1,162 @@
+
+Python differentiate variables into two types based on scope.
+
+1. GLOBAL
+2. LOCAL
+
+
+Eg :
+
+def foo():
+	print ("Value of a is : ", a)
+
+a = 6    // This is defined in no scope i.e not in function or in class hence it is global by default(no need to declare 'global a')
+foo() 
+
+
+Output :
+    Value of a is : 6
+
+
+*************************************************************************
+
+def foo():
+	a = 6
+	print ("Value of a is : ", a)
+
+foo() 
+print(a)    
+
+
+Output :
+    Value of a is : 6
+    NameError: name 'a' is not defined
+
+**************************************************************************
+# Inorder to overcome above exception we need to declare a as global as follows:
+
+def foo():
+        global a
+	a = 6
+	print ("Value of a is : ", a)
+
+foo() 
+print(a)    # Make sure this statement is after the function(foo) call(not before) as printing it before will cause Nameerror again as declaration is inside function     
+
+
+Output :
+	Value of a is : 6
+        6
+
+***************************************************************************
+
+# This function has a variable with
+# name same as s.
+def f(): 
+    s = "Me too."
+    print s 
+ 
+# Global scope
+s = "I love Geeksforgeeks"
+f()
+print s
+
+Output :
+        Me too.
+        I love Geeksforgeeks.
+
+***************************************************************************
+
+# In this program, what is expect to print in 2nd line of code is global value of s but...
+
+# In the below program, s is declared in global(by default) so we expect s to be printed but python will give priority to local variable i.e if s is assigned in function
+# scope(as local) and if we are trying to print(s) then it will throw error. 
+
+
+
+# So if func contain local var which has same name as global variable.then local var is given priority over global.So hence it will not consider global,hence since we are
+# print variable(local) 's' before assigment it is throwing error 
+
+def f(): 
+    print s
+ 
+    # This program will NOT show error
+    # if we comment below line. 
+    s = "Me too."
+ 
+    print s
+ 
+# Global scope
+s = "I love Geeksforgeeks"
+f()
+print s
+
+Output :
+    UnboundLocalError: local variable 's' referenced before assignment
+
+****************************************************************************
+# To overcome this, i.e if we want to print global value of s despite local variable being declared, include global s where s is to be printed
+
+
+def f():
+    global s 
+    print(s)
+ 
+    # This program will NOT show error
+    # if we comment below line. 
+    s = "Me too."
+ 
+    print(s)
+ 
+# Global scope
+s = "I love Geeksforgeeks"
+f()
+print(s)
+
+Output :
+	I love Geeksforgeeks
+	Me too.
+	Me too.
+
+
+****************************************************************************
+
+# ANOTHER GOOD EXAMPLE :
+
+a = 1
+ 
+# Uses global because there is no local 'a'
+def f():
+    print 'Inside f() : ', a
+ 
+# Variable 'a' is redefined as a local
+def g():    
+    a = 2
+    print 'Inside g() : ',a
+ 
+# Uses global keyword to modify global 'a'
+def h():    
+    global a
+    a = 3
+    print 'Inside h() : ',a
+ 
+# Global scope
+print 'global : ',a
+f()
+print 'global : ',a
+g()
+print 'global : ',a
+h()
+print 'global : ',a            # This will produce output '3' because we modified the global value 'a = 1' to 'a = 3' by specifying global keyword in function 'h'
+ 
+Output :
+
+global :  1
+Inside f() :  1
+global :  1
+Inside g() :  2
+global :  1
+Inside h() :  3
+global :  3
+
+

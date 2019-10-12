@@ -1,0 +1,15 @@
+Decorators in python are used to alter the function dynamically
+
+Few Applications are :
+
+1. Timing : When we need to find the time it takes to process a function then we can make a decorator function to calculate the time.
+2. Logging : When we need to log the calls (Entering and leaving a function and parameters which come as input and parameters which go out of output)
+3. Check   : To check if some condition is satisfied to run the function.(Eg : For example to apply a promocode the user must be logged in, to check if a user is logged a decorator can be placed just before the function call)
+
+
+While debugging a function, I sometimes need to temporarily output the value returned by it. It gets frustrating if there are multiple points from which it could return, as in the following function.
+
+One way to do so is to implant a print statement at both the places from where this function could return but that is cumbersome. Another way is to implant a print statement at the point of calling, but a single function could again be called from several places.
+
+The best way is to use a decorator here!
+  

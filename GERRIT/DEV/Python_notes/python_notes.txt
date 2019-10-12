@@ -53,7 +53,19 @@ data visualisation - bar graphs,charts, (eg : koinex(stock market))
 Python has frame works like - FLASK and DJANGO
 
 
+Python collection datatypes :
 
+	1. lists
+	2. Tuples
+	3. Set
+	4. Dictionary
+
+declarations :
+
+list  :  list_a = []
+tuple  :  tuple_a = ()
+dictionary  :  dict_a = {}
+set     :   set_a = set()
 
 
 
@@ -111,6 +123,17 @@ if any sorting involves nested if loops i,e if inside if then it takes much time
 if any sorting involves arrays i.e divide and conquer tech then it takes less time but consumes more memory (Eg : quick sort, merge sort) 
 
 divide and conquer strategy is best suited for large datasets and time complex applications
+
+
+
+SETS are used when order and no. of occurences are not significant
+since when we add an element using set.add(num).. it will place at random value
+and   when we add same element again there is no use
+
+SETS has 3 ways to delete elements :
+	1. remove() - removes an elem if not there it will throw key error exception
+	2. discard() - removes an elem if not there it will not do anything (i.e no exception)
+	3. clear() - clears all elements in one go
 
 
 
