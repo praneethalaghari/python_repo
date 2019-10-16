@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfd1d41-43df-46a3-ac6f-764387cd9b11" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Automation/send_sms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GERRIT/DEV/Welcome_message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings/local.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/settings/production.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/my_django_project_1/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Python_notes/TOPICS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/DEV/Python_notes/TOPICS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GERRIT/DEV/Python_notes/python_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/DEV/Python_notes/python_notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GERRIT/DEV/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/GERRIT/DEV/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,34 +18,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="python_repo" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GERRIT/DEV/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-end-line="7" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/admin.py">
+      <file leaf-file-name="Welcome_message.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Welcome_message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scheduler.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Scheduler.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="94" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -75,6 +73,8 @@
       <find>2.68</find>
       <find>1st</find>
       <find>develop</find>
+      <find>way2</find>
+      <find>cookielib</find>
     </findStrings>
     <replaceStrings>
       <replace>bowler</replace>
@@ -87,13 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_23.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_24.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_25.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_26.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/Django/sample.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/problem_17.py" />
-        <option value="$PROJECT_DIR$/GERRIT/Practice/Webscraping.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/sdfjh.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/test_web_scrapping.py" />
         <option value="$PROJECT_DIR$/GERRIT/Practice/cricbuzz_pandas.py" />
@@ -137,7 +130,14 @@
         <option value="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/admin.py" />
         <option value="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/models.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.bat" />
+        <option value="$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/lib/gui.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Automation/send_sms.py" />
         <option value="$PROJECT_DIR$/GERRIT/DEV/test.py" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Welcome_message" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Scheduler.bat" />
+        <option value="$PROJECT_DIR$/GERRIT/DEV/Welcome_message.py" />
       </list>
     </option>
   </component>
@@ -148,7 +148,7 @@
     <option name="height" value="688" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -159,22 +159,59 @@
               <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_repo" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
             <path>
-              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
             </path>
             <path>
-              <item name="python_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="GERRIT" type="462c0819:PsiDirectoryNode" />
-              <item name="DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+              <item name="GERRIT" type="cbb8eebc:String" user="GERRIT" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+              <item name="GERRIT" type="cbb8eebc:String" user="GERRIT" />
+              <item name="DEV" type="cbb8eebc:String" user="DEV" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+              <item name="GERRIT" type="cbb8eebc:String" user="GERRIT" />
+              <item name="DEV" type="cbb8eebc:String" user="DEV" />
+              <item name="Python_notes" type="cbb8eebc:String" user="Python_notes" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+              <item name="GERRIT" type="cbb8eebc:String" user="GERRIT" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="python_repo" type="cbb8eebc:String" user="python_repo" />
+              <item name="GERRIT" type="cbb8eebc:String" user="GERRIT" />
+              <item name="DEV" type="cbb8eebc:String" user="DEV" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,8 +236,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Welcome_message">
+    <configuration name="Welcome_message" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,17 +245,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/restaurants" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/restaurants/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Welcome_message.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="clean_tmp_files" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -226,11 +263,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Automation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/settings/base.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +291,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="old_settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="send_sms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,11 +299,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GERRIT/DEV/Automation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Django/trydjango1-11/src/django_project/old_settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GERRIT/DEV/Automation/send_sms.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -291,19 +328,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.base" />
-      <item itemvalue="Python.old_settings" />
-      <item itemvalue="Python.__init__" />
       <item itemvalue="Python.models" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.clean_tmp_files" />
+      <item itemvalue="Python.send_sms" />
+      <item itemvalue="Python.Welcome_message" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Welcome_message" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.send_sms" />
+        <item itemvalue="Python.clean_tmp_files" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.old_settings" />
-        <item itemvalue="Python.base" />
       </list>
     </recent_temporary>
   </component>
@@ -322,14 +359,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49739584" visible="true" weight="0.2470238" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.10491072" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30033004" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.89508927" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89508927" weight="0.30033004" />
       <window_info id="Structure" order="1" sideWeight="0.5026042" side_tool="true" weight="0.24962406" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.42244226" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -368,26 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,27 +501,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Python_notes/Git_hub_Info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/lib/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Automation/send_sms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Automation/clean_tmp_files.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="85">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Django/cfehome/src/mysite/polls/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="87">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Scheduler.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="94" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GERRIT/DEV/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GERRIT/DEV/Welcome_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
