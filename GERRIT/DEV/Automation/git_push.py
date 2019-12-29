@@ -4,6 +4,5 @@ import subprocess
 branch_repo = "Python_R1A"
 
 subprocess.Popen("git add .",shell=True)
-
-#git commit -m str(time.time())
-#git push origin HEAD:branch_repo
+subprocess.Popen("git commit -m " + str(time.time()))
+subprocess.Popen("git push origin HEAD:" + str(branch_repo))
