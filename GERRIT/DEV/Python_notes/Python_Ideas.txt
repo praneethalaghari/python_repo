@@ -1,0 +1,17 @@
+
+
+
+
+Automation :
+
+
+Alexa
+Mirror typing and mouse pointing
+Create a keylogger program run in background in my pc and house keep it every 1 month
+Logging usage time of PC usage
+Battery charging and discharging rate, plot the data collected
+
+
+Create a dash board.
+Create cards for different Genres 
+Spell out bulletins when clicked on the cards

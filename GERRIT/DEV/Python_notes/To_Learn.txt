@@ -1,0 +1,27 @@
+
+Decorator Iterator Generator 
+Multi threading    by Durga
+
+
+even-odd nmbers
+Armstrong number 
+Perfect number
+Strong number
+Anology
+reverse a number
+sum of n numbers
+count the number of elements
+prime number
+Fibanocci series
+LCM
+GCD
+HCF
+
+
+searching algorithms
+sorting algorithms
+
+
+Pandas
+Numpy
+Matplotlib 

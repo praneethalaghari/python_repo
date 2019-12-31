@@ -1,0 +1,32 @@
+
+Mean
+Median
+Mode
+Standard deviation
+Variance
+Linear regression
+Cumulative distributive function (Data camp)
+Probability density function
+
+Video Sources :
+ 
+   mean,median,mode,standard deviation,variance - Simplilearn
+   Statistics fun - Linear regression
+
+
+
+
+
+Less the Standard deviation less the outliers i.e all are nearer to average
+even mean and median are equal.. that doesnt mean that all are in average values.. there may be balance with positive outliers with negative outliers 
+
+  Application : The lower the standard deviation of their ratings in each category, the more balanced and consistent they will tend to be. Teams with a higher standard                 deviation, however, will be more unpredictable.
+
+
+
+
+
+
+
+
+

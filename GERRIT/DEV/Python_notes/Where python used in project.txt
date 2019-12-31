@@ -1,0 +1,44 @@
+
+Circuit : Python is used for log file collection, System configuration collection
+          Configuration parameter collection i.e collect the to extract log releated parameters in ini file and to find difference during upgrade and if required modify them
+          House keeping of files 
+          DBTools - using sqllite3 or c2_Oracle module execute SQL queries to fetch database or to write into database for modification  (Python + SQL)
+
+          Export option in SOEM or Ckt application.. will generate XML and CSV files.. parsing and writing..
+          Those are parsed via pandas and visualized by Matplotlib.. check if there is any usage of numpy.
+          This can be applicable to Alarms,Paths/Circuits/Links data,NE info data.
+
+  Provides various insights like :   
+
+(THe below can be extended to multiple BPS)
+
+Which NE is more alarmed over month,BP     (just insight)
+
+Longest Alarms,Shortest alarms over month,BP (just insight)
+
+Alarm Act time over month BP(Bar graph)
+
+How many alarms in a month   (Bar Graph)
+
+Warning,High,Low,Mediuam,critical alarms (Pie chart & Bar graph)
+
+How many alarms in a BP (3 months) (Bar Graph)
+
+Type of alarms(Class of alarms) in a month vs BP (Bar graph com & Pie chart)
+
+Which type of alarm probable cause
+
+Seasonal alarms, Day & Night alarms
+
+Alarm prediction
+
+Top 10 alarms which took most of the time to repair
+Top 10 alarms which took most of the time to functioning
+Top 10 quickest solving alarms
+          
+ 	  
+
+
+Wizard :  Automation of installation/Upgardation via providing a platform
+          Health checks
+
