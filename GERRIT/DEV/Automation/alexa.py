@@ -7,6 +7,7 @@ import sys
 import os
 import subprocess
 import welcome_message
+import webbrowser
 
 try:
 	import winshell
@@ -25,7 +26,7 @@ microphone_to_select = microphone_list[1]
 
 repeat_strings = ['Speak now!!','Are you There??','I am waiting for your command..','On your Command master!!','Are you Slept?']
 max_attemps_exceeded_strings = ["Seems you are busy!! Catch you later! Bye!","Dont waste my time Master!! Bye!","Its enough i am going to sleep"]
-leaving_strings = ['Good bye!! See you soon','Ok !! bye !! Catch you later','Bye!! Have a nice day ahead','Hope i served you better today','Always at your help!! Master']
+leaving_strings = ['Good bye!! See you soon','Ok !! bye !! Catch you later','Bye!! Have a nice day ahead','Hope i served you better today! Bye','Always at your help!! Master']
 not_understood_strings = ["Sorry i cant understand what you said!!! May be you can ask!!! what can i do"]
 
 def speak_now(source):
@@ -53,8 +54,17 @@ def change_voice():
 	engine = pyttsx3.init()
 	engine.setProperty('voice','HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0')			
 			
+def activate_battery_monitor():
+	#subprocess.Popen([r"C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\battery_monitor.bat"],shell=True)
+	os.startfile(r"C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\battery_monitor.bat")
+	time.sleep(5)
+	return
 			
 
+def search_google():
+	webro
+			
+			
 #Decorator function implemented on engine.say() function to modify its behavior.
 #i.e To print what bot is saying
 # To prevent adding engine.runAndWait() everytime we execute say() function
@@ -104,13 +114,18 @@ def run(r):
 					welcome_message.run()
 					change_voice()
 					
+				elif command in ['activate Battery Monitor','battery status']:
+					engine.say("Ok.. Activating battery monitor..")
+					activate_battery_monitor()
+					
+					
 				elif command in ['bye','good bye','get lost','see you','nothing','goodbye']:
 					engine.say(random.choice(leaving_strings))
 					break
 					
 				else:
 					engine.say(random.choice(not_understood_strings))
-					time.sleep(2)
+					time.sleep(0.8)
 					
 				
 				engine.say("What else can i do for you!!")
