@@ -6,8 +6,10 @@ import time
 import sys
 import os
 import subprocess
-import welcome_message
+import weather_report
 import webbrowser
+import requests
+import winsound
 
 try:
 	import winshell
@@ -26,13 +28,15 @@ microphone_to_select = microphone_list[1]
 
 repeat_strings = ['Speak now!!','Are you There??','I am waiting for your command..','On your Command master!!','Are you Slept?']
 max_attemps_exceeded_strings = ["Seems you are busy!! Catch you later! Bye!","Dont waste my time Master!! Bye!","Its enough i am going to sleep"]
-leaving_strings = ['Good bye!! See you soon','Ok !! bye !! Catch you later','Bye!! Have a nice day ahead','Hope i served you better today! Bye','Always at your help!! Master']
+leaving_strings = ['Good bye!! See you soon','Ok !! bye !! Catch you later','Bye!! Have a nice day ahead','Hope i served you better today! Bye','Always at your help!! Master !! See you !']
 not_understood_strings = ["Sorry i cant understand what you said!!! May be you can ask!!! what can i do"]
 
 def speak_now(source):
 	try :
+		winsound.Beep(350,350)
 		audio = r.listen(source)
 		audio_data = r.recognize_google(audio)
+		print(audio_data)
 		return audio_data
 	except:
 		engine.say(random.choice(repeat_strings))
@@ -61,9 +65,26 @@ def activate_battery_monitor():
 	return
 			
 
-def search_google():
-	webro
-			
+def google_search(source):
+	engine.say("Ok.. what do you want to search for ?")
+	search_string = interact(source)
+	google_url = 'www.google.com/search?q='
+	url = google_url + search_string
+	webbrowser.open(url)
+	engine.say("Ok.. showing search results for " + search_string)
+	
+def web_search(source):
+	engine.say("Ok.. which website you want me to open?")
+	search_string = interact(source)
+	url = 'www.'+search_string+'.com'
+	webbrowser.open(url)
+	engine.say("Ok.. Proceeding to open" + search_string + '.com')
+	
+
+def what_can_i_do():
+	pass
+
+	
 			
 #Decorator function implemented on engine.say() function to modify its behavior.
 #i.e To print what bot is saying
@@ -84,7 +105,10 @@ pyttsx3.init().say = dec_engine_say(pyttsx3.init().say)
 def openexplorer():
 	os.system('explorer')
 	return
-	
+
+def match_score_updates():
+	os.startfile(r"C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\cricbuzz.bat")
+	time.sleep(10)
 	
 def emptyrecyclebin():
 	winshell.recycle_bin().empty(confirm=False, show_progress=True, sound = True)
@@ -99,27 +123,36 @@ def run(r):
 				r.adjust_for_ambient_noise(source)
 				command = interact(source)
 				
-				if command in ['open explorer','windows explorer','explorer']:
+				if command in ['open explorer','windows explorer','explorer','Windows Explorer']:
 					engine.say("Proceeding to open windows explorer")
 					openexplorer()
 					engine.say("Task Accomplished")
 					
-				elif command in ['empty recycle bin','clean recycle bin','free recycle bin']:
+				elif command in ['empty recycle bin','clean recycle bin','free recycle bin','recycle bin']:
 					engine.say("Proceeding to empty recycle bin...")
 					emptyrecyclebin()
 					engine.say("Task Accomplished." + "All items in the bin are removed successfully")
 					
 				elif command in ['weather report']:
 					engine.say("Ok.. DAVID is up with the details for you")
-					welcome_message.run()
+					weather_report.run()
 					change_voice()
 					
 				elif command in ['activate Battery Monitor','battery status']:
 					engine.say("Ok.. Activating battery monitor..")
 					activate_battery_monitor()
+				
+				elif command in ['Google','search Google','Google search']:
+					google_search(source)
 					
-					
-				elif command in ['bye','good bye','get lost','see you','nothing','goodbye']:
+				elif command in ['open website','web search']:
+					web_search(source)
+				
+				elif command in ['Cricbuzz','score update','match score','score please','activate score update']:
+					engine.say("Sure.. Activating score update..")
+					match_score_updates()
+				
+				elif command in ['bye','good bye','get lost','see you','nothing','goodbye','good night']:
 					engine.say(random.choice(leaving_strings))
 					break
 					

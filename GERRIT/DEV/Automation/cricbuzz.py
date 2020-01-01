@@ -1,71 +1,84 @@
 from pycricbuzz import Cricbuzz
 import json
 import time
-from win10toast import ToastNotifier 
+from win10toast import ToastNotifier
+import pyttsx3 
 
-c = Cricbuzz()
+def run():
 
-
-print(help(Cricbuzz))
-
-#print(json.dumps(c.matches(),indent = 4))
+	c = Cricbuzz()
 
 
+	#print(help(Cricbuzz))
 
-match_id_list = []
+	#print(json.dumps(c.matches(),indent = 4))
 
-for i in c.matches():
-    match_id_list.append(i['id'])
-    
-    match_info = c.matchinfo(i['id'])
-    Team_A = match_info['team1']['name']
-    Team_B = match_info['team2']['name']
- 
-    print(i['id'] + '\t' + ' --- ' + '\t' + Team_A + ' vs ' + Team_B + '\t' + ' --- ' + '\t' + i['srs'])
+	engine = pyttsx3.init()
 
 
+	match_id_list = []
 
-def is_ball_bowled(overs):
-
-    over_count,ball_count = str(overs).split('.') 
-   
-
-    live_score_update = c.livescore(match_id)
-
-    live_overs = float(live_score_update['batting']['score'][0]['overs'])
-    live_score = live_score_update['batting']['score'][0]['runs']
-    live_over_count,live_ball_count = str(live_overs).split('.')
-
-
-    if over_count != live_over_count or ball_count != live_ball_count:
-        return True,live_overs,live_score
-    else:
-        return None,None,None
+	for i in c.matches():
+		match_id_list.append(i['id'])
+		
+		match_info = c.matchinfo(i['id'])
+		Team_A = match_info['team1']['name']
+		Team_B = match_info['team2']['name']
+	 
+		print(i['id'] + '\t' + ' --- ' + '\t' + Team_A + ' vs ' + Team_B + '\t' + ' --- ' + '\t' + i['srs'])
 
 
-while(True): 
+
+	def is_ball_bowled(overs):
+
+		over_count,ball_count = str(overs).split('.') 
+	   
+
+		live_score_update = c.livescore(match_id)
+
+		live_overs = float(live_score_update['batting']['score'][0]['overs'])
+		live_score = live_score_update['batting']['score'][0]['runs']
+		live_over_count,live_ball_count = str(live_overs).split('.')
 
 
-    match_id = input("ENTER MATCH ID :")
+		if over_count != live_over_count or ball_count != live_ball_count:
+			return True,live_overs,live_score
+		else:
+			return None,None,None
 
 
-    if match_id in match_id_list:
-        livescore = c.livescore(match_id)
-        if livescore:
-            overs = float(livescore['batting']['score'][0]['overs'])
-            while(True):
-                ball_bowled,live_overs,live_score = is_ball_bowled(overs)
-                if(ball_bowled):
-                    toaster = ToastNotifier()
-                    toaster.show_toast("SCORE UPDATE",str(live_overs)+'-'+str(live_score))
+	while(True): 
 
-                    print(str(live_overs) + '-' + str(live_score))
-                    overs = live_overs
+		engine.say("Please Enter Match ID :")
+		engine.runAndWait()
+		match_id = input("ENTER MATCH ID :")
 
-        else:
-            print("Stay tuned.. Match is yet to begin!!!")
-        break
-    else:
-        print("Please enter correct Id")
 
+		if match_id in match_id_list:
+			livescore = c.livescore(match_id)
+			if livescore:
+				overs = float(livescore['batting']['score'][0]['overs'])
+				while(True):
+					ball_bowled,live_overs,live_score = is_ball_bowled(overs)
+					if(ball_bowled):
+						toaster = ToastNotifier()
+						toaster.show_toast("SCORE UPDATE",str(live_overs)+'-'+str(live_score))
+
+						print(str(live_overs) + '-' + str(live_score))
+						engine.say("Score update :," + str(live_score) + "in" + str(live_overs))
+						overs = live_overs
+
+			else:
+				print("Stay tuned.. Match is yet to begin!!!")
+			break
+		elif match_id == str(0):
+			break
+		else:
+			print("Please enter correct Id")
+			engine.say("Invalid Match ID")
+			engine.runAndWait()
+			
+			
+if __name__ == '__main__':
+	run()
 
