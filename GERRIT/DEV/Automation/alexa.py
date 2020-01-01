@@ -63,6 +63,14 @@ def activate_battery_monitor():
 	os.startfile(r"C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\battery_monitor.bat")
 	time.sleep(5)
 	return
+	
+def plot_a_graph():
+	import matplotlib.pyplot as plt
+	graph = plt.plot([0,1],[3,4])
+	plt.savefig("graph.png",bbox_inches='tight')
+	os.startfile("graph.png")
+	
+	
 			
 
 def google_search(source):
@@ -152,7 +160,11 @@ def run(r):
 					engine.say("Sure.. Activating score update..")
 					match_score_updates()
 				
-				elif command in ['bye','good bye','get lost','see you','nothing','goodbye','good night']:
+				elif command in ['plot a graph']:
+					engine.say("Plotting a graph")
+					plot_a_graph()
+				
+				elif command in ['bye','good bye','get lost','see you','nothing','goodbye','good night','enough']:
 					engine.say(random.choice(leaving_strings))
 					break
 					

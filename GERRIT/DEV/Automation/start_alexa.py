@@ -2,6 +2,14 @@ import pyttsx3
 import speech_recognition as sr
 import os
 import time
+import winsound
+
+
+sample_rate = 48000
+chunk_size	= 2048
+microphone_list = sr.Microphone.list_microphone_names()
+microphone_to_select = microphone_list[1]
+
 
 engine = pyttsx3.init()
 r = sr.Recognizer()
@@ -17,10 +25,9 @@ def listen_func(source):
 	
 
 def run():
-	print("In run method")
-	with sr.Microphone() as source:
+	with sr.Microphone(sample_rate = sample_rate, chunk_size = chunk_size) as source:
 		while True:
-			print("cool")
+			print("Loop")
 			r.adjust_for_ambient_noise(source)
 			command = listen_func(source)
 			print(command)
