@@ -18,7 +18,6 @@ def run():
 	else: engine.setProperty('voice','HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0')
 	
 	
-	
 	# Weather 
 	url = "http://api.openweathermap.org/data/2.5/weather?appid=fa2536ab2699a5077d09902716acddc2&q="
 	city = 'Hyderabad'

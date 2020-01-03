@@ -1,6 +1,7 @@
 import psutil
 import pyttsx3
 import time
+import os
 import matplotlib.pyplot as plt
 
 battery = psutil.sensors_battery()
@@ -8,6 +9,7 @@ battery_level = str(battery.percent)
 
 engine = pyttsx3.init()
 
+engine.say("Battery Monitor Activated")
 
 if int(battery_level) >= 20:
 	engine.say("Battery levels are fine. Running at" + battery_level + "Percent")
@@ -20,14 +22,43 @@ battery_power_plugged_in_event_noted = False
 battery_power_plugged_out_event_noted = False
 
 def plot_charge_discharge_data(charge_discharge_data):
+
 	plt.plot(charge_discharge_data.keys(),charge_discharge_data.values())
+
 	plt.xlabel('Time(in mins)')
 	plt.ylabel('Battery %')
-	plt.suptitle('Battery Analysis')
-	plt.xticks(charge_discharge_data.keys())
+
+	
+	xtick_labels = [time.strftime('%H-%M',time.localtime(x)) for x,y in charge_discharge_data.items()]
+	x_ticks = list(charge_discharge_data.keys())
+	plt.xticks([x_ticks[i] for i in range(len(x_ticks)) if i%10 == 0],[xtick_labels[i] for i in range(len(xtick_labels)) if i%10 == 0]) # To reduce x axis scale
 	plt.yticks(range(0,100,10))
-	plt.savefig('plot.png')
-	os.startfile('plot.png')
+	
+	#	xy = list(np.linspace(0,len(x_ticks)-1,10).astype('int'))
+	#	plt.xticks([x_ticks[i] for i in xy],[dict_keys_2[i] for i in xy])
+	#	plt.yticks(range(0,100,10))
+	#	- Use the above in case of complications in dividing huge number of elements in above code 
+	#	- i.e in already existing code 1000 will be divided with 10 yields 100 values
+	#	- where as above commented code will make 1000 into 10 equal parts.. what ever the size of elems.. it will divid into 10 hence scale will be good 
+
+	
+	date = time.strftime("%d-%m-%Y")
+	time_of_day = time.strftime("%H_%M_%S")
+	
+	plt.suptitle('Battery Analysis_' + str(date) + '_' + str(time_of_day))
+	
+	#def convert_epoch_to_time(x):
+	#return time.strftime('%H-%M',time.localtime(x))
+
+	#dict_keys_2 = list(map(lambda x: time.strftime('%H-%M',time.localtime(x)),dict))
+	#print(dict_keys_2)
+
+	#dict_keys_3 = list(map(convert_epoch_to_time,dict))
+	#print(dict_keys_3)
+	
+	fig_name = 'Battery Analysis_' + str(date) + '_' + str(time_of_day) + '.png'
+	plt.savefig(fig_name)
+	os.startfile(fig_name)
 
 
 charge_discharge_data = {}

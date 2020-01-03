@@ -70,9 +70,28 @@ def plot_a_graph():
 	plt.savefig("graph.png",bbox_inches='tight')
 	os.startfile("graph.png")
 	
+def activate_key_logger():
+	os.startfile(r"C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\keylogger.bat")
+	return
 	
-			
+def shut_down(source):
+	engine.say('Do you want me to shut down the PC?')
+	proceed = interact(source)
+	if proceed in ['yes','Yes','s','S']:
+		os.system("shutdown /s /t 1")
+		sys.exit(0)
+	else:
+		return
 
+def restart(source):
+	engine.say('Do you want me to restart the PC?')
+	proceed = interact(source)
+	if proceed in ['yes','Yes','s','S']:
+		os.system("shutdown /r /t 1")
+		sys.exit(0)
+	else:
+		return
+		
 def google_search(source):
 	engine.say("Ok.. what do you want to search for ?")
 	search_string = interact(source)
@@ -146,7 +165,7 @@ def run(r):
 					weather_report.run()
 					change_voice()
 					
-				elif command in ['activate Battery Monitor','battery status']:
+				elif command in ['activate Battery Monitor','battery status','Battery Monitor']:
 					engine.say("Ok.. Activating battery monitor..")
 					activate_battery_monitor()
 				
@@ -160,10 +179,16 @@ def run(r):
 					engine.say("Sure.. Activating score update..")
 					match_score_updates()
 				
-				elif command in ['plot a graph']:
-					engine.say("Plotting a graph")
-					plot_a_graph()
-				
+				elif command in ['activate keylogger','keylogger']:
+					engine.say("Activating Keylogger")
+					activate_key_logger()
+					
+				elif command in ['shutdown','restart']:
+					if command == 'shutdown':
+						shut_down(source)
+					if command == 'restart':
+						restart(source)
+					
 				elif command in ['bye','good bye','get lost','see you','nothing','goodbye','good night','enough']:
 					engine.say(random.choice(leaving_strings))
 					break
