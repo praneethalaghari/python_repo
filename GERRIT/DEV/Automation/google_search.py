@@ -3,51 +3,30 @@ import webbrowser
 import requests
 import json
 import re
+from urllib.request import Request,urlopen
 
 
 google_url = 'https://google.com/search?q='
-to_search = 'water'
+to_search = 'clothes'
 url = google_url + to_search
-data = requests.get(url)
-
-soup = BeautifulSoup(data.text,"lxml")
-
-#print(soup.prettify())
-
-class_retrieve = soup.find_all('div',attrs={'class' : 'rc'})
-print(class_retrieve)
-#class_retrieve = soup.find_all('div')
-#for a in class_retrieve:
-#	print(a.class_)
-
-#print(class_retrieve)
-#print(class_retrieve)
-
-#for a in class_retrieve:
-#	anchors = a.find_all('a')
-	#print(anchors)
-#	for i in anchors:
-#		pass
-		#print(i.get('href'))
-
-#anchors = soup.find_all('a', class_ = '')
-#print(anchors)
-
-#for i in anchors:
-#	print(i.get('href'))
-#	print(i.get('class'))
 
 
+data = requests.get(url)     # Using requests
+soup = BeautifulSoup(str(data.text),"html.parser")
 
-'''
-google_url = 'www.google.com'
-to_search = ''
 
-url = google_url + to_search 
-#webbrowser.open(url)
-#print(url)
-data = requests.get(url)
+# This is usin urllib library
 
-print(data)
+	#url_search = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+	#data = urlopen(url_search).read()
+	#soup = BeautifulSoup(str(data),"html.parser")
 
-'''
+# To print prettified html content
+	#print(soup.prettify())
+
+class_retrieve = soup.find_all('div',attrs={'class' : 'kCrYT'})
+
+for cr in class_retrieve:
+	links = cr.find_all('a')
+	for link in links:
+		print(link.get('href'))

@@ -9,7 +9,6 @@ battery_level = str(battery.percent)
 
 engine = pyttsx3.init()
 
-engine.say("Battery Monitor Activated")
 
 if int(battery_level) >= 20:
 	engine.say("Battery levels are fine. Running at" + battery_level + "Percent")
@@ -127,6 +126,7 @@ while True:
 				
 				#Calculating the rate of charge
 				rate_of_discharging =  (plug_out_time_battery_power - discharging_completed_battery_power)/((plug_out_time - discharging_completed_time)/60)
+				rate_of_discharging = "%.1f" % round(rate_of_discharging,2)
 				engine.say("Battery discharged at a rate of {} per minute".format(rate_of_discharging))
 				engine.runAndWait()
 				

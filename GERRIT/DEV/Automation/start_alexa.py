@@ -40,7 +40,7 @@ def run():
 				continue
 			else:
 				print("Command to execute :" + command)
-				if command in ["start Alexa",'Alexa']:
+				if command in ["start Alexa",'Alexa','hey Alexa','hello Alexa']:
 					os.startfile(r'C:\Users\Praneeth Alaghari\python_repo\GERRIT\DEV\Automation\alexa.bat')
 					time.sleep(20)
 		

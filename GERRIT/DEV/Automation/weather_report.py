@@ -51,7 +51,6 @@ def run():
 
 	if time_of_the_day and climate and rounded_temp:
 		engine.say("Hello, Good" + time_of_the_day + "Praneth")
-		if __name__ == '__main__': engine.say("Hope you are fine")
 		engine.say("Its " + climate + "outside. Recording about " + rounded_temp + "Centigrade")
 		engine.say("Enjoy the weather")
 

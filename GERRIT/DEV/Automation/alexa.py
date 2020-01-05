@@ -168,6 +168,7 @@ def run(r):
 				elif command in ['activate Battery Monitor','battery status','Battery Monitor']:
 					engine.say("Ok.. Activating battery monitor..")
 					activate_battery_monitor()
+					engine.say("Battery Monitor Activated")
 				
 				elif command in ['Google','search Google','Google search']:
 					google_search(source)

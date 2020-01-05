@@ -7,6 +7,16 @@ Automation :
 
 Alexa
 Mirror typing and mouse pointing
+Remider application and merge it with Alexa
+Spell something
+Alarm clock
+news
+calclations
+joke
+play songs spotify
+what is,meaning of
+show me pictures of
+change your name,change your voice(i dont like your voice)
 Create a keylogger program run in background in my pc and house keep it every 1 month
 Logging usage time of PC usage
 Battery charging and discharging rate, plot the data collected
