@@ -7,7 +7,7 @@ from urllib.request import Request,urlopen
 
 
 google_url = 'https://google.com/search?q='
-to_search = 'clothes'
+to_search = 'He is so cute'
 url = google_url + to_search
 
 
