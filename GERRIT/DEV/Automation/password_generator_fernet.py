@@ -9,4 +9,3 @@ f = Fernet(key)
 encrypt_value = b'gAAAAABeGLw8mHQBdvh5jDZyDzaigWMwyaMSSZSoabBKytVo4CvWwzFd7XI50JAcb-3W6l3KSofNVxyx8XaWcXTKQpyVH4zBUA=='
 
 decrypt_value = f.decrypt(encrypt_value)
-print(decrypt_value.decode('utf-8'))

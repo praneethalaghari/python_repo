@@ -40,8 +40,12 @@ def speak_now(source):
 		audio_data = r.recognize_google(audio)
 		print(audio_data)
 		return audio_data
-	except:
+	except sr.RequestError as e:
+		engine.say("Could not request results from Google Speech Recognition service... Please check your network connection")
+		return 0
+	except Exception as e:
 		engine.say(random.choice(repeat_strings))
+		print(e)
 		return 0
 			
 def interact(source):
@@ -81,6 +85,7 @@ def shut_down(source):
 	proceed = interact(source)
 	if proceed in ['yes','Yes','s','S']:
 		os.system("shutdown /s /t 1")
+		engine.say('Ok.. proceeding to shut down the system')
 		sys.exit(0)
 	else:
 		return
@@ -90,6 +95,7 @@ def restart(source):
 	proceed = interact(source)
 	if proceed in ['yes','Yes','s','S']:
 		os.system("shutdown /r /t 1")
+		engine.say('Ok.. proceeding to restart the system')
 		sys.exit(0)
 	else:
 		return
@@ -113,51 +119,8 @@ def play_video_song(to_search):
 	class_retriever = soup.findAll('div',attrs={'class' : 'twQ0Be'})
 	print(class_retriever)
 	
-	#from selenium import webdriver
-	#driver = webdriver.Firefox()
-	#driver.get(url)
-	#driver.implicitly_wait(30)
-	##search_form = driver.find_element_by_id('tsuid70')
-	#search_form = driver.find_element_by_xpath("//iframe[contains(@src,'https://www.youtube.com')]")
-	#print(search_form)
-	##search_form.send_keys('Hello')
-	##search_form.submit()
-
 	
-	#import requests
-	#from bs4 import BeautifulSoup
-	# data = requests.get(url)
-	# data = BeautifulSoup(str(data.text),"html.parser")
-	
-	
-	
-	# class_retrieve = data.find_all('div',attrs={'class' : 'kCrYT'})
-	# link_retrieve = data.find_all('a')
-	# print(link_retrieve)
-	# print(class_retrieve)
-	
-	# for cr in class_retrieve:
-		# links = cr.find_all('a')
-		# print(links)
-		# for link in links:
-			# print(link.get('href'))
-		
-
 def lookup_meaning(word):
-	# word = 'meaning of ' + word
-	# url = "https://google.com/search?q=" + word
-	#webbrowser.open(url)
-	# data = requests.get(url)     # Using requests
-	# soup = BeautifulSoup(data.content,"html5lib")
-	
-	# This also works
-	# class_retriever = soup.select("div[class='v9i61e']")
-	# for a in class_retriever:
-		# print(a.text.encode('utf-8'))
-	
-	# class_retriever = soup.findAll('div',attrs = {'class':'v9i61e'})
-	# print(class_retriever[0].text)
-	
 	mean_ing = fetch_meaning.meaning(word)
 	engine.say(mean_ing)
 	
@@ -202,6 +165,12 @@ def match_score_updates():
 def emptyrecyclebin():
 	winshell.recycle_bin().empty(confirm=False, show_progress=True, sound = True)
 	return 
+
+def login(to_website):
+	if to_website == 'Freecharge' :
+		engine.say("Kool.. Proceeding to login!!Please wait for a moment")
+		import freecharge_login
+		freecharge_login.run()
 		
 def run(r):
 	
@@ -238,10 +207,15 @@ def run(r):
 				elif command in ['open website','web search']:
 					web_search(source)
 					
-				elif command.startswith('meaning of','tell me the meaning of','what is the meaning of','what do you mean by'):
+				elif command.startswith('meaning of'):
 					to_search = "".join(command.split(' ')[2:])
 					engine.say("Ok ",to_search)
 					lookup_meaning(to_search)
+					
+				elif command.startswith('login'):
+					to_website = "".join(command.split(' ')[2:])
+					engine.say("Okay")
+					login(to_website)
 				
 				elif command in ['Cricbuzz','score update','match score','score please','activate score update','cricket']:
 					engine.say("Sure.. Activating score update..")

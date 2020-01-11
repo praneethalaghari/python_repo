@@ -32,8 +32,10 @@ def listen_func(source):
 
 def run():
 	with sr.Microphone(sample_rate = sample_rate, chunk_size = chunk_size) as source:
+		times = 0
 		while True:
-			print("Loop")
+			times +=1
+			print("Loop :" + str(times))
 			r.adjust_for_ambient_noise(source)
 			command = listen_func(source)
 			if command == None:
