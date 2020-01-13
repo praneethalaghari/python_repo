@@ -19,3 +19,5 @@ Single Linked list (playlist) https://www.youtube.com/watch?v=8MCPTf-w3ak&list=P
 MySql : https://www.youtube.com/watch?v=7S_tz1z_5bA
 
 Algorithms : https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A/search?query=algorithm
+
+Array Datastructure practice problems link : https://www.geeksforgeeks.org/array-data-structure/

@@ -11,7 +11,7 @@ import webbrowser
 import requests
 from bs4 import BeautifulSoup
 import winsound
-import fetch_meaning
+
 
 try:
 	import winshell
@@ -121,6 +121,7 @@ def play_video_song(to_search):
 	
 	
 def lookup_meaning(word):
+	import fetch_meaning
 	mean_ing = fetch_meaning.meaning(word)
 	engine.say(mean_ing)
 	
@@ -168,7 +169,7 @@ def emptyrecyclebin():
 
 def login(to_website):
 	if to_website == 'Freecharge' :
-		engine.say("Kool.. Proceeding to login!!Please wait for a moment")
+		engine.say("cool.. Proceeding to login!!Please wait for a moment")
 		import freecharge_login
 		freecharge_login.run()
 		
@@ -213,7 +214,7 @@ def run(r):
 					lookup_meaning(to_search)
 					
 				elif command.startswith('login'):
-					to_website = "".join(command.split(' ')[2:])
+					to_website = "".join(command.split(' ')[1:])
 					engine.say("Okay")
 					login(to_website)
 				
