@@ -21,3 +21,11 @@ MySql : https://www.youtube.com/watch?v=7S_tz1z_5bA
 Algorithms : https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A/search?query=algorithm
 
 Array Datastructure practice problems link : https://www.geeksforgeeks.org/array-data-structure/
+
+Stack vs Heap (Excellent) https://www.youtube.com/watch?v=_8-ht2AKyH4
+
+Dynamic memory allocation https://www.youtube.com/watch?v=xDVC3wKjS64
+
+Memory leak with example : https://www.youtube.com/watch?v=F2nrej6Kjww
+
+Datastructure in c++ : https://www.youtube.com/watch?v=92S4zgXN17o&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P
