@@ -1,0 +1,13 @@
+
+Telstra  - 10 GB - Unix 
+DBool - Stack Memory - Stackoverflow - Heap memory - Badalloc
+Dynamic memory - unallocated
+
+
+
+New immediately Delete
+Usage of destructors
+Struct padding
+conversion of static
+preventing usage of long int where int can be used.. and short if short int can be used
+ 
