@@ -1,0 +1,29 @@
+
+
+Vector :
+
+push_back()
+size()
+empty()
+capacity()
+shrink_to_fit()
+resize()
+vector<T> v2=v1;
+
+Deque :
+
+push_back()
+size()
+empty()
+capacity()
+shrink_to_fit()
+resize()
+
++
+
+pop_back()
+pop_front()
+push_front()
+insert()
+front() - first element
+back() - back element

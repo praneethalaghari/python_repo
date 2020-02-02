@@ -1,0 +1,8 @@
+TexttoSpeech 				pyttsx3
+SpeechtoText 			    recognition using Speech Recognition and Google recognition module,winsound
+Battery Monitor				psutils,os,sys,subprocess,time
+Meaning of word				webbrowser,selenium,bs4,urllib,requests
+weather_report				json,requests,time,datetime,sys,requests,pyttsx3
+shutdown,restart			os,sys
+key logger					pynput
+clean_tmp_files				os,shutil

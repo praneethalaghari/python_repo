@@ -1,0 +1,67 @@
+
+
+
+
+
+VVVVV Imp :
+
+Iterating over arrays :
+
+
+***********************************************
+
+
+arr[] = {1,2,4,5,6,8,9,0,2,4,6};
+
+for (int i:arr)
+{
+  cout << i;       // similar op of for i in arr:print i
+}
+
+***********************************************
+
+
+// Above will print without spaces or commas
+
+// THis is only for static arrays
+// For dynamic -
+
+  int *p = new int[10];
+  
+  cout << 'enter size' << endl;
+  cin >> size;
+  
+  for (int i = 0;i<size;i++)
+  {
+     cout << "ENter number " << i << endl;
+	 int value = 0; 
+	 cin >> value;
+     *(p+i) = value;
+  }
+  
+  for (int i = 0;i<size;i++)
+  {
+      cout << *(p+i) << endl;
+  }
+
+
+
+
+
+
+
+
+Iterating over enum :
+
+enum days {sunday,monday,thuesday,wednessday};
+
+for (int i = sunday;i<wednessday+1;i++)
+	cout << i << endl;
+	
+	//Here sunday is 0 and wednessday = 3 so it will print 0,1,2,3;
+	// we can also specify the values to it such as 
+	   enum days { sunday = 3,monday = 5,tuesday = 8,wednessday = 10};
+	//These are mainly used in switch case statements
+	
+	
+	

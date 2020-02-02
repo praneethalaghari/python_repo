@@ -1,0 +1,139 @@
+
+			     Multi Tasking
+			
+	
+	Multiprocessing			Multithreading
+
+
+	
+Multithreading :
+
+	
+
+
+Thread is a light weight process
+
+
+
+
+
+
+
+Context switching is done by scheduler..
+In a CPU of mulitple cores/processor mostly Each process is taken up by only one processor
+the activity is done by scheduler
+Even it is multi threading also each thread is to be managed by processor
+
+
+Multi processing :
+
+
+                                            Process
+                                               |
+                                               |
+                                           Scheduler
+                               (processor into one of any processor) 
+
+
+           Processor-1          Processor-2            Processor-3       Processor-4
+
+
+Multi threading :
+
+                                            Process
+                                         /     |     \
+                                        /      |      \
+                                thread-1    thread-2   thread-3
+                                               |
+                                               |
+                                           Scheduler
+                       (thread into make use of one/multiple of any processor) 
+
+
+           Processor-1          Processor-2            Processor-3       Processor-4
+
+
+
+
+
+Thread Libraries :
+
+pthreads
+linux threads
+Windows threads
+Boost
+
+preprocessor directive :
+#include <pthread.h>
+
+
+
+
+Methods of pthreads : 
+
+pthread_create(&thread,NULL,thread_function,args)
+pthread_join(thread,NULL)
+
+
+GIL Global Interpreter Lock :
+
+   Python have GIL which prevents thread concurrency i.e at a given time only one thread can be run within a process.
+   but how much time will GIL locks one thread - 100 byte instructions
+
+
+
+Example : Mozilla is multi threading
+          Internet explorer,Google chrome is multi processing
+
+Each core can truly run one thread at a time.
+but using hyper threading or Simultaneous multithreading, each core can handle 2 threads
+(for this to happen check if Hardware has 2 cores and 4 logical cores i.e 4 logical processors)
+In my case i have 2 cores(Dual core) i.e i can have two instructions run parallely at a time
+
+
+
+Architecture :
+
+               (Multi Processing)
+
+ Process-1(Memory-1)            Process-2(Memory-2)
+  GIL                         	GIL
+  (Multi Threading)   		(Multi Threading)
+  Thread1                	Thread1
+  Thread2                	Thread2             
+
+Difference with Multi Processing :
+
+Thread context switching is faster than Process context switching
+
+Threads are spawned within the existing process.where as processes are independent to each
+
+Starting(creation) of new thread is faster than starting(creation) of new process
+
+All Threads are in same memory space(but diff stack space) i.e memory is shared between all threads using registers and global data, where as memory is not shared or each process has its own chunk of memory
+
+Mutexes are necessary to control access to shared data in MT, whereas multiprocessing doesnt
+
+One GIL for all threads,seperate GIL for each process
+
+If thread dies remaining threads continue.. where as if process terminates all threads will die
+
+
+Synopsis :
+      * True concurrency in python can be achieved only by multiprocessing
+
+
+Project usage : DBTools
+
+There is a combined tool which comprises several multiple individual tools
+Each tool will check and fix mode for the corruptions..
+So the execution of DBTool can be achieved by multithreading
+  It can be done this way..
+    each DBTool is executed in check mode..
+	if there is any DBTool which detect corruptions.. then a new thread is created which will run the fix mode.
+        while fix mode is running.. the execution of main thread(i.e check part) dont stop.. it will continue to check further.
+        Finally just before exiting the DBTool.. we'll wait till all threads join.
+
+   This way.. check and fix will be executed parallely and hence reduce time.Thus regardless of a DBTool having corruptions or not, check mode will take specific time.
+
+Shared resource - log file
