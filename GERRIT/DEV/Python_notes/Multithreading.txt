@@ -127,10 +127,10 @@ Project usage : DBTools
 
 There is a combined tool which comprises several multiple individual tools
 Each tool will check and fix mode for the corruptions..
-So the execution of DBTool can be achieved by multithreading
+So the execution of DBTool can be achieved by multiprocessing
   It can be done this way..
-    each DBTool is executed in check mode..
-	if there is any DBTool which detect corruptions.. then a new thread is created which will run the fix mode.
+    each individual DBTool is executed in check mode as a seperate individual process..
+	if there is any DBTool which detect corruptions.. then a new thread is created for that process which will run the fix mode. Threading is good here as it involves in I/O bound operation i.e confirmation to fix from user
         while fix mode is running.. the execution of main thread(i.e check part) dont stop.. it will continue to check further.
         Finally just before exiting the DBTool.. we'll wait till all threads join.
 

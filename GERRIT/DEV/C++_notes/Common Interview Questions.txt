@@ -1,0 +1,65 @@
+What happens if a constructor/Destructor is private ?
+
+	By default,default constructor is public.
+	Class cannot be instantiated.displays error like A() or ~A() is private in context.
+	But a class itself can create a object(using static function eg: getInstance() in public) this is possible as private constructor is still accessible inside constructor
+	Best application of above is singleton class
+	
+What happens if exception is thrown in destructor?
+
+    Destructor is generally called when object is getting deleted.
+	As object is getting deleted stack is getting unwinded(closing) if during that context switch if exception comes then it program terminates
+	
+During polymorphism.. if base class pointer is accessing(containing) derived class object.. what happens if we delete the pointer?
+
+    As we know deleting a pointer will delete the content inside it.. it will try to delete the object(derived).
+	Yes it is possible to delete the derived object using base class pointer provided if destructor is virtual.
+	Iff the destructor is virtual.. then as any normal virtual function.. destructor of derived class is called hence it will get deleted.
+	Other wise it base class destructor is called which results in undefined behavior
+
+How to prevent a class from inheriting?
+
+	if using C++ 11 standard, use key word final.
+	Eg : class abc final{};   -  Prevents extension of class
+	     void abc() final{}   - Prevents inheritance of function in derived class. i.e derived class wont get this method along with others. i.e inhibiting the base class feautures
+		 
+		
+What happens if constructor is Virtual?
+
+	A constructor cant be virtual in C++
+	because when a constructor of a class is executed there is no virtual table in the memory, means no virtual pointer defined yet
+	
+What is an abstract class?
+
+	A class with atleast one pure virtual function is called an abstract class.
+	An abstract class cant be instantiated i.e there is no implementation
+
+What happens when we inherit an abstract class?
+
+	If an abstract class is inherited, the inheriting class also will become abstract class,unless there is function overriding of pure virtual function
+	
+What is size of empty class?
+   
+   1 byte, this is to make sure that objects created share different memory
+   
+What is the order of call of constructors and destructors?
+	
+	Conructors - Order of inheritance
+	Destructors - In the reverse order of inheritance i.r first derived then Base
+	
+What is a concrete class?
+
+	A normal class is also called concrete class it is opposite of abstract class i.e it has no pure virtual functions
+	
+What is an interface in C++?
+
+	An interface describes the behavior or capabilities of a C++ class without committing to a particular implementation of that class.
+
+    The C++ interfaces are implemented using abstract classes and these abstract classes should not be confused with data abstraction which is a concept of keeping implementation details separate from associated data.
+	
+What is mutable ?
+
+	The mutable specifier applies only to class objects, which are discussed later in this tutorial. It allows a member of an object to override const member function. That is, a mutable member can be modified by a const member function.
+	
+
+   

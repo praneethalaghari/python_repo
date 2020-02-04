@@ -1,0 +1,33 @@
+/******************************************************************************
+SINGLETON CLASS
+
+This is singleton class which will have only one object
+Idea is to make constructor private so that no object can be created
+and to make function static so that it becomes a class method so as for calling a class method(static) no object is required it works
+and inside the static function create a single ton object and return it
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+class singleton
+{
+ private:
+  singleton(){}
+  
+ public:
+  static singleton* get_instance(){
+      singleton* s = new singleton();
+      return s;
+  } 
+ 
+};
+
+
+int main()
+{
+    singleton* s1;
+    s1 = singleton::get_instance();
+    return 0;
+}
