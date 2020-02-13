@@ -34,3 +34,7 @@ Memory leak with example : https://www.youtube.com/watch?v=F2nrej6Kjww
 Datastructure in c++ : https://www.youtube.com/watch?v=92S4zgXN17o&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P
 
 Multithreading : https://www.youtube.com/watch?v=TPVH_coGAQs
+
+Hashing and hash tables - https://www.youtube.com/watch?v=Ke_tII6Y0GE&list=PLTZbNwgO5ebqw1v0ODk8cPLW9dQ99Te8f&index=1
+
+Volatile - *bit*
