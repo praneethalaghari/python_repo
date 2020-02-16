@@ -1,0 +1,65 @@
+
+CASE : 1
+
+	void func(int *p)
+	{
+		p = new int;
+	}
+
+	int main()
+	{
+		
+		int *q;
+		func(q);
+		*q = 4;
+		cout << *q << endl;
+		return 0;
+	}
+
+
+Explanation : Above code will return in Segmentation fault.. since the 'q' which is passed in function call is via pass by value.
+So the pointer will be copied into another local variable (p) in stack and that pointer is dynamically allocated in heap. So it will be deleted.Can cause memory leak too.
+
+
+CASE : 2
+
+
+The solution for this is to return the pointer and catch at the function call. 
+
+
+	int* func(int *p)
+	{
+		p = new int;
+		return p;
+	}
+
+	int main()
+	{
+		
+		int *q;
+		q = func(q);
+		*q = 4;
+		cout << *q << endl;
+		return 0;
+	}
+
+CASE : 3
+
+If you still dont want to return pointer and catch.. then go with double pointers or via pass by reference as below.
+
+int* func(int* &q)
+{
+    q = new int;
+}
+
+int main()
+{
+    
+    int *q;
+    func(q);
+    cout << *q << endl;
+    *q = 4;
+    cout << *q << endl;
+    return 0;
+}
+

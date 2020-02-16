@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    vector<int> vec = {1};
+    vector<int> sub_vec;
+    
+    vector<int>::iterator it;
+    
+ 
+  for(int i = 0; i<10;i++)
+  {
+    for(it=vec.begin();it!=vec.end()-1;it++)
+    {
+        sub_vec.push_back(*it + *(it+1));
+    }
+    
+    sub_vec.insert(sub_vec.begin(),1);
+    sub_vec.push_back(1);
+    
+    vector<int>::iterator sit;
+    
+    int p = 0;
+    for (int p : sub_vec){
+        cout << p << " ";
+    }
+    cout << endl;
+    vec = sub_vec;
+    sub_vec.clear();
+  }  
+    
+    return 0;
+}

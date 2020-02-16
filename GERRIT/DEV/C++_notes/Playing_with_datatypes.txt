@@ -1,0 +1,126 @@
+
+
+float - precision 7 decimal numbers; double - precision 15 decimal numbers
+
+decimal point numbers are double by default i.e they are not considered float
+if to make it a float then do type casting(c style explicit)
+auto a = 5.4 (sizeof(a) = 8 bytes) and auto a = float(5.4) (sizeof(a) = 4 bytes)
+
+
+short a   or   short int a will take sizeof 2 bytes i.e 16 bits
+So it can hold any number between +/-32767
+Any number exceeding that,1's complement will be done and results in undefined beh
+
+    
+//ly int can take 4 bytes i.e 64 bits
+So it can hold any number between +/-2147483647
+Any number exceeding that,1s complement will be done and results in undefined beh
+
+char can take only 1 byte i.e for each char ascii value will be stored
+So it can hold only one char
+If we try to assign more than one char.. it will result in a warning
+    char a = 'va';
+
+   "overflow in implici constant conversion"
+  and will display only first character
+
+ Inorder to fix this either we should go for string or 
+
+    const char* a = "va";  ('' - single quotes should not used for multi cahr)
+
+int a = 3;
+char b = a;
+cout << b << endl;
+
+Output : (No output/Warning/Error)
+
+
+
+To convert integer to ascii value :
+
+int a = 97;
+char c = static_cast<char> (a);
+cout << a << endl;
+
+
+To convert ascii to integer value :
+
+char c = 'b';
+int a = c              // This works without static cast because its promotion i.e from char to int
+cout << a << endl;  
+
+
+char b = 'd';
+int *p = (int*)(&b);  // This will not cause compiler error but may cause undefined behavior as this will not check compatiability
+int *p = static_cast<int*>(&b); // This will cause compiler eror as it will check compatiablity(risks)
+int *p = reinterpret_cast<int*>(&b); // This again will not cause compiler error as it mean force type casting. 
+
+dynamic_cast is used in case of virtual functions i.e runtime/dynamic polymorphism.
+i.e a derived class object can be type casted to base class object.But a base class object may/may not be type casted to derived class object.
+Eg :
+  Base *b;
+  Derived *d = dynamic_cast<Derived *>(b);   //This will cause compiler error by checking if it is compatiable or not.
+  Derived *d = static_cast<Derived *>(b);    //This will not cause compiler error as it ignores incompatiability.if incompatiable it will point to incomplete object which may lead to run time consequences.
+
+* if you want to store a character array of n characters.Always make sure to allocate 1 more byte space more than required. i.e for Null termination char i.e '\0'
+     if string = "john", then go with const char* p[5]; p = "john"  then it will store 'j','o','h','n','\0' in the array p
+
+Convert char array to string :
+
+      
+  
+
+*************************************************************
+How to copy char array to char array ?
+
+   #include <cstring>
+
+   char a[6] = "Hello";                      // We must specify the size of array if we intend to use strcpy
+   char b[];                                 // We must also specify the size of array to which we are copying to (not necessarily correct it can be any non negative value) it will extend
+   
+   strcpy(b,a);
+   cout << b << endl;
+************************************************************* 
+How to find length of char array?
+
+  #include <cstring>
+
+  char a[] = "Hello";
+  cout << strlen(a) << endl;
+  
+  // Other way
+  for(i = 0; a[i]!='\0'; i++)
+   {
+         count++
+   }  
+**************************************************************
+How to copy to char * i.e char pointers instead of char [] i.e char arrays?
+
+   char *s = "Buddy";
+   char *p;
+   p = s;
+   cout << p << s << endl;
+   return 0;
+**************************************************************
+How to string compare two char * arrays ?
+
+   char *s = "Hello";
+   char *p = "Hellow";
+   
+   if(s == p)
+      cout << "same" << endl;
+   else
+       cout << "not same" << endl;   
+
+***************************************************************
+How to string compare two char[] arrays?
+
+   #include <cstring>
+
+   char a[] = "Hello";
+   char b[] = "Hellow";
+   
+   if(!strcmp(a,b))
+       cout << "a is equal to b" << endl;
+   else
+       cout << "not" << endl;

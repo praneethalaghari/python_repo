@@ -1,0 +1,159 @@
+void pointer has no data type..
+i.e it can hold data of any time
+but the only thing we have to do to access or use it is to type cast to required datatype
+  int a = 4;
+  void *p = &a;
+  cout << *((int*)p) << endl;
+Application  = calloc and malloc in C
+
+
+'this' keyword is a constant pointer which points only to the memory address of a particular object entering
+
+
+
+
+void func(int *p)
+{
+    p = new int;
+}
+
+int main()
+{
+    
+    int *q;
+    func(q);
+    *q = 4;
+    cout << *q << endl;
+    return 0;
+}
+
+
+Explanation : Above code will return in Segmentation fault.. since the 'q' which is passed in function call is via pass by value.
+So the pointer will be copied into another local variable (p) in stack and that pointer is dynamically allocated in heap. So it will be deleted.Can cause memory leak too.
+
+The solution for this is to return the pointer and catch at the function call. 
+
+
+
+int* func(int *p)
+{
+    p = new int;
+    return p;
+}
+
+int main()
+{
+    
+    int *q;
+    q = func(q);
+    *q = 4;
+    cout << *q << endl;
+    return 0;
+}
+
+
+If you still dont want to return pointer and catch.. then go with double pointers or via pass by reference as below.
+
+int* func(int* &q)
+{
+    q = new int;
+}
+
+int main()
+{
+    
+    int *q;
+    func(q);
+    cout << *q << endl;
+    *q = 4;
+    cout << *q << endl;
+    return 0;
+}
+
+
+//Pointer 'p' pointing to a static variable 'a'
+    //Will get destructed when scope ends
+    int *p;
+    int a = 3;
+    p = &a;
+    cout << *p << endl;
+    
+    
+    //Pointer 'q' pointing to a dynamic memory - 4
+    //Will get destructed only if we used delete ptr;
+    int *q = new int(4);
+    cout << *q << endl;
+    delete q;
+    
+    
+    //Void pointer
+    
+    int x = 4;
+    char y = 'y'; 
+    
+    void *r;
+    r = &x;
+    cout << *((int*)r) << endl;
+    r = &y;
+    cout << *((char*)r) << endl;
+    *((char*)r) = 'z';
+    cout << *((char*)r) << endl;
+    
+    
+    int a1 = 3;
+    int *a2 = new int(4);
+    
+    int *e = &a1;
+    cout << e << endl;         // Pointer e point to stack variable prints 0x7ffca8c62564
+    cout << a2 << endl;        // Pointer a2 point to heap memory location 0x21bec20
+
+*******************************************************************************************************
+
+    const int* b1;                //non constant pointer to constant variable
+    b1 = &a1;                     
+    //*b1 = 8;                      //Assignment of read only location b1
+     
+    int const* b2;                //non constant pointer to constant variable
+    b2 = &a1;                     
+    //*b2 = 8;                      //Assignment of read only location b1
+    
+    int* const b3 = &a1;         //constant pointer to non constant variable
+    *b3 = 7;   
+    cout << *b3 << endl;
+    
+    const int* const b4 = NULL;   //constant pointer to constant variable
+    //b4 = &a1;                     //This will throw error as b3 is a constant pointer which is already referencing NULL so cannot be reassigned to a1
+
+*******************************************************************************************************	
+	
+Function pointers : 
+
+	<return_type> (*<pointer_name>)(datatype1,datatype2,...) = &<function_name>
+
+	int (*a)(int,int) = &sum;
+   	int res = (*a)(3,4);
+	cout << res << endl;                   // Outputs 7
+
+
+     void (*c)() = &function; // function pointer
+    (*c)();
+	
+	Note : always '*' should be tied up with pointer name   (*a)
+	       when giving the &function_name dont include '()' call operator
+		   
+*******************************************************************************************************
+
+   char* func1(char* j)
+   {
+      j[0] = 'b';
+	  return j;
+   }
+                                                    // This code will work i.e changes cool to bool i.e outputs m as 'bool'
+   char s[] = "cool";
+   char *m = func1(s);
+   cout << m << endl;
+   
+   -------------------------------------------
+   
+   char* l  = "cool";
+   l[0] = 'b';                                       // This will not work results in segmentation core dumped

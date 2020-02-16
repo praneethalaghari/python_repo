@@ -1,0 +1,55 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+template <typename T>
+T add(T a,T b)
+{
+    return a + b;
+}
+
+template <class T>
+class Father
+{
+  public:
+    T age;
+    T height;
+};
+
+
+int main()
+{
+    cout << add<int>(5,3) << endl;
+    cout << add<float>(5.5,3.3) << endl;
+    
+    Father<int> f;
+    f.age = 30;
+    f.height = 6;
+    
+    Father<float> f2;
+    f2.age = 35;
+    f2.height = 5.9;
+    
+    cout << f.age << f.height << f2.age << f2.height << endl;
+    
+    
+    int arr[] = {1,4,6,8,9,0};
+    
+    for(int i:arr)
+    {
+        cout << i << endl;
+        
+    }
+    
+    
+    
+    return 0;
+}

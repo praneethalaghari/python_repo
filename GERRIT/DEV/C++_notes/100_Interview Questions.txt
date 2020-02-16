@@ -1,0 +1,199 @@
+What is the full form of OOPS?
+
+What is a class?
+
+What is an object?
+
+List the types of inheritance supported in C++.
+
+What is the role of protected access specifier?
+
+What is encapsulation?
+
+What is abstraction?
+
+What is inheritance?
+
+Explain the purpose of the keyword volatile.
+
+What is an inline function?
+
+What is a storage class?
+
+Mention the storage classes names in C++.
+
+What is the role of mutable storage class specifier?
+
+Distinguish between shallow copy and deep copy.
+
+What is a pure virtual function?
+
+What is an abstract class in C++?
+
+What is a reference variable in C++?
+
+What is role of static keyword on class member variable?
+
+Explain the static member function.
+
+Name the data type which can be used to store wide characters in C++.
+
+What are/is the operator/operators used to access the class members?
+
+Can we initialize a class/structure member variable as soon as the same is defined?
+
+What is the data type to store the Boolean value?
+
+What is function overloading?
+
+What is operator overloading?
+
+Do we have a String primitive data type in C++?
+
+Name the default standard streams in C++.
+
+Which access specifier/s can help to achive data hiding in C++?
+
+When a class member is defined outside the class, which operator can be used to associate the function definition to a particular class?
+
+What is a destructor? Can it be overloaded?
+
+What is a constructor?
+
+What is a default constructor? Can we provide one for our class?
+
+Which operator can be used in C++ to allocate dynamic memory?
+
+What is the purpose of ‘delete’ operator?
+
+Can I use malloc() function of C language to allocate dynamic memory in C++?
+
+Can I use ‘delete’ operator to release the memory which was allocated using malloc() function of C language?
+
+What is a friend function?
+
+What is a copy constructor?
+
+Does C++ supports exception handling? If so what are the keywords involved in achieving the same.
+
+Explain the pointer – this.
+
+What is the difference between the keywords struct and class in C++?
+
+Can we implement all the concepts of OOPS using the keyword struct?
+
+What is the block scope variable in C++?
+
+What is the role of the file opening mode ios::trunk?
+
+What is the scope resolution operator?
+
+What is a namespace?
+
+What are command line arguments?
+
+What is a class template?
+
+How can we catch all kind of exceptions in a single catch block?
+
+What is keyword auto for?
+
+What is a static variable?
+
+What is the purpose of extern storage specifier.
+
+What is the meaning of base address of the array?
+
+When should we use the register storage specifier?
+
+Can a program be compiled without main() function?
+
+Where an automatic variable is stored?
+
+What is a container class?
+
+What is a token?
+
+What is a preprocessor?
+
+What are command line arguments?
+
+What are the different ways of passing parameters to the functions? Which to use when?
+
+What is reminder for 5.0 % 2?
+
+Which compiler switch to be used for compiling the programs using math library with g++ compiler?
+
+Can we resize the allocated memory which was allocated using ‘new’ operator?
+
+Who designed C++ programming language?
+
+Which operator can be used to determine the size of a data type/class or variable/object?
+
+How can we refer to the global variable if the local and the global variable names are same?
+
+What are valid operations on pointers?
+
+What is recursion?
+
+What is the first string in the argument vector w.r.t command line arguments?
+
+What is the maximum length of an identifier?
+
+What is the default function call method?
+
+What are available mode of inheritance to inherit one class from another?
+
+What is the difference between delete and delete[]?
+
+Does an abstract class in C++ need to hold all pure virtual functions?
+
+Is it legal to assign a base class object to a derived class pointer?
+
+What happens if an exception is thrown outside a try block?
+
+Are the exceptions and error same?
+
+What is function overriding?
+
+Which function is used to move the stream pointer for the purpose of reading data from stream?
+
+Which function is used to move the stream pointer for the purpose of writing data from stream?
+
+Are class functions taken into consideration as part of the object size?
+
+Can we create and empty class? If so what would be the size of such object.
+
+What is ‘std’?
+
+What is the full form of STL?
+
+What is ‘cout’?
+
+What is ‘cin’?
+
+What is the use of the keyword ‘using’?
+
+If a pointer declared for a class, which operator can be used to access its class members?
+
+What is difference between including the header file with-in angular braces < > and double quotes “ “
+
+S++ or S=S+1, which can be recommended to increment the value by 1 and why?
+
+What is the difference between actual and formal parameters?
+
+What is the difference between variable declaration and variable definition?
+
+Which key word is used to perform unconditional branching?
+
+Is 068 a valid octal number?
+
+What is the purpose of #undef preprocessor?
+
+Can we nest multi line comments in a C++ code?
+
+What is a virtual destructor?
+
+What is the order of objects destroyed in the memory?
+
+What is a friend class?

@@ -1,0 +1,143 @@
+#include <iostream>
+
+using namespace std;
+
+
+void print_Q1()
+{
+    char a = '*';
+   
+   for (int i = 0;i <5;i++)
+   {
+       for (int j = 0;j<i+1;j++)
+       {
+           printf("%c",a);
+       }
+       cout << endl;
+   }
+    
+}
+
+void print_Q2()
+{
+   char a = '*';
+   
+   
+   for (int i = 0;i <5;i++)
+   {
+       for (int s=0;s<5-i-1;s++)
+       {
+       cout << " ";
+       }
+       
+       for (int j = 0;j<i+1;j++)
+       {
+           printf("%c",a);
+       }
+       cout << endl;
+   }
+    
+}
+
+void print_Q1_and_Q2()
+{
+   char a = '*';
+   
+   
+   for (int i = 0;i <5;i++)
+   {
+       for (int s=0;s<5-i-1;s++)
+       {
+       cout << " ";
+       }
+       
+       for (int j = 0;j<i+1;j++)
+       {
+           printf("%c",a);
+       }
+       
+       for (int j = 0;j<i+1;j++)
+       {
+           printf("%c",a);
+       }
+       cout << endl;
+   } 
+    
+}
+
+void print_Q3()
+{
+    char c = '*';
+    
+    for(int i = 0;i<5;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout << ' ';
+        }
+        for (int k = 0;k<5-i;k++)
+        {
+            cout << c;
+        }
+        cout << endl;
+    }
+}
+
+void print_Q4()
+{
+    char c = '*';
+    
+    for(int i=0;i<5;i++)
+    {
+        for (int j = 0;j<5-i;j++)
+        {
+            cout << c;
+        }
+        cout << endl;
+    }
+    
+}
+
+void print_Q3_and_Q4()
+{
+   char c = '*';
+   
+   
+   for (int i = 0;i <5;i++)
+   {
+       
+       for(int j=0;j<i;j++)
+        {
+            cout << ' ';
+        }
+        for (int k = 0;k<5-i;k++)
+        {
+            cout << c;
+        }
+        for (int j = 0;j<5-i;j++)
+        {
+            cout << c;
+        }
+       
+       cout << endl;
+   } 
+    
+}
+
+void print_Q1_Q2_Q3_Q4()
+{
+    print_Q1_and_Q2();
+    print_Q3_and_Q4();
+}
+
+int main()
+{
+    //print_Q1();
+    //print_Q2();
+    //print_Q1_and_Q2();
+    //print_Q3();
+    //print_Q4();
+    //print_Q3_and_Q4();
+    print_Q1_Q2_Q3_Q4();
+    return 0;
+}

@@ -10,5 +10,4 @@ Usage of destructors
 Struct padding
 conversion of static
 preventing usage of long int where int can be used.. and short if short int can be used
-To prevent dangling pointer - after delete initialize with nullptr;
  
