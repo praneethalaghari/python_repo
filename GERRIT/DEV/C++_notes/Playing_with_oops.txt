@@ -1,0 +1,106 @@
+
+Constructor :
+
+
+	Special class function
+	All the methods of parent class can be inherited but constructor cannot be inherited. 
+    if we create a global object/static object of a class i.e outside any function even main().. then constructor of that objects class is called even before main()
+	Destructor of such objects i.e global/static class will be called after main execution as the lifetime of such objects is end of program
+	
+Private :
+    If a constructor is private.. objects cant be instantiated directly.
+	But still the objects can be instantiated via a friend class constructor, as friend class can access private member.
+	Applications : Singleton class,Interface,Named constructor
+
+Static  :
+	A constructor cannot be static in C++;
+	As constructor is used to instantiate objects.. a static constructor is meaning less.
+	But a specific object can be instantiated using static object and static method i.e singleton class
+	But static constructors are possible in Java,C#
+
+Virtual :
+	A constructor cant be overridden, so it is meaningless to have a constructor virtual.
+	C++ is statistically typed, so object type should be determined at the time of compilation not dynamically.
+	So virtual before construtor will throw an error 
+
+Pure virtual :
+	As virtual constructor itself is not possible.There is no point of pure virtual constructor
+
+final :
+	All members of parent class can be inherited except constructor, so there is no need of final.
+	
+const :
+
+
+
+try_catch :
+	if there is an exception in try block of constructor.. the object is considered uninstantiated i.e as it is not constructed completely
+	So destructor wont be called
+
+Inline :
+    Yes Inline is possible with constructor. if compiler decides to inline it can place at object creation.
+	But as it is just a request, if there are any virtual functions in constructor the constructor wont be inlined
+
+
+Destructor :
+
+	Along with deleting dynamic memory allocation and stack(automatic) variables it is also used to clear up mutex and locks as well
+	As Destructor dont contain parameters at all.. it cannot be overloaded.. and hence a class can have only one destructor
+	Note that destructor is called only at the normal exit i.e when exit is called.. not Abort
+	Global variables are destroyed in the opposite order of how they were created
+
+
+Private :
+Static  :
+Virtual :
+Pure virtual :
+final :
+const :
+try_catch :
+
+Function :
+
+Private :
+	if a function is private in a class it is called utility class.. which is accessible to only other member function of the class or friend class
+
+Static  :
+Virtual :
+Pure virtual :
+final :
+const :
+	if an object is made constant then it cant access non constant function.i.e it can only access constant functions only
+try_catch :
+
+Virual Function :
+
+Private :
+Static  :
+Virtual :
+Pure virtual :
+final :
+const :
+try_catch :
+
+
+Variables :
+
+Volatile :
+Mutable :
+Const :
+static :
+
+Copy constructor
+Default constructor
+Paramterized constructor
+
+Operator overloading
+
+Static polymorphism
+Dynamic polymorphism
+
+This pointer
+
+Public,private,protected inheritance,virtual inheritance :
+
+
+
