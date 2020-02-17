@@ -1,0 +1,28 @@
+What is threading?
+Thread is a light weight process which can perform its task individually.
+
+How many processors/core in i3,i5 and i7?
+i3 - 2 cores
+i5 - 4 cores
+i7 - 4 (6-8 also)
+
+How many threads can a core manage?
+If the core has Hyper-Threading it can process two per core
+If the code dont it can pocess only one per core
+i3,i7 have HT where as i5 dont have HT
+
+What is multi threading?
+
+  When a program is executed.. scheduler selects one of the process to execute in any of the available processors..
+  Each process executing has a parent or main thread i.e main..
+  We can subdivide into multiple thread using thread.. and thus based on cores we can attain concurrency and parallelism as well.
+  
+
+What is difference between Thread and Processess?
+  Thread is a light weight process					-	Process is little more overweigh than thread
+  Thread container is process						- 	Process container is program
+  Thread share in-process memory					- 	Process have their own memory
+  Cost of communication between thread is less  			- 	IPC is costly
+  Creation,termination of thread is fast				- 	Creation,termination of thread is slow
+  Share resources via shared memory					- 	Use files,shared memory,pipes/queues	
+  Threads take less time to switch					- 	Process take more time to switch

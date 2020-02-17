@@ -1,0 +1,74 @@
+#include <iostream>
+
+using namespace std;
+
+class Smartpointer{
+ public:
+    int *p;
+    
+    Smartpointer(int *s)
+    {
+      p = s;    
+    }
+    ~Smartpointer()
+    {
+        delete p;
+        cout << "Destructor called" << endl;
+    }
+    
+    int& operator *()
+    {
+        return *p;
+    }
+    
+};
+
+int main()
+{
+    Smartpointer s1(new int(4));
+    //cout << *(s1.p) << endl;
+    
+	cout << *s1 << endl;
+    *s1 = 6;
+    
+	cout << *s1 << endl;
+    cout << sizeof(s1) << endl;
+    return 0;
+}
+
+
+With templates :
+
+#include <iostream>
+
+using namespace std;
+
+template <class T>
+class Smartpointer
+{
+ public:
+    T *p;
+    
+    Smartpointer(T *s)
+    {
+      p = s;    
+    }
+    ~Smartpointer()
+    {
+        delete p;
+        cout << "Destructor called" << endl;
+    }
+    
+    T& operator *()
+    {
+        return *p;
+    }
+    
+};
+
+int main()
+{
+    Smartpointer<float> s1(new float(4.23));
+    cout << *s1 << endl;
+    return 0;
+}
