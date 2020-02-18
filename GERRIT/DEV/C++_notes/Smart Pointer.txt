@@ -72,3 +72,71 @@ int main()
     cout << *s1 << endl;
     return 0;
 }
+
+Using these above wrapper..
+ There are 3 types of pointers -        Unique pointers		
+										Shared pointers
+										Weak   pointers
+										
+										
+	Unique pointers : A pointer which takes ownership of memory allocated and dont give ownership to any other pointer..
+						unique_ptr<int> ptr1(new int());
+					  But it can transfer its ownership to a new pointer.. and commit suicide i.e it will point to null
+						unique_ptr<int> ptr2 = move(ptr1);
+						
+						
+						// UNIQUE POINTER
+    
+						unique_ptr<int> ptr1(new int(10));
+    
+						//unique_ptr<int> ptr2;     
+						//ptr2 = ptr1;                      // This will fail as p1 has ownership and it cant assign it to another         
+    
+						unique_ptr<int> ptr2 = move(ptr1);  // This will work as p1 gives its ownership to p2 and p1 will lose its ownership and points to null.
+    
+						cout << *ptr2 << endl;
+						//cout << *ptr1 << endl;              // Doing this will result in segmentation fault
+						
+						
+	Shared pointers : A pointer which can share its ownership to a new pointer is called shared pointer.
+						shared_ptr<int> ptr1(new int());
+					  Each ponter among the shared pointers will save the reference count
+					    ptr1.get_count();
+					  Share pointer can also give its ownership to others
+					  Shared pointer will only get deallocated i.e contructor called when all the shared pointers ref goes to 0
+					  This is a problem of cyclic reference
+					  To free a shared pointer forcefully we can go with reset
+						ptr1.reset()
+					  This way count of each pointer will reduce by 1.
+					  
+					  // Shared pointer
+					  
+					    shared_ptr<int> ptr3(new int(10));
+    
+						shared_ptr<int> ptr4;     
+						ptr4 = ptr3;                      // This will work as p1 has ownership and it can assign it to another         
+						
+						cout << *ptr3 << endl;
+						cout << *ptr4 << endl; 
+						
+						cout << ptr3.use_count() << endl;  // ref count 2
+						cout << ptr4.use_count() << endl;  // ref count 2
+						
+						// Even though the program goes out of scope memory wont be freed as still it have references
+						
+						ptr3.reset();                      // This will delete reference to the object it is pointing to 
+						cout << ptr3.use_count() << endl;
+						//cout << *ptr3 << endl;
+						cout << ptr4.use_count() << endl;
+						
+						
+
+
+    Weak pointers : A weak pointer do not have any ownership hence wont cause a reference count increment.
+						
+					   // Weak pointer	
+						
+                        weak_ptr<int> ptr5;
+						ptr5 = ptr4;
+						cout << ptr4.use_count() << endl;  // The count is still 1 because the pointer which it is pointing to is a weak ptr 
+														   // So it wont contribute to reference count
