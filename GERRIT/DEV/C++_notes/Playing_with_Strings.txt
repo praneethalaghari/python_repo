@@ -1,0 +1,309 @@
+
+Reversing a string (Using Character array): 
+
+   char a[] = "Praneeth";
+   int len = strlen(a);
+   
+   cout << "Original String" << a << endl;
+   
+   for(int i = 0;i<len/2; ++i)
+   {
+       char temp = a[len-1 - i]; 
+       a[len-1-i] = a[i];
+       a[i] = temp;
+   }
+    
+   cout << "Reversed String : " << a << endl; 
+
+*******************************************************************************
+   
+Reversing a string using String pointer :
+
+   char *s = "Praneeth";
+   int count = 0;
+   
+   for(int i=0;s[i]!='\0';++i)
+   {
+       count++;
+   }
+   cout << count << endl;
+   
+   for(int i=count-1;i>=0;--i)
+   {
+       cout << *(s+i);
+   }   
+   
+*********************************************************************************
+   
+Reversing a string using another empty string :
+
+   string s1("Hello");
+   string s2="";
+   for(int i=s1.length()-1;i>=0;--i)
+   {
+         s2=s2+s1[i];
+   }
+   cout << s2 << endl;
+
+*********************************************************************************
+
+Reversing a string preserving the space positions :
+
+  Eg : Praneeth is a good boy
+  o/p: yobdooga si h teen arP  instead of yob doog a si hteenarP
+
+   char a[] = "Praneeth is a good boy";
+   int len = strlen(a);
+   
+   cout << "Original String : " << a << endl;
+   
+   int i = 0;
+   int j = len-1;
+   
+   while(i<j)
+   {
+       if(a[i]==' ')
+       {
+        i++;
+        continue;
+       }
+       
+       if(a[j]==' ')
+       {
+        j--;
+        continue;
+       }
+       
+       char temp = a[j];
+       a[j] = a[i];
+       a[i] = temp;
+       
+       i++;
+       j--;
+   }
+    
+   cout << "Reversed String : " << a << endl;
+   
+*********************************************************************************************
+
+To check if the each charater in the given string is Upper case or lowercase :
+
+char a[] = "Praneeth";
+   
+   int len = sizeof(a)/sizeof(a[0]);
+   
+   for(int i = 0;i < len;++i)
+   {
+       if(char(a[i]) >= 65 && char(a[i]) <= 90)
+       {
+           cout << a[i] << " is " << "Capital" << endl; 
+       }
+       else if(char(a[i]) >= 97 && char(a[i]) <= 122)
+       {
+           cout << a[i] << " is " << "Small" << endl;
+       }
+   }
+
+*********************************************************************************************
+
+To convert the each charater in the given string to Upper case or lowercase :
+   
+   for(int i = 0;i < len;++i)
+   {
+       if(char(a[i]) >= 65 && char(a[i]) <= 90)
+       {
+           a[i] = a[i]+32; 
+       }
+       else if(char(a[i]) >= 97 && char(a[i]) <= 122)
+       {
+           a[i] = a[i]-32;
+       }   
+   }
+   
+***********************************************************************************************
+
+    char a[] = "0123456789";
+    for(int i=0;i<strlen(a);i++)
+     cout << int(a[i]) << endl;
+    
+    //To convert each char number  to  original number subtract by 0123456789
+    int p[strlen(a)];
+    for(int i=0;i<strlen(a);i++)
+    {
+        p[i] = a[i]-48;
+    }
+    
+    for(int i=0;i<strlen(a);i++)
+     cout << p[i] << endl;
+
+***********************************************************************************************
+
+// Program to find if a given string is rotated version of original string :
+
+ Simple solutin : just do original string = original string + original string	
+				  find if string to check is a substring of original string
+
+
+bool is_rotated(string rot_str,string orig_str)
+{
+    if(orig_str.length()!=rot_str.length())
+    {
+        cout << "Length mismatch Hence not a rotated string" << endl;
+        return false;
+    }
+    
+    orig_str = orig_str + orig_str;
+    return (orig_str.find(rot_str) != string::npos);
+}
+
+
+int main()
+{
+    string str1 = "Praneeth";
+    string str2 = "thPranee";
+    string str3 = "aneethrP";
+
+    bool is_str2_rotated = is_rotated(str2,str1);
+    bool is_str3_rotated = is_rotated(str3,str1);
+    
+    if(is_str2_rotated)
+    cout << "Str 2 rotated versino of Str 1" << endl;
+    
+    if(is_str3_rotated)
+    cout << "Str 3 rotated versino of Str 1" << endl;
+    
+    return 0;
+}
+
+*******************************************************************************************
+
+bool is_anagram(string str1,string str2)
+{
+    if(str1.length()!=str2.length())
+    {
+        cout << "Lengths are not same.Hence they cant be anagrams" << endl;
+        return false;
+    }
+    
+    //Approach -1 put each character,count in two seperate vectors and compare if each words count are same.
+    //Apprach - 2 sort the elements are compare each character
+    sort(str1.begin(),str1.end());
+    sort(str2.begin(),str2.end());
+    
+    for(int i = 0;i<str1.length();i++)
+    {
+        if(str1[i]!=str2[i])
+            return false;
+    }
+    return true;
+}
+
+
+int main()
+{
+    string str1 = "Praneeth";
+    string str2 = "thPranee";
+    
+    bool is_str1_and_str2_anagram = is_anagram(str1,str2);
+    
+    if(is_str1_and_str2_anagram)
+        cout << "Yes! They are anagram" << endl;
+    else
+        cout << "No! They are not anagram" << endl;
+
+    return 0;
+}
+
+****************************************************************************************************************
+
+Check if a given string is a rotation of a palindrome :
+
+Input:  str = "aaaad"
+Output: 1  
+// "aaaad" is a rotation of a palindrome "aadaa"
+
+Input:  str = "abcd"
+Output: 0
+// "abcd" is not a rotation of any palindrome.
+
+
+## MANACHERS ALGORITHM
+
+****************************************************************************************************************
+
+Find maximum number of consecutive chars in a given string 
+
+
+    char a[] = "abcijkmnopq";
+    
+    int max_count = 0;
+    int count = 0; 
+    
+    for(int i=1;i<strlen(a);++i)
+    {
+        if(a[i]-a[i-1] == 1)
+        {
+            count++;
+        }
+        else
+        {
+            if(count > max_count)
+                 max_count = count;
+            count = 0;
+        }
+        
+        if(i == strlen(a)-1)
+         {
+           if(count > max_count)
+                max_count = count;
+         }
+    }
+
+    cout << max_count+1 << endl;
+
+  Output is 5 - mnopq
+	
+*****************************************************************************************************************
+
+Find maximum size of Most common substring between two given strings :
+
+Time complexity : O(m*n)
+Space complexity : O(m*n)       //m,n size of str1,str2
+
+    string s1 = "GeeksforGeeks";
+    string s2 = "GeeksQuiz";
+    
+    
+    int x = s1.length();
+    int y = s2.length();
+
+    int max_val =0;int i_pos = 0;int j_pos = 0;
+   
+    int a[x][y] = {0};
+    for(int i = 0;i<x;i++)
+    {
+        for(int j=0;j<y;j++)
+        {
+            a[i][j] = 0;
+            if(s1[i]==s2[j])
+            {
+             if(a[i-1][j-1] > 300)            // If there is default value like 32567 etc.. it will make it to 0 because we are accessing out of bounds memory
+                a[i-1][j-1] = 0;
+             a[i][j] = a[i-1][j-1] + 1;
+            }
+            else
+            {
+             a[i][j] = 0;
+            }
+       
+          if(a[i][j] > max_val)
+           {
+               max_val = a[i][j];
+               i_pos = i;
+               j_pos = j;
+           }
+        }
+    }
+    cout << "Most common substr leng :" << max_val  << endl;
+    cout << "Match in A :" << i_pos+1-max_val << " to " << i_pos << endl;
+    cout << "Match in B :" << j_pos+1-max_val << " to " << j_pos << endl;

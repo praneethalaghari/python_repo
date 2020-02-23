@@ -1,0 +1,53 @@
+Tricks in coding :
+
+To check if a number is even/odd  -   
+
+       a & 1 = 1  - Then number is odd
+	   a & 1 = 0  - Then number is even       // And operator - 1,1 - 1 else 0
+
+To multiply/dived a number -
+
+	Left shift - multiply
+		a << 1    - Then a is multiplied by '2' once
+		a << 2    - Then a is multiplied by '2' twice
+	
+	Right shift - divide
+		a >> 1    - Then a is divided by '2' once
+		a >> 2    - Then a is divided by '2' twice
+		
+Length of a number :
+
+    n = floor(log10(num)) + 1      // log10(10) = 1   ;   log 10(99) = 1.9...  ; log10(100) = 2 
+
+Swap a number without a third variable :
+
+	a = a+b; b = a-b; a = a-b;   // Add
+	a = a^b; b = a^b; a = a^b;   // XOR
+	a = a+b-(b=a);               // Single line without 3rd var
+
+XOR can be used to find the missing element in given contigous elements 
+XOR can also be used to find the odd repitive number in array. eg : {1,5,7,3,3,3,5,7,1}  // XOR = 7
+	
+Use auto wherever it is possible, especially for the use of iterators in STL
+
+Use foreach loop in loop/STL containers for reading instead of for(it=v.begin();it!=v.end();it++)
+    for(auto it : v){cout << *it << endl;}
+	
+	To change any value in STL use '&' befor iterator:
+	for(auto &it: v){it*=3}       // Multiply each element in vector with 3
+	
+Use 'iota' function to intiate a array with consecutive elements instead of for loop (like in range of python):
+	
+	int arr[100]
+	iota(arr,arr+99,1) // Initiates with 1,2,3,4.... 100
+         	
+In a big program where we dont want to use strlen() we can define a macro like this to find the lenght of an array :
+
+	#define lenof(x) sizeof(x)/sizeof(x[0])
+			
+
+	
+Include <bits/stdc++.h> insted of iosteam,algorithm,vector and many others individually in c++
+
+
+	

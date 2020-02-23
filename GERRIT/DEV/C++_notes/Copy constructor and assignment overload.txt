@@ -1,0 +1,108 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <string>
+#include <cstdarg>
+
+using namespace std;
+
+class foo
+{
+    
+  public:
+    int x;
+    char y;
+    float z;
+    struct st{
+        int a;
+        char b;
+    }s1;
+    int *c;
+    int *d = new int();
+    char *e = new char[5];
+    union un{
+        int a;
+    }u1;
+    char *spb;
+    
+    foo()
+    {
+        
+    }
+    
+    foo(int x1,char y1,float z1,int *c1,int *d1,char *e1,int pj,char* spb1)
+    {
+        x = x1;y = y1;z = z1;c = c1;d = d1;e = e1;u1.a = pj;spb = spb1;
+    }
+    
+    foo(const foo &obj2)
+    {
+        
+        x = obj2.x;
+        y = obj2.y;
+        z = obj2.z;
+        c = new int(9);
+        d = nullptr;
+        e = obj2.e;
+        spb = obj2.spb;
+    }
+    
+    void operator =(const foo &obj2)
+    {
+        x = obj2.x;
+        y = obj2.y;
+        z = obj2.z;
+        c = new int(5);
+        d = nullptr;
+        e = obj2.e;
+        spb = obj2.spb;
+    }
+    
+    void sum(int jk,...)
+    { 
+        va_list v;
+        va_start(v,jk);
+        for (int i;i<jk;i++)
+            //cout << va_arg(v,int) << endl;
+        va_end(v);
+    }
+    
+    ~foo()
+    {
+        delete d;
+    }
+};
+
+
+
+int main()
+{
+    int q = 4;
+    
+    int *q1 = &q;
+    char *s = "Hello";
+    int *q2 = new int(4);
+    char st[] = "Mama";
+    
+    
+    foo f1(1,'a',1.23,q1,q2,s,655,st);
+    foo f2 = f1;
+    foo f3(f1);
+    foo f4;
+    f4 = f1;
+    f1.sum(3,8,9,10);
+    cout << f1.spb << endl;
+    cout << f2.spb << endl;
+    cout << f3.spb << endl;
+    cout << f4.spb << endl;
+   
+   
+    
+   return 0;
+}
