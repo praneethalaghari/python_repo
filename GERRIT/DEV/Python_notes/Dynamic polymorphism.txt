@@ -1,0 +1,64 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Employee
+{
+    public :
+    int salary;
+    virtual int increment()
+    {
+        
+    };
+
+};
+
+class Clerk:public Employee
+{
+    public:
+    int salary;
+    Clerk(int sal):salary(sal){
+        
+    };
+    int increment()
+    {
+       return salary + 1000; 
+    }
+    
+};
+
+class Manager:public Employee
+{
+    public:
+    int salary;
+    Manager(int sal):salary(sal){
+        
+    }
+    int increment()
+    {
+       return salary + 5000; 
+    }
+    
+};
+
+int main()
+{
+    vector<Employee> v1;
+    Employee *e1 = new Employee();
+    Manager m1(10000);
+    Clerk c1(5000);
+    
+    e1 = &m1;
+    int sal = e1->increment();
+    cout << sal << endl;
+    
+    e1 = &c1;
+    int sal1 = e1->increment();
+    cout << sal1 << endl;
+    
+    v1.push_back(m1);     // Iterate the vector and assigin it to array of base class pointers and call function
+    v1.push_back(c1);
+    
+    return 0;
+}

@@ -38,3 +38,5 @@ Multithreading : https://www.youtube.com/watch?v=TPVH_coGAQs
 Hashing and hash tables - https://www.youtube.com/watch?v=Ke_tII6Y0GE&list=PLTZbNwgO5ebqw1v0ODk8cPLW9dQ99Te8f&index=1
 
 Volatile - *bit*
+
+Trie Data Structure : https://www.youtube.com/watch?v=-urNrIAQnNo

@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void fibanocci(int n)
+{
+    int f1=0;int f2=1;
+    for(int p = 0;p<n;p++)
+    {
+    int f3 = f1 + f2;
+    f1 = f2;
+    f2 = f3;
+    cout << f3 << endl;
+    }
+}
+
+int fibanocci_rec(int n)
+{
+  vector<int> v1 = {0,1};
+  
+  for(int p = 0;p<n;p++)
+  {
+    v1.push_back(v1[v1.size()-1] + v1[v1.size()-2]);   
+  }
+  for(int q = 0;q<v1.size();q++)
+  {
+    cout << v1[q] << endl;   
+  }
+  
+}
+
+
+
+int main()
+{
+    fibanocci_rec(10);
+    return 0;
+}

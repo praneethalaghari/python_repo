@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 56;
+    int b = 28;
+    
+    int min = a<b?a:b;
+    
+    int GCD = 0;
+    for(int j=1; j<min+1; ++j)   // will iterate till 28 since HCF/GCD cant be > 28
+	{
+	   if(a%j == 0 && b%j ==0)
+	   {
+	      GCD = j;  
+	   }
+	}
+	cout << GCD << endl;
+   
+    return 0;
+}

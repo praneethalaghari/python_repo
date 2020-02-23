@@ -19,8 +19,9 @@ Static  :
 	But static constructors are possible in Java,C#
 
 Virtual :
-	A constructor cant be overridden, so it is meaningless to have a constructor virtual.
+	A constructor cant be overridden, it is meaningless to have a constructor virtual.
 	C++ is statistically typed, so object type should be determined at the time of compilation not dynamically.
+	As custructor is where virtual table is defined
 	So virtual before construtor will throw an error 
 
 Pure virtual :
@@ -30,9 +31,7 @@ final :
 	All members of parent class can be inherited except constructor, so there is no need of final.
 	
 const :
-
-
-
+	C++ dont have constant constructors
 try_catch :
 	if there is an exception in try block of constructor.. the object is considered uninstantiated i.e as it is not constructed completely
 	So destructor wont be called
@@ -41,7 +40,14 @@ Inline :
     Yes Inline is possible with constructor. if compiler decides to inline it can place at object creation.
 	But as it is just a request, if there are any virtual functions in constructor the constructor wont be inlined
 
-
+friend :
+	A constructor cannot be friend because, if it makes it is similar to some other class inheriting its constructor
+	which is meaning less.
+	
+	
+	
+	
+	
 Destructor :
 
 	Along with deleting dynamic memory allocation and stack(automatic) variables it is also used to clear up mutex and locks as well
@@ -51,35 +57,97 @@ Destructor :
 
 
 Private :
-Static  :
-Virtual :
-Pure virtual :
-final :
-const :
-try_catch :
+  
+    Yes a destructor can be private.
+	If a destructor is private then the calss cannot be instantiated similar to constructor.(But wait iw can instatiate dynamic objects)
+	Though the objects creation is not possible.. it is still possible to create pointer and create object in dynamic memory.
+    So as far we dont use delete it will work fine but once delete is called.. it will go for destructor but since it is private it will throw error	
+	
 
+Static  :
+
+	If destructor is static.. then it will somehow become a class method or static method...
+    We know static method can only contain static variables/members
+	but destructors are related to objects.. so it is not possible
+	
+Virtual :
+	Yes a destructor can be virtual.
+	This is very useful in dynamic polymorphism
+	i.e when a base class pointer is pointing to some derived class object.. and if we delete the pointer then derived class objects contructor will be called only if base class destructor is virtual.
+
+Pure virtual :
+	Yes a destructor can be pure virtual .. but unline a pure virtual function. it is not an empty fucntion
+	it will contain some body..
+	because since destructor are called in the reverse order of constructors if there is nothing in the body of pvd it is of no meaning
+
+final :
+	As constructor, destructor cant be final. As we know that.. constructor and destructor are not inherited by derived classess 
+
+const :
+	No a destructor cant be const.. thers is no provision like such in c++ till now
+
+try_catch :
+	When a destructor contains try catch and if exception is thrown and caught then no problembut 
+	But cannot be caught then always throw will call terminate() 
+	During stack winding up if exception is caught it will terminate
+	SImple answer to this question is.. destructor in C++ 11 is no except function i.e if any exception comes it will call terminate() directly to prevent exception propogation
+	
+friend :
+	
+	
+	
 Function :
 
 Private :
-	if a function is private in a class it is called utility class.. which is accessible to only other member function of the class or friend class
+	If a function is private in a class it is called utility class.. which is accessible to only other member function of the class or friend class
 
 Static  :
+	A static function is a class function which defines the state of a function. A function declared static can only have static variables inside
+	i.t a static function will not contain non static variables
+	static functions are called via scope operator and can be called via class name
+	A static function can be called even though class has no objects
+	useful in design patterns ex : singleton class
+	An object of a class can be static similar to that of a static variable
+    Even the normal objects of the class can also access static functions like any other functions
+	
 Virtual :
+	This is the base of dynamic polymorphism.
+	Any method of the class is declared virtual then it can cause dynamic polymorphism.
+	It will create vptr and vtables of all the base and derived classes
+	virtual function mean the function can be overridden
+
 Pure virtual :
 final :
 const :
 	if an object is made constant then it cant access non constant function.i.e it can only access constant functions only
 try_catch :
+friend :
+
+
+
 
 Virual Function :
 
 Private :
+	     if a virtual function is private then dynamic polymorphism is not possible
+         if the fucntion to override i.e derived class function is private then dynamic polymorphism is possible i.e override is possible
+		 if constructor of base/derived is private in virtual it displays compiler error saying use of deleted function
+		 private or virtual inheritance will cause compiler error
+		 if the virtual function is not overridden.. there will be no dynamic polymorphism i.e it will call base class method only
+		 This is similar to inheriting the virtual function into the derived class both are same
 Static  :
-Virtual :
+
 Pure virtual :
+		  This will make the class as interface ie abstract class
+		  An abstract class cannot be instatiated
+		  Make sure that the derived class should override the PV function as not doing so will make derived class also abstract
+
 final :
+		  if we declare the virual function as final then it cant be overridden or inherited i.e polymorphism fails
 const :
 try_catch :
+friend
+
 
 
 Variables :
@@ -88,6 +156,21 @@ Volatile :
 Mutable :
 Const :
 static :
+friend
+
+
+Class :
+
+private
+static
+const
+final
+pure virtual:
+friend
+
+
+
+
 
 Copy constructor
 Default constructor

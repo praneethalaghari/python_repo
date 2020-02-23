@@ -1,0 +1,240 @@
+Differences between Malloc and calloc?
+	Malloc will not initialize the allocated memory with 0's	-  Calloc will initialize the allocated memory with 0's
+	Malloc is faster than calloc					-  Calloc is slower than Malloc
+	Function is not parameterized					-  Calloc is parameterized i.e contains (no._of_elements,size)
+
+What is the difference between delete and free?
+	delete is an operator							- free is a function
+	delete calls destructor							- there is no call to destructor
+	delete is called to objects created with new	- free is called if the memory is allocated via malloc,calloc,realloc
+	
+	
+WHat are the differences between C++98 and C++11?
+	Introduction to lambda expressions
+	Introduction to final keyword
+	Introduction to threading
+	Introduction to auto,nullptr
+
+
+	
+How to open and close a file in C/C++ (file handling)?
+
+
+What new does in object creation?
+	When new operator is called then program context is switched from user mode to kernal mode
+	The kernel will now check if memory is available i.e not it will throw bad allocate
+	if available it will allocate and assign a pointer. // Similar to malloc
+
+
+Why argument in copy constructor is const and & 
+
+Can a private member of a method be modified outside without friend or inside the class?
+	Yes it can be done using pointers. i.e fooling the compiler
+
+
+Difference between assignment and copy constructor?
+	The primary difference between the two is that..
+		copy constructor will copy the contents of the object into a new place
+			so it wont be a problem until unless there is a pointer
+		Assignment overload operator will just create a reference to the original object
+			so any variable changes it reflects in its reference object.
+
+			
+What are the different types of castings
+
+     Casting   -  Implicit      Explicit
+	 
+	 Implicit  -  Demote        Promote
+	 Explicit  -  Static	Dynamic		Const		reinterpret
+	 
+	 Const cast : 
+			This type of casting will remove the constantness of the pointer.
+			Eg :
+					int a = 4;
+					const int *b = &a;               // b is pointer to constant a
+					int *c = const_cast<int*> b;     // Constantness of pointer b is not copied into pointer c
+					*c = 9;                          // Valid
+
+
+			However this fails
+			Eg :
+					const int a = 4;
+					const int *b = &a;               // b is pointer to constant a
+					int *c = const_cast<int*> b;     // Constantness of pointer b is not copied into pointer c
+					*c = 9;                          // Invalid since even constantness is not carried to new pointer the variable itself is constant
+					
+			
+What is a functor?
+	An object working as function is called functor
+	it will overload '()' operator
+	A functor is like function + operator
+	A function is which maintains the state of variable similar to static
+	Infact that is the advantage of having functor
+
+Differences between Malloc and new?
+	New is an operator         	-       Malloc is a library function
+        New can be operator overloaded  -       Malloc cannot	
+        New will initiate with 0s 	-       Malloc will have garbage values
+	New will call constructor  	-       Malloc will not call constructor
+	Memory deallocation-delete 	-       Malloc with free
+	If no memory-exception-BadAlloc	-	Malloc will output null if it cannot allocate memory
+        
+
+How to free memory in C/C++ without free?
+	In C we can free the memory allocated by calloc,malloc via realloc().
+	realloc(ptr,0) - > This mean delete ptr;
+	realloc(NULL,10) -> This mean malloc 10 bytes of memory (with junk values)
+	each time we use realloc.. it copy the old contents of ptr into new locations(if increased) i.e deallocate the old memory and recreate the same in new place  
+
+What happens if we 'delete this' in a function called by the object?
+	This mean that program will try to delete the object which is calling the function.
+	This is acceptable.. provided the object should not be used again.. after the function call.. if attempted it will cause segmentation fault.
+
+
+What is Padding or structure alignment? Why do we need it?
+	For any clock cycle processor will process a word (i.e a segment or frame) which is 4 bytes for 32 bit os and 8 bytes for 64 bit OS
+	So if there are two datatypes(atleast one incomplete) in the frame.. it has to fetch next word to read complete data type.
+	So for efficiency, if next data variable cannot fit into the frame.. it will assign the value in the memory location multiple of its data type data size.
+	And the remaining elments are left which is called padding.  
+
+What is Packing?
+	If we dont want the efficiency in considering the frame.. i.e if memory is important than os overhead.. then we can avoid padding
+	For this to happen just include #pragma pack(1) near the preprocessor directives
+
+Calculate the padding in the given struct?
+
+
+What is the size of empty class/struct?
+	A class is said to be empty class if it do not contain any datatype.
+        A class can be called as empty class if it contains only one function and that func is virual.
+	
+	Size of empty class is not 0 in either of the classes..
+	In first case size of empty class is 1 byte to ensure different object have different memory spaces
+	In second case size is 4 bytes/8 bytes based on 32 bit/64 bit.
+
+	Note : Ofcourse class is not there in C, size of struct in C is 0 bytes.
+	       where as C++ both struct/class is 1;
+	
+Difference between Mutex and Semaphore?
+	Mutex is a locking mechanism		- 	Semaphore is signalling mechanism
+	Mutex is used for syn in MT		- 	Semaphore can be used for both MP and MT
+	Mutex possess owner ship		-	Semaphore do not possess ownership
+	  i.e the one who locks is the owner	 	
+	
+
+What is 'explicit' keyword ?
+	If the class has only one variable i.e int x; and is initializing using paramtarized constructor.
+	constructor is called when creating object lets say A a1(10);
+	The same will be called if we do A a2 = 12; implicitly which can cause issues
+	Inorder to prevent that we need to put explicit before constructor.
+	Similary function taking the class A as paramter which have only one param i.e int, then even def is fun(A a); it can take fun(30)
+    Hence this type of implicit constructors are not allowed with explicit	
+	
+
+What is 'extern' keyword ?
+
+Can we call constructor/Destructor explicitly?
+	Yes we can..
+	But care to be taken while calling destructor..
+	as destructor may be called twice.. i.e explicit call and implicit call when object goes out of stack
+	the double destructor call will be a problem if detructor has body which delete pointers,mutex etc..
+	
+	Eg Base();      Base().~Base()
+	   In above case Base() will create a temporary object.destructor can only be called with object
+	
+
+What is Semaphore?
+
+What is Mutex?
+
+What happens if the virtual function is inherited privately using private inheritance?
+
+Can we do this ?  int *p = new int[];
+    No we should specify the number of bytes allocated.
+
+Can we do this ? char p[] = "Hello";p[0] = 'M'
+    Yes we need not specify the number of bytes allocated.
+    Here we can do p[0] = "M"
+
+Can we do this ? char *p = "Hello";p[0] = 'M'
+    No we cannot do p[0] = "M" as it is equalent to const char* in C++
+
+	
+	
+What is operator overloading and how to do it with dynamic memory pointer in it?
+What is copy constructor and how to do it with dynamic memory pointer in it
+
+
+Difference between List and vector?
+	Allocation of list is non contigous  - Allocation of vector is contigous
+	Accessing an element is O(n)	     - Accesing an element is O(1)
+	Insertion of element is O(1)         - Insertion of element is O(n) if it is not end else O(1)
+	Need space for pointer too	         - Only need space for element
+    Size is same as no of elements       - size is different capacity.. when size reaches capacity then capacity doubles and copies all elements to a new place 1,2,4,8,16,32..
+	
+
+What is the difference between returning int& and int ?
+	Simple.. int&  -  (x3 = x2) = x1; is possible and not equal to x3 = x2 = x1;
+			 int   -  (x3 = x2) = x1; is same as x3 = x2 = x1;
+	
+	
+	
+Difference between string and char array?
+	String is a class and its identifiers are objects      -   Char array is an array datatype and identifiers are variables
+	String needs header inclusion ie <string>	       -   It comes inbuild
+	String is slower to access			       -   Char is faster to access
+ 
+
+Can we do this?
+     int &r = 3;   
+        // No we cant directly assign number to reference
+     int &x = foo();  where foo it returns as follows return p;
+        // No it is returning value directly not variable p so we need to catch it with a variable
+     int j = foo();
+     int &y = j 
+        // Yes, we can do as variable is assigned to reference  
+ 
+
+
+How to handle variable length arguments in c++?
+    #include <cstdarg>
+    function(int no_of_arguments,...){}    
+    va_list v;
+    va_start(v,no_of_arguments)
+    In for loop iterate : va_args(v,int)    
+    va_end(v)
+
+What is inline function?
+    Whenever a function is called it will save the memory of function call
+				  it will create a stack frame create local auto variables in stack
+				  copy the contents of the function call
+				  store the value to return in registers
+    So this is a big overhead to OS, more importantly if context switching(stack func call) will take more time than time which it takes to execute
+    So to reduce this overhead, compiler may copy the contents of inline function at the place of function call
+    Bt compiler may not like i if it has follows
+	the inline function has loops
+	contains static variables
+	recursive
+	contains switch/goto
+
+    But if func calls are more due to copying.. executable binary may become big
+    compilation will take time
+   
+Use g++ -std=C++11 to compile code according to c++ 11 standards.. gcc version 4.8
+   
+Linker combines multiple object files of seperate programs along with dynamic link libraries in command line and link them
+   
+A global object is creatd calling another function(constructor) even before main() call.
+	can also be done by static member of class refer cppnuts
+
+Application of union is when we dont know which datatype is to be saved of a uniion object
+Union may have abstraction and encapsulation cannot have inheritance and polymorphism i.e virtual functions 
+
+A friend class can be placed at any point of the class it can be in private,public,protected.
+
+Whenever an try block encountered an exception.. it will destruct/free all its resources (of try block) and then proceed to catch statment
+
+No casting is requited if pointer to base class is pointing to derived class object 
+    Base *b = new Derived;
+But casting is required if pointer to derived class is pointing to base class object
+    Derived *d = (Derived*)&b3;
