@@ -1,0 +1,59 @@
+Memory management in c++
+
+Memory layout of any c/c++ program are made of 4 sections :
+
+- Stack
+- Heap
+- Data
+- Code - Text segment
+
+
+   Stack 
+   .....
+     1
+	 V
+	 
+     ^	
+	 1
+   .....
+   Heap
+   .......
+   data segment
+   .......
+   code segmenet
+   .......
+
+
+
+Stack (LIFO):
+  
+  - Stack resides on RAM
+  - Variables in stack has limited scope i.e inside a stack frame Eg : local variables
+  - Stack memory accessibility is faster than heap
+  - Every time a function is called a new stack frame is created by OS
+  - When program exec context goes out of function the corresponding stack frame will be destroyed along with variables
+  - huge or infinite recursion calls or very huge object creation can cause stack overflow
+  - Size of stack is around 1-2 MB
+  - Each thread will create and have its own stack frame
+  - It is not possible to delete the stack variables/objects explicitly.
+  - Used if memory to allocation is previously known 
+
+
+Heap :
+  
+  - Heap resides on RAM
+  - lifetime of memory in Heap is through out the lifetime of program or till we delete it 
+  - Heap memory accessibility is slower than stack.
+  - Dynamic memory allocation can be created at any time and destroyed at any time during the program lifetime but ofcourse within scope of pointer.
+  - Dynamic memory allocation can be done only via pointers which are ofcourse stack variables which are pointing to dynamic memory
+  - Used if memory to allocation is not previously known
+  
+  
+Data :
+
+  - Data segement will be in between heap and code segement of the memory.
+  - It contains the Global and static variables declared in the program
+
+  
+  
+Memory leaks in a large code can be detected using valgrind tool

@@ -187,3 +187,62 @@ Public,private,protected inheritance,virtual inheritance :
 
 
 
+Static :
+  
+    A static variable is stored in Data segment of Program memory layout.
+	A static variable is by default inititalized with 0.
+	A static variable can only get initialized by a constant not a variable or function in C. where as in c++ it can be initialized via function also.
+	A static variable should not be used in structure in C, because variables in structure should be in contigous and located in same memory 
+	   where as it is possible to have static variables in a struct/class in C++
+	A static variable can be global,local or a data member
+	  If a static variable is global 
+	       - it need not be initialized but to derefer use ::var.
+      If a static variable is local:
+		   - it need not be initialized we can print like normal var.
+	  If a static variable is data member of class :
+		   - It should not be initialized where it is declared.
+		   - It should not be left unitialized (i.e it should be initialized outside the class using :: operator)
+		   - While declaring out of the class dont use static keyword again
+
+
+	  class A{
+		  public :
+		  static int k;  // static int k = 4 - Compilation fails   
+		};
+
+		static int g=7;
+
+		int A::k =3;     // static int A::k = 3 - compilation fails
+
+		int main()
+		{
+			static int i=4;
+			cout << i << endl;
+			cout << A::k << endl;
+			cout << ::g << endl;
+			return 0;
+		}
+
+		
+		
+What is the difference between static and global variables?
+
+	The primary difference betweeen the two is that..   static variable has a scope in which it is defined
+	                                            whereas global variable has a scopt through out the program
+												
+Can a global variable be static?  (or)
+What is the difference between global variable and static variable declared in global(i.e outside of any scope)
+
+    Yes it is possible to have global variable as static.. i.e scope of the global variable will be limited to only that C file in which it is declared
+	                 if we want the global variable to get accessed accross other .C files then dont declare a global variable as static
+
+					 
+What is the difference between copy constructor and assignment operator ?
+	A copy constructor is called when there is no existing object created but to create a new object with object we want to copy.
+	   Eg : Base b1(b2);
+	   
+	An assignment operator is called when we already created an object but is assigned/unassigned.. and we want to copy the contents into new ones
+	   Eg : Base b1;
+	        b1 = b2;
+					 
+	

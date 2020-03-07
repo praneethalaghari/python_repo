@@ -157,3 +157,27 @@ Function pointers :
    
    char* l  = "cool";
    l[0] = 'b';                                       // This will not work results in segmentation core dumped
+   
+************************************************************************************************************************
+ 
+Call back functions (Use of function pointers) :
+ 
+ int func()
+{
+    return 4;
+}
+int func2(int (*ptr)())
+{
+    return (*ptr)() + 4;
+}
+int main()
+{
+    int (*ptr)() = &func;
+    int res;
+    res = func2(ptr);
+    cout << "Res is :" << res << endl;
+   
+    return 0;
+}
+
+************************************************************************************************************************
