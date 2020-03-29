@@ -1,0 +1,41 @@
+
+INTERVIEW TOPICS IN PYTHON :
+
+list methods
+tuple methods
+set methods
+dict methods
+String methods
+Inbuild mthods
+File methods
+
+
+Operator overloading 
+decorators
+closures
+iterators
+generators
+random
+aggregation
+composition
+
+
+Exception handling
+Multithreading in python
+Multiprocessing in python
+File handling in python
+IPC techniques
+
+
+read csv
+read excel
+json
+
+
+itertools
+functools
+collections
+
+Socket programming
+
+

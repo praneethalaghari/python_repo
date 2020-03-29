@@ -44,7 +44,7 @@ What are the different types of castings
 
      Casting   -  Implicit      Explicit
 	 
-	 Implicit  -  Demote        Promote
+	 Implicit  -  Demote(Down cast)        Promote(Up cast)
 	 Explicit  -  Static	Dynamic		Const		reinterpret
 	 
 	 Const cast : 
@@ -63,7 +63,33 @@ What are the different types of castings
 					int *c = const_cast<int*> b;     // Constantness of pointer b is not copied into pointer c
 					*c = 9;                          // Invalid since even constantness is not carried to new pointer the variable itself is constant
 					
+
+     Reinterpret cast :
+	        It is used to convert one pointer type to another pointer of any type
+			This type of casting is force casting..
+			i.e it will not check if the pointer type and the data to which it is pointing to is of same data or not.
+			It does not have any return type
 			
+			     data_type *new_pointer_name = reinterpret_cast<data_type *>(pointer_to convert)
+				 
+	        Usage : int *p = new int(65);
+			        char *q = reinterpret_cast<char *>(p);
+					cout *q << endl                            // Outputs 'A' which is equalent to 65 in ascii
+					
+			Application : as shown above convert int* to char* to convert ascii-int/int-ascii or bool-int/int-bool
+						  Used when we want to work on bits
+						  
+		
+     Dynamic casting :
+			This is primary used in down casting i.e to convert derived into base class object
+			As the name suggests i.e dynamic, it is used in case of run time polymorphism(i.e only atleast one virtual function is used)
+			If cast fails and new type is pointer type it will return null pointer
+			if cast fails and new type is reference then it will throw exception (bad_cast)
+			
+	 
+
+
+					
 What is a functor?
 	An object working as function is called functor
 	it will overload '()' operator
@@ -238,3 +264,253 @@ No casting is requited if pointer to base class is pointing to derived class obj
     Base *b = new Derived;
 But casting is required if pointer to derived class is pointing to base class object
     Derived *d = (Derived*)&b3;
+
+	
+	
+What are smart pointers?
+
+What are different types of constructors ?
+	conv,explicit,move,copy,param,default
+
+
+What is Multi threading?
+	A thread is a light weight process.i.e a part of process which can be executed individually.
+	Threads provide parallism and concurrency
+	Each thread will have its own stack and can share memory space. i.e threads can run individually but not independent like process
+	
+	Eg : Mozilla firefox tabs are threads..
+	     Internet explorer tabs are process
+	
+	No. of threads is calculated as follows :
+	           1 core -  2 threads
+			   i3 -  4 threads (i3 contain hyper-V)
+			   i5 -  4 threads (i5 do notcontain hyper-V)
+			   i7 - 4-7 cores 
+
+    Note : Since thread can share common data in common address space there is no need such as IPC
+           Given a single core MP, though the process have multiple threads each thread will run concurrently but not parallely i.e timely context switching takes place
+              while there is a way around.. i.e A process containing multiple threads.. can be split accross mltiple cores(only if available) in such circumstances parallel processing is possible. 
+		   where as multiple processess can run simultaneously in multi core processors. i.e one process in one core and another process in another core run parallelly i.e no need of context switching
+             			
+
+
+						
+
+What are the synchronization primitives in multithreading?
+    1. Mutex
+	2. Semaphore
+
+
+
+What is the difference betweeen lock and mutex?
+
+lock is an object which encapsulates a lock i.e restrict access
+mutex is a synchornization object which can implement a lock.
+    i.e to implement a lock on mutex we have to provide a mutex as parameter
+	
+	Eg :  std::mutex m,
+          std::lock_guard<std::mutex> lockGuard(m);
+	
+	
+What are the different ways to create a thread?
+
+What is the difference between user space and kernel space?
+	Kernel space is a memory in OS where code of OS/kernel is stored.It does have low level program to maintain OS functions eg : restart,process tables etc..
+	User space is a memory which is available for user applications. they do not have complete access to kernal space but a small access for system calls
+	where as kernal space have whole access of memory i.e kernal space + user space
+	
+	Eg : A simple example is memory in mobile.. there is some space reserved for android/ios OS which we can access/modify/erase
+         So apart from that OS space.. all ther remaining is user space
+
+
+What is a a system call?
+	A call which is made to provide interface/requests between program(process) and operaing system(kernel)
+	Eg : endl calls flush() which is a call to OS, an example of system call
+	     creation and management of process/thread
+		 malloc/calloc/free etc are system calls
+		 exit() - after this call.. OS will reclaim the resources used by the process
+		 
+		 wait(),fork(),exec(),kill(),exit()
+
+What are the ways we get segmentation fault?
+	1.trying to modify a read only access memory 
+	        i.e char *s = "Hello"; *s = 'H';
+			
+	2. trying to modify a memory which is not allocated in stack during inititalization
+			i.e arr[10] = {0};arr[14] = 3;
+
+    3. When trying to access a wild pointer.
+		    i.e int *p; cout << *p;
+			
+	4. When using scanf improperly.
+			i.e scanf('%d',p)   // here we are not passing '&'
+			
+	5. Stack overflow :
+			int main(){main();return 0;}   // infinite loop
+			
+
+What is Thread Control Block?
+A Thread control block is a block/table  which maintains the information of the threads created.
+It holds the following info :
+	* Thread ID		*Thread State	*CPU information	*Thread priority	*pointer to process from where it is created  *prointer to other thread to which it created 
+
+What is Process control Block?
+A process control block is a table which maintains the information of the processess created
+   * Pointer	* process state		* process number	*program counter	*register	*Memory list	*Open files	
+		 
+How do you do debugging in C++ application using linux
+	1. Using gdb debugger - using core dump or via process id executing parallely 
+	
+	2. Using valgrind tool - using core dump or executing parallely
+		valgrind ./executable --leak-check=full
+		
+		
+How will you debug a code ?
+	Debugging a code can be done via gdb debugger or valgrind tool..
+	if the issue can be replicated in or local test servers.. then we can run the application via gdb debugger..
+	if this is the case then we can execute the program parallely.. using various commands we can find where we are getting segmentation fault.
+	or if the application is replicated in customer server.. such that we dont have accesss.. then we will enable the core dump in client server using below command
+	    ulimit -c unlimited
+	After which we will get a core dump file.. created in the same path.. we will take that file to our local.
+	and analyze it under gdb debugger/valgrind tool
+	
+	If we use gdb debugger then the core file can be extraced this way : 
+		gdb -c <core_file>
+	
+	
+What is valgrind tool?
+	A valgrind tool is a memcheck tool.. which provides the following functionalities.
+		1. It provides memory usage especially heap memory
+		2. It provides where there are leaks in the memory i.e number of blocks lost
+		3. It provides the root cause of the segmentation fault/crash of the application
+
+What is a core dump?
+		 
+
+What is a kernel?
+	A kernel is the core part of Operating system. which deals as a mediater between software and hardware 
+	It deals with memory on RAM/HDD,CPU,Devices
+	
+What are all the commands in gdb debugger ?
+	next,n	step,s 	b,breakpoint	f <frame_num>	print,p	   info b   backtrace,bt	info locals  	
+
+		 
+What is a Daemon thread?
+
+	The threads which are executing in background are called daemon thread.
+	    Eg : garbage collector
+
+
+How to make a thread wait until another thread completes?
+	We can use join method to force one thread to wait for another thread to achieve this
+
+
+Explain the following terms :
+	Critical section
+	Racecondtion
+	Atomicity
+	Deadlock
+	Livelock
+	conditional variable
+	Spin lock
+	Starvation
+
+Critical section     : If two or more threads access a common part of code. that section is called critical section.
+Race condition       : If two or more threads tries to modify a common shared resource in ciritcal section it is known as race condition.It leads to atomiciy
+Atomicity            : It is a phenomenon during a race condition in which two threads modify a same common shared variable leading to undefined results
+
+Deadlock 			 : If two threads are trying to gain access over the resource which is already locked by them 
+                       Suppose t1 locks m1 and waits to gain/lock m2  at the sametime t2 locks m2 and waits for m1 to get released
+					   The above situation leads to blockage where only rely on other.This is known as dead lock
+					   
+Livelock			 : 
+	
+Conditional Variable : This is a synchronization mechanism in which.. threads communicates regarding the state of the shared resource.
+					   Once the condition becomes True.. it notify's all the sleeping(waiting) threads to have do its work(i.e to enter critical section)
+					   Simple example is producer consumer problem.. thread which retrieve some thing from shared array(consumer) can be kept in sleep mode
+					   and when producer adds something into shared array.. there will be a method to notify the sleeping thread to wake and do its work
+
+
+Spin lock : A spin lock polls its lock condition repeatedly till the condition mets i.e till it become true to take its turn to access critical section.
+			It is primarily used in the microprocessor where expected wait time is small
+			Use a spinlock when you really want to use a mutex but your thread is not allowed to sleep.instead of sleeping it will continously try to check condition
+					   
+
+
+					   
+What is Process scheduling and Process synchronization
+
+
+What is the difference between mutex and semaphore?
+
+              Mutex                                               Semaphore
+	  
+	   Mutex is a locking mechanism						Semaphore is a signalling mechanism
+	  
+  	   Mutex will provide ownership to only 			Semaphore can provide ownership to multiple threads
+ 	   one thread to critical section					provided it is a counting semaphore and not binary semaphore
+	   
+	   Mutex is an object 								Semaphore is an implementation via variable
+	   
+	   It has lock(),unlock() mechanism					It uses signal and wait mechanism
+	   
+    Difference in application : A mutex will only allow one thread to access critical section at a time..
+	                            So if we have a buffer of 4kb to be produced by producer.. it should produce 4kb to be produced to give access to consumer thread
+								Instead we can make buffer into 4 X 1kb buffer slots and allow both prodcer and consumer to access the buffer at a time
+
+
+
+What are the different ways to create a thread in c++ 11?
+
+Note : if we create multiple threads at a time, there is no gaurantee that which one will start first.
+       i.e thread t1(fun,11);thread t2(func,12)  either t1 or t2 can be created first.
+
+
+1. function pointer	 :    std::thread t1(fun, 11);
+2. Lambda expression :    std::thread t1([](int x){while (x-- > 0){cout << "helo";}} )
+3. functor			 :    std::thread t1(Base(),10)   // A class can be callable by operator overloading ()
+4. Static member functions
+5. non static member functions
+
+
+What is join(),joinable(),detach() ?
+
+join() : If forces one thread/program to wait till another thread completes and return after execution
+joinable() : asking to join an already joined/completed thread will cause crash(terminate called()) to avoid that we can put a check
+detach() : It is a counter part of join() i.e it will not make a thread to wait till another thread completes.i.e it will get detached with the thread
+
+what is the way to make a thread sleep in c++ 11?
+std::this_thread::sleep_for(chrono::seconds(4));
+
+What are the different types of mutex available?
+
+1. mutex
+2. timed_mutex
+3. recursive_mutex
+4. recursive_timed_mutex
+5. shared_timed_mutex
+
+
+
+Difference between binary semaphore and mutex
+What are thread synchronization mechanisms
+what is the difference between mutex and semaphore
+Difference between list and tuple,applications (i.e where we have to use)
+How to access bits in a byte
+What are the difference between Little Endian & Big Endian processors
+What is a copy constructor/Move constructor and its applications
+Can we hae a pointer to register variable
+Storage classes in C/C++
+What are the differnces between structure and union
+Where we can use union
+Which STL container is better
+What happens if vector/STL is there in copy constructor
+Difference between auto and shared pointer
+What are the differences between different types of pointers
+Why the size of list is more than that of a tuple
+What is the difference between string of C++/string of python
+What is the primary difference between C++ and python
+If we put static in header file and is included in some source file will it be same address in each of file.. or seperate i.e change in one will affect another?
+if we have same param but we expect different return type what should we use? 
+why we want copy constructor if we can do it via assignment operator?
+Why to go for vector if deque can add elements at beginning and end at O(1)

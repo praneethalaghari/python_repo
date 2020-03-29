@@ -62,3 +62,88 @@ int main()
     
     return 0;
 }
+
+
+
+Application of dynamic polymorphism (for loop iteration):
+
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class shape
+{
+    public:
+    int side;
+    virtual void area(int a){};
+};
+class square:public shape
+{
+    void area(int a)
+    {
+        cout << "Area of square is :" << a*a << endl;
+    }
+};
+class rectangle:public shape
+{
+    void area(int a)
+    {
+        cout << "Area of rectangle is" << a+2 << endl;
+    }
+    
+    
+};
+class triangle:public shape
+{
+    void area(int a)
+    {
+        cout << "Area of triangle is" << a*2/2 << endl;
+    }
+};
+
+int main()
+{
+    cout<<"Hello World" << endl;
+
+    vector<shape> v1;
+     
+    square s1;
+    s1.side = 4;
+    
+    rectangle r1;
+    r1.side = 8;
+    
+    triangle t1;
+    t1.side = 12;
+
+    v1.push_back(s1);
+    v1.push_back(r1);
+    v1.push_back(t1);
+
+   
+    shape *sh;
+    
+    vector<shape>::iterator it;
+    
+    for(it = v1.begin();it!=v1.end();++it)
+    {
+        
+        cout << it->side << endl;
+        sh = &(*it);
+        sh->area(it->side);
+        
+    }
+
+    return 0;
+}
+
+

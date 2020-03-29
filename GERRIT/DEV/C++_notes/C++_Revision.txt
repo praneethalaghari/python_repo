@@ -1,0 +1,32 @@
+Tell me about yourself
+Role in project
+Tell me about your project
+
+Compilation stages procedure in c++
+Datatype in c++
+Different types of Errors in c++
+Storage classess in C/C++
+Difference between pointer and reference
+
+static keyword
+const keyword
+typedef keyword
+mutable keyword
+volatile keyword
+virutal keyword
+explicit keyword
+override keyword
+constexpr
+nullptr
+
+
+classes
+object
+
+different types of constructors
+default constructors
+parameterized constructors
+copy constructors
+move constructors
+conversion constructor
+explicit constructors

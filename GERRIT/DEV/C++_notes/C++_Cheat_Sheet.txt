@@ -1,0 +1,250 @@
+INTERVIEW TOPICS IN C/C++
+
+What is C Programming Language?
+
+Dennis Ritchie - Bell labs
+Developed to write an OS i.e Unix
+It is a low level programming language when compared to modern languages
+C is derived from B programming language
+C is a procedural oriented language.
+C programs can be compiled in c++ compiler with few exceptions
+C supports top - bottom approach i.e it will implement highlevel design(overall design) towards the low level design(fill the patches) Eg : first design match,innings,team,player
+
+Mandatory sections of C program :  header - main() - return 
+Eg of headers are : stdlib.h,stdio.h,string.h,math.h
+The code of each header is copied into the C Program and then it will be compiler. This is called preprocessing
+
+
+
+What is C++ Programming language?
+
+Bjarne Stroustrup
+It is a middle level language when compared to modern languages
+C++ is derived from C programming language
+C++ is both procedural and object oriented language
+C++ programs cannot be compiled in C compiler
+C++ is more secure,dynamic,reliable,community supported language
+C++ dont support automatic garbage collection same as C
+C++ support references where as C doesnt
+C++ follows bottom to top approach i.e design goes from low level design(small sections of code) bind up to form high level design/development(large functionality/entity) Eg : first design player,team,innings,match
+
+
+Note : Simula is the worlds first OOP langagee and C++ derived the feautures of OOPS from it
+
+
+
+
+
+What are the differences between C and C++?
+
+What are different data types in C/C++?
+ Data types in C/C++ are classified into 3 types :
+						1. Primary data types
+						2. Derived data types
+						3. User defined data types
+
+ Primary data types : char - 1 byte; bool - 1 ; wide char - 2 ; int - 4 ; short int - 2  float - 4 ; double - 8 ; long - 4/8
+ Derived data types : These deals with primary data types - Function,Array,pointer,reference
+ User defined DT    : Struct,union,class,enum,typedef
+
+ Note : float has 7 decimal precision whereas double has 14 decimal precision
+        max length of variable name in C is 31,and C++ is 255
+		variables are case sensitive i.e abc is diff from ABC
+		
+		
+What is a const variable?In how many ways can we have const values/variables?
+
+What is a reference ? what are the differences between variable and reference ?
+	A reference is like alias/alternate name to an existing variable.
+	To have a reference we must have a variable.When a ref is created to the variable both will point to same address memory.
+	So changing one will reflect the value of other as well
+	Where as variable is like owning a memory location.which is allocated a seperate memory address.
+	
+	Eg : int y = x;   int &y = x    in first x,y point to different memory locations by copy the value to new.
+	                                in second both will point to same address no need of copy
+									
+	Note : reference should be intialized with a variable at declaration for sure.
+		   Eg : int &x =y;
+		        int &x;x = y cause compiler error
+				
+			references cannot be reinitiated/changed i.e it is fixed to one point(i.e constant pointer to an address)
+		   Eg : int &x = y;
+		        x = z;         // This will called compiler error
+	
+	Applications of references :
+		references are used in function arguments to prevent copy of huge objects
+		To prevent object slicing.. and to implement virtual behavior via dynamic polymorphism. (refer this - https://www.youtube.com/watch?v=nY4dYGXPqjg)
+		To change the local variable of a function in another function
+		Apart from pointer which can do run time poly reference also can be used to do the same(explainged in point 2)
+		Used in copy,assignment,move constructor
+	
+	
+	
+What is a pointer? what are the differences between reference and pointer?
+	Pointer is a seperate variable which points/holds to some address.
+	Pointer size is 4 bytes in 32 bit arch and 8 bytes in 64 bit arch regardless of type of data it is pointing to
+	This makes a pointer to point to multiple data types in a class/struct/union
+	
+	references will have the same size of the type it is point to i.e an int reference can point to int only
+	
+	Pointers can be make point to null, reference cant
+	Pointers are reinitialized i.e can be reused
+	Pointers can be iterated where as reference point only to constant address to which it is initiated
+	Pointers support indirection references cant i.e &&i is not possible where as **i is possible
+	Pointers support arithmetic operations i.e *p++,*p-- references cant but this can - (&p)++
+	Pointers needs to be dereferenced where as reference need not it can be used like a normal variable
+	Pointers can cause memory leak/issues eg wild pointer,null exceptions,dangling pointer
+	
+	Applications :
+	Linkedlist,Trees,
+	Use in application where there are applications which are prone to null access
+	To iterate a data type (as of in point 1)
+	
+	
+What is structure padding?
+
+What are the different steps involved in compilation ?
+
+                  XXXXXXXXXXXXXXX   COMPILATION  XXXXXXXXXXXXXXXXXXX
+                  ^                                                ^
+                  |                                                |
+   Source code -> Preprocessing  -> compiler -> Assembler -> Linking -> loading
+                  (Prepocessor)   
+
+    (.C,.cpp)                   (.ii)         (.s)        (.o)       (.exe)
+
+
+
+Preprocessor - process all the include files required for compilation.. replaces and evaluates the macros, it will remove comments
+Compiler     - Checks for compiler time errors,semantic errors,linker errors.. warns for run time errors
+Assembler    - converts the compiled output i.e Assembly code  into object code with the help of assembler
+Linker       - Static libraries,data binding,name mangling etc.. will be done here and converts the code into executable i.e exe
+Loader       - This is last part of execution of program.. it will load the dynamic libraries needed to execute the program	
+					i.e it will include .dll file in case of windows and .so files in case of linux and then load into the operating system
+			   
+ 
+
+What are function pointers?
+
+Unlike normal pointers where a pointer points to data
+function pointer stores the address of a function i.e it points to code
+
+One of the applications of function pointers is call back functions
+
+Eg : int add(int a, int b)
+	      return a+b;
+		  
+	 int (*funcptr)(int,int) = &add;
+	 int c = (*fun)(1,2);
+
+
+	 Other applications :
+	 
+		1 It is useful when you want to send function as argument to
+          another function.
+        2 they are used to call at run time instead of compile time
+        3 It is used to return more than one value
+	 
+	    4 Function pointer allow us to use function name as variable similar to that of python
+
+        5 Some one would argue you could write if(condition) call function a else if call function b. However, it is very tedious and painful to do this for hundreds of functions. This is where function pointers are easy and decent to use.
+
+
+
+
+Eg : 
+     int (*fun(int type))(int,int)
+	 {
+	   if(type == 1)
+		   return add;
+	   if(type == 2)
+		   return sub;
+	 }
+
+     int (*somefun)(int,int);
+     somefun = fun(1);
+	 int c = someFun(1,2);
+	 cout << c << endl;
+
+	 
+	 
+	 Note : if we dont put * inside parenthesis
+			i.e int *funcptr(int,int) = &add;
+			then it becomes int pointer,not a func pointer
+			
+            Unlike normal pointers we need not deallocate function pointers
+
+			
+What is call back functions?
+
+A function definition in which there is a function call to another function is called callback functions
+thus the call back function is processed after the calling function in its argument is returned with a value.
+
+Eg :       int add(int a,int b)
+			return a+b;
+			
+		   int sub(int a, int b)
+			return a-b;
+	
+           int func((*somefunc)(int,int))  // a common function for add/sub it is like a platform
+		   {
+		     int c = somefunc(1,2);
+			 return c;
+		   }
+	
+            int main()
+			{
+			  int c = func(add);
+			  int d = func(sub);
+			  cout << c << endl;
+			}
+
+
+
+What is an enum ?
+
+Enum is a user defined data type.
+It is similar to that of an array which is prioritized based on the value.
+It is used in switch case statements or also used in for loop as shown below :
+
+
+Eg 1 :
+
+enum test{ABC,DEF,GHI,JKL};
+test t1 = DEF;
+switch(t1)
+{
+   case ABC: cout << "hello";break;
+   cout DEF: cout << "cool";break;
+   default: cout "This is default";
+}
+
+
+Eg 2 :
+enum color{red,green,blue};
+
+for(int i = 0; i< blue; i++)   // here blue is 2 by default
+    cout << i << endl;
+
+
+How to overload & operator/how to prevent one to take address of object?
+
+usualy this is applicable if we want to secure our data i.e to prevent modification of data as we know address.
+There are two ideas to accomplish this :
+
+				1. make operator overloading under private access specifier.
+				2. make it to point to delete
+				
+				
+	1. We can overload & operator as follows :
+       
+	   private:
+        <class_type>* operator &(){}	
+	 
+    2. We can define the operator function to point it to delete
+	
+	   <class_type>* operator &() = delete;
+	      then we will get error while accessing the function as follows : 
+		        use of deleted function 'function_name'
+
+	

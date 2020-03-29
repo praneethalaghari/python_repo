@@ -245,4 +245,80 @@ What is the difference between copy constructor and assignment operator ?
 	   Eg : Base b1;
 	        b1 = b2;
 					 
-	
+
+
+*************************************************************************************************************************************
+					 
+Along with pointers we can also modify the private variables out side the class via references as shown below :
+					 
+					 
+#include<iostream> 
+using namespace std; 
+
+class foo
+{
+    int a,b;
+    public:
+    int& vala(){return a;}
+    int& valb(){return b;}
+    void show(){cout << this->a << this->b << endl;}  
+    
+};
+
+int main() { 
+  foo f1;
+  f1.vala() = 4;
+  f1.valb() = 6;
+  f1.show();
+  
+  return 0; 
+}
+
+*************************************************************************************************************************************
+					 
+What is copy elision?
+
+Elision means ommision i.e it will prevent unnecessary copy of objects
+It is similar to that of conversin constructor
+
+
+Copy elision will prevent the overhead of calling copy constructor.
+It depends on the type of compilers we will use.
+
+
+For Eg : 
+
+
+#include <iostream> 
+using namespace std; 
+   
+class B 
+{ 
+public:     
+    B(const char* str = "\0") //default constructor 
+    { 
+        cout << "Constructor called" << endl; 
+    }     
+      
+    B(const B &b)  //copy constructor 
+    { 
+        cout << "Copy constructor called" << endl; 
+    }  
+}; 
+   
+int main() 
+{  
+    B ob = "copy me";  
+    return 0; 
+} 
+
+Here if the compiler dont use copy elision :
+
+   then B ob = "copy me"  is interpreted as B ob = B("copy me")
+   i.e first it will create a temporary object(calls constructor) and then uses copy constructor(calls copy constructor) to copy into 'ob' object.
+   
+   where as modern compilers(usually use copy elision) will break down the statemnt to :
+   B ob("copy me")
+   So it will only called constructor and no copy constructor will be called.Here creation of temporary object and copy is merged.
+
+					 
