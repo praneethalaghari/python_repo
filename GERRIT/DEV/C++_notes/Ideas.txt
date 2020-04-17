@@ -1,0 +1,15 @@
+
+
+Friend Calculator :
+
+Answer some default questions..
+or add custom quesions..
+
+Pass it to the friend and see how much your friend knows about you
+
+Slam book :
+
+Generate or pick some default questions..
+or add custom qestions..
+
+Pass it to the friend or group from whom you want to take slam notes 

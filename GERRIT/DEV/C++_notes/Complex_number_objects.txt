@@ -1,0 +1,66 @@
+#include <iostream>
+
+using namespace std;
+
+class Complex
+{
+  public:
+    int real;
+    int img;
+
+  void print()
+  {
+      cout << real << "+" << img << "j" << endl; 
+  }
+  
+   Complex operator +(const Complex& x1)
+  {
+      Complex temp;
+      temp.real = real + x1.real;
+      temp.img = img + x1.img;
+      return temp;
+  }
+  
+   Complex operator -(const Complex& x1)
+  {
+      Complex temp;
+      temp.real = real - x1.real;
+      temp.img = img - x1.img;
+      return temp;
+  }
+ 
+    
+};
+
+
+
+int main()
+{
+    Complex c1;
+    c1.real = 2;
+    c1.img = 3;
+    
+    c1.print();
+    
+    Complex c2;
+    c2.real = 4;
+    c2.img = 5;
+    
+    c2.print();
+    
+    Complex c3;
+    c3 = c1+c2;
+    cout << c3.real << "+" << c3.img << "j" << endl;
+    
+    Complex c4;
+    c4 = c1-c2;
+    cout << c4.real << "+" << c4.img << "j" << endl;
+  
+    cout << "C1 : " << c1.real << "+" << c1.img << "j" << endl;
+    cout << "C2 : " << c2.real << "+" << c2.img << "j" << endl;
+    cout << "C3 : " << c3.real << "+" << c3.img << "j" << endl;
+    cout << "C4 : " << c4.real << "+" << c4.img << "j" << endl;
+    
+    cou << 
+    return 0;
+}

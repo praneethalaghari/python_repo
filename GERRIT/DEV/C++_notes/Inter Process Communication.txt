@@ -1,0 +1,45 @@
+What is Interprocess communication?
+
+Each process will have its own address space
+Interprocess communication allows processess to communicate among themselves for synchronization and shared memory resource purposes
+
+
+There ar three ways to achive IPC :
+	1. Shared Memory
+	2. Message Passing
+	3. Signals
+	4. pipes,fifo
+
+
+	
+Shared Memory :
+
+    1. File Sharing : A file can be used to communicate which can be accessisble to both the processses
+	2. A shared memory is createdd by one process and give access to other process to communicate
+	
+	   This is achieved via 
+	    shmget() - Create shared memory,
+		shmat()  - Attach the process to the created shared memory segment
+		shmdt()  - Detach the process from shared memory after use
+		
+		shmget(key,size,shmflg)
+		
+		Disadvantages of other ways :
+		
+ 		 Server reads from the input file.
+ 		 The server writes this data in a message using either a pipe, fifo or message queue.
+ 		 The client reads the data from the IPC channel,again requiring the data to be copied from kernel’s IPC buffer to the client’s buffer.
+		 Finally the data is copied from the client’s buffer.
+		 
+		 A total of four copies of data are required (2 read and 2 write).
+		 
+		 So wastage of space.. but with shared memory concept data only copied twice
+		     i.e input -> shared memory    aand     sharedmemory - > output buffer
+		
+	
+	
+	
+	
+	Inorder to see the process id use the following methods :
+getpid(),getppid()
+

@@ -1,0 +1,15 @@
+TOSHIBA TEST QUESTIONS :
+
+Yes a class be defined inside main function
+Yes a class be defined inside a struct
+Yes we can call a constructor from another constructor i.e among overloaded constructors
+
+
+
+Python set is ordered
+
+NSEIT :
+
+We cant access address of register
+when to use tuple (Use case)
+Why accessing a tuple,size of tuple are better than list?

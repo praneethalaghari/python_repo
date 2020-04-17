@@ -181,3 +181,45 @@ int main()
 }
 
 ************************************************************************************************************************
+
+
+    int *p = new int[5]{4,3,1};                 // Multiple initialization   remaining memory slots will be default 0
+    cout << *p << endl;
+    cout << *(p+1) << endl;                     // *p+1   is similar to (*p) + 1 not *(p+1)
+    cout << *(p+2) << endl;
+    cout << *(p+3) << endl;
+    cout << *(p+4) << endl;
+
+    O/P  - 4,3,1,0,0                 
+
+************************************************************************************************************************
+
+   if we dont assign a declared pointer to some address..(wild pointer)
+   if we print the adress of the pointer.. it will print 0
+   Similarly if we print address of NULL pointer.. iw till print 0;
+
+   Deferencing any/both will cause segmentation fault
+
+   int *p; cout << p;     // it will print 0
+   int *q = NULL; cout << q;  // it will print 0   
+   
+************************************************************************************************************************
+   
+    int *p;
+    int arr[] = {1,2,3,4,5};
+    cout << &arr;
+    cout << &arr[0] << endl;   //Both are same it yields same results
+    
+	But if we want to assign to a pointer.. we have to do like this..
+	
+	p = arr;     // Correct
+	p = &arr[0]; // Correct
+    p = &arr;    // Incorrect	
+   
+************************************************************************************************************************   
+   
+   char arr[] = "Hello World";    // This allocates 12 bytes of mem.. i.e 11 bytes + 1 byte for '\0' 
+   char *arr = "Hello World";     // This allocates 12 bytes of mem.. i.e 11 bytes + 1 byte for '\0' along with this.. arr is allocated some mem since it is a pointer.
+   
+   
+   

@@ -1,0 +1,149 @@
+#include <iostream>
+
+using namespace std;
+
+class Node
+{
+  public:
+    int data;
+    Node* next;
+};
+
+Node* create_node()
+{
+    Node* n = NULL;
+    n = new Node();
+    return n;
+}
+
+void push_back(Node* head,Node* n)
+{
+    while(head->next != NULL)
+    {
+        head = head->next;
+    }
+    
+    head->next = n;
+}
+
+
+Node* push_front(Node* head,Node* n)
+{
+    n->next = head;
+    head = n;
+    return head;
+}
+
+void insert_after(Node* head,int val,Node* n)
+{
+    while(head->next!=NULL)
+    {
+        if(head->data == val)
+        {
+            n->next = head->next;
+            head->next = n;
+            break;
+        }
+        head = head->next;
+    }
+    if(head->data == val)
+        {
+          n->next = head->next;
+          head->next = n;
+        }
+}
+
+
+void insert_before(Node* head,int val,Node* n)
+{
+    Node* temp = head;
+    
+    while(head->next!=NULL)
+    {
+        if(head->data == val)
+        {
+          n->next = head;
+          temp->next = n;
+          break;
+        }
+       temp = head;
+       head = head->next;
+    }
+}
+
+void print_linkedlist(Node* head)
+{
+    while(head->next !=NULL)
+    {
+        cout << head->data << endl;
+        head = head->next;
+    }
+    cout << head->data << endl;
+}
+
+
+int find_in_list(Node* head,int val)
+{
+    int index = 0;
+    
+    while(head->next!=NULL)
+    {
+        index+=1;
+        if(head->data == val)
+        {
+            return index;
+        }
+        
+        head = head->next; 
+    }
+    
+     return index;
+}
+
+
+
+int main()
+{
+    Node* n1 = create_node();
+    n1->data = 1;
+    n1->next = NULL;
+    
+    Node* head = n1;
+    
+    Node* n2 = create_node();
+    n2->data = 2;
+    n2->next = NULL;
+    
+    push_back(head,n2);
+    
+    Node* n3 = create_node();
+    n3->data = 3;
+    n3->next = NULL;
+    
+    insert_after(head,2,n3);
+    
+    Node* n4 = create_node();
+    n4->data = 4;
+    n4->next = NULL;
+    
+    insert_before(head,2,n4);
+    
+    
+    Node* n5 = create_node();
+    n5->data = 5;
+    n5->next = NULL;
+    
+    head = push_front(head,n5);
+    
+    int pos;
+    pos = find_in_list(head,4);
+    
+    if(pos)
+        cout << "Item found at index : " << pos << endl;
+    else
+        cout << "Item not found!!!" << endl;
+    
+    print_linkedlist(head);
+    
+    return 0;
+}

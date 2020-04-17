@@ -1,0 +1,14 @@
+What is Maven ?
+
+-Maven is a build tool which will manage dependencies,packaging while compiling and   building a project managing the build paths etc..
+-It can be used in eclipse
+
+
+What is a cookie..?
+
+ - A cookie is a file which stores few info about the user preferences related to website.
+    i.e Language,shopping preferences,visited websites
+ - One websites cookies can conains bits of cookies of other website too.. 
+ - Thats the reason why we get amazon,flipkart etc ads on other sites we access.
+ - Cookies can be good or bad.. it depends on web developer
+

@@ -1,0 +1,49 @@
+Explain about project ?
+
+
+Ok.. Before explaining my project.. let me explain you very basic understanding how telecommunication bussiness works.
+
+
+The entire teams can be spread accross 5 layered architecture of TMN Telecommunication Managemnt Network
+
+1.Network Element Layer
+2.Element Management Layer
+3.Network Management Layer
+4.Service Management Layer
+5.Bussiness Management Layer
+
+Tasks of TMN - FCAPS - Fault,Configuration,Accounting,Performance,Security
+
+
+Network management Layer : This layer deals with the hard ware equipment of telecommunication and is heart of TMN architecture..
+                           It contains Nodes,Switches,Routers,Cables and other equipment related entities.
+			   Node team manages this layer and is responsible for the data sent/recived by it.
+
+Between NEL and EML there is a message interface which passes the data from NEL to EML.This interface is dealt by Plugin team in our project
+
+Element Management Layer : It contains Element manager.. which is a container for all the Nodes bought by the customer.. EM is used for monitoring and implementing      	                      purpose. 
+			   Node can be managed i.e started/stopped via the application.It recieves the data from plugin i.e direct communication with plugin and pass           	              it to higher level applications.
+			   It performs F,C,P tasks of TMN  i.e Fault - via Alarm,Configuration - card,slot,port types config,Perfromance - performance data
+			   
+   So what is Alarm?
+   SNMP protocol is used accross the Node equipments and will continously evaluate the performance.If suppose there is any abnormal behavior of working.. then it will send an SNMP trap.. which is converted as alarm in the application based on Error code.. based on error code.. alarms are mapped and are visible in SOEM
+
+   When the operator(user of applicaton) observes this, he will be notified what type of alarm and what is the severity.. based on that he will log ticket and take necessary action to clear the alarm and thus restore the traffic flow.
+
+   There are different type of alarms like Equipment type such as Tx failure,Rx Failure,Laser equipment burn etc.. and Communication like Channel failure,Loss of signal,Wrong channel flow etc.. and environment related etc.. catching fire,heavy rainfall effects etc.. based on the affect on traffic.. alarms are categorized to critical,high,medium,low,warning types.
+
+   These all are manageble by SOEM..
+
+Network Management Layer : This deals with networking of Nodes i.e A point to Z point and traffic it flows through it..
+			   This is what my current team in project does.. IP Transport Network Transmission System(IPT NMS-C).. it deals with IP transport.. i.e it 			   manages speed of transport,mode of transport and links between them through which the traffic flows.
+			   Again it is classified into two types based on how traffic flows i.e wired(connection) or unwired(connection less)
+                              IPT NMS-C Wired      IPT NMS-P Unwired
+			  This application is very important because it deals with monitoring/controlling flow of traffic.
+                          We can manage the speed/quality of flow via creating appropriate links/paths (Eg STM-4 or STM-64 cables)
+			  Any alarm coming to SOEM will be passed to Circuit if it is transmission fault.. and related links/path will be alarmed (changed to red)
+                          Again based on severity we can stop the flow of traffic via disable option and fix the faulty cables.
+			   
+               
+			   
+
+ 

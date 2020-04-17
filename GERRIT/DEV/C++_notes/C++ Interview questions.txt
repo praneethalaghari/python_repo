@@ -1,8 +1,25 @@
 Differences between Malloc and calloc?
 	Malloc will not initialize the allocated memory with 0's	-  Calloc will initialize the allocated memory with 0's
-	Malloc is faster than calloc					-  Calloc is slower than Malloc
+	Malloc is faster than calloc					-  Calloc is slower than Malloc because it needs to be initialized with 0
 	Function is not parameterized					-  Calloc is parameterized i.e contains (no._of_elements,size)
 
+What are the differences between calloc/malloc/realloc with new?
+	New is an operator								- c/m/r are not operator,they are functions
+	New calls constructor							- c/m/r will not call constructor
+	With new only we can use delete					- c/m/r we can use only with free
+	with new we cannot implement realloc            - we can do that via realloc function 
+	  i.e we can extend/modify already allocate mem 
+	New need not be typecasted explicity            - needs to be typecasted explicitly
+	New can be operator overloaded                  - cannot be overloaded
+	
+	Note : realloc have the following structure - realloc(pointer,size)
+	       if we subs the pointer with NULL and size not 0 then it is similar to malloc
+		   if size passed is zero and ptr is not NLL then the call is similar to free
+		   Thus with realloc we can simulate both malloc/free
+
+    Note : if we try to free an already freed memory chunk then it will cause crash/segmentation fault		   
+	
+	
 What is the difference between delete and free?
 	delete is an operator							- free is a function
 	delete calls destructor							- there is no call to destructor
@@ -13,7 +30,7 @@ WHat are the differences between C++98 and C++11?
 	Introduction to lambda expressions
 	Introduction to final keyword
 	Introduction to threading
-	Introduction to auto,nullptr
+	Introduction to smart pointers,auto,nullptr
 
 
 	
@@ -25,12 +42,31 @@ What new does in object creation?
 	The kernel will now check if memory is available i.e not it will throw bad allocate
 	if available it will allocate and assign a pointer. // Similar to malloc
 
+	
+What happens if new cannot allocate new memory in heap?
+	If we dont use nothrow then it will throw run time exception i.e bad_alloc
+	if we use nothrow then it will return null pointer
+	   i.e int *p = new(std::nothrow) int[4] // This will not throw bad_alloc exception but it will return null pointer
+                                                But if we try to deference it result is undefined.. mostly it will crash	   
 
-Why argument in copy constructor is const and & 
+Why argument in copy constructor is const and &
+	Argument is const because we want to make sure that the object which is being copied should not be accidentally changed during copying (i.e in copy constructor)
+	Argument is & because it is (call by ref) it will avoid memory wastage if the object size is huge.. more over if we make it call by value by ommiting '&', then in turn, the copying
+	   of actual paramters will have to be copied to formal paramters and it inturn calls copy constructor itself again.. so it will be an recursive infinite loop.
 
 Can a private member of a method be modified outside without friend or inside the class?
 	Yes it can be done using pointers. i.e fooling the compiler
 
+    	class foo
+		{int x;};
+
+		int main()
+		{
+			foo f1;
+			int *p = (int*)&f1;
+			*p = 7;    // with this pointer we can change the value of private member x of f1 object
+		}
+	
 
 Difference between assignment and copy constructor?
 	The primary difference between the two is that..
@@ -38,6 +74,11 @@ Difference between assignment and copy constructor?
 			so it wont be a problem until unless there is a pointer
 		Assignment overload operator will just create a reference to the original object
 			so any variable changes it reflects in its reference object.
+			
+	So why we need both?
+	    As explained assignment operator is called to copy contents to already existing object.
+		Copy constructor is a special function which dont have return type and is called when copy args in pass by value
+		          when an object is returned by value;when an exception is thrown
 
 			
 What are the different types of castings
@@ -87,8 +128,6 @@ What are the different types of castings
 			if cast fails and new type is reference then it will throw exception (bad_cast)
 			
 	 
-
-
 					
 What is a functor?
 	An object working as function is called functor
@@ -129,9 +168,24 @@ What is Packing?
 
 Calculate the padding in the given struct?
 
+    int a;   //4
+    char b;  //1
+    bool c;  //1
+	         //2 bits padding
+
+	size : 8
+	
+	double a;   //8
+    char b;  //1
+    bool c;  //1
+	         //last 6 bits padding
+
+	size : 16           it will take the block size of highest datatype size..
+	
+	
 
 What is the size of empty class/struct?
-	A class is said to be empty class if it do not contain any datatype.
+	A class is said to be empty class if it do not contain any data members.
         A class can be called as empty class if it contains only one function and that func is virual.
 	
 	Size of empty class is not 0 in either of the classes..
@@ -143,9 +197,11 @@ What is the size of empty class/struct?
 	
 Difference between Mutex and Semaphore?
 	Mutex is a locking mechanism		- 	Semaphore is signalling mechanism
-	Mutex is used for syn in MT		- 	Semaphore can be used for both MP and MT
+	Mutex is used for sync in MT		- 	Semaphore can be used for both MP and MT
 	Mutex possess owner ship		-	Semaphore do not possess ownership
 	  i.e the one who locks is the owner	 	
+	  
+	Further Differentiate using producer-consumer problem
 	
 
 What is 'explicit' keyword ?
@@ -158,6 +214,11 @@ What is 'explicit' keyword ?
 	
 
 What is 'extern' keyword ?
+	extern is very much similar to global which ofcourse sometimes can be referred to globali.e both are declared outside all the functions.
+	The primary application is if a variable is declared extern then the variable can be used in another file also..
+	   like with following declaration extern int a;    // otherwise we cant use the same variable.. i.e a new variable is created if not declared extern
+	It practivally means that variable 'a' is declared somewhere in some part of program.. so use it
+	
 
 Can we call constructor/Destructor explicitly?
 	Yes we can..
@@ -174,6 +235,9 @@ What is Semaphore?
 What is Mutex?
 
 What happens if the virtual function is inherited privately using private inheritance?
+	if suppose virtual function is inherited privately i.e if we use private inheritance when deriving derived class from base class.. then 
+		there will be compiler error as follows : error: ‘Base’ is an inaccessible base of ‘Derived’ in the following line 
+		  Base *ptr = new Derived;
 
 Can we do this ?  int *p = new int[];
     No we should specify the number of bytes allocated.
@@ -184,14 +248,55 @@ Can we do this ? char p[] = "Hello";p[0] = 'M'
 
 Can we do this ? char *p = "Hello";p[0] = 'M'
     No we cannot do p[0] = "M" as it is equalent to const char* in C++
+	
+Can we have function overloading with same number of parameters and same datatypes?
+	Yes it is possible.. with the help of constant qualifier..
+	there are two cases in this... i. constantness of function return type	
+								  ii. constantness of parameters in function definitions.
+								  
+	Constantness of function return type :
+				void function foo(){}
+				void function foo() const {}
+				
+				both the above functions are considered different.. and hence overloaded without compiletime error
 
+				Test t1;t1.foo() will call first function
+				const Test t2;t2.foo() will call second function
+				
+	Constantnes of paramters inside function definitions
+	
+	            void fun(const int i) {cout << "fun(const int) called "; } 
+                void fun(int i){cout << "fun(int ) called " ;}
+
+                const int i = 10; fun(i);   // This will yield compiler error
+
+                because here we are passing argument by "pass by value"  so it cannot modify the actual paramter which is being passed.so it wont make any sense if i is passed as const or non const
+                but it makes sense if we pass the argument which is ref or pointer.. then it will have impact on passing actual argument i.e it can(when not applied const) or cannot(when applied const) change actual paramter.so it makes difference
+                hence it is valid..
+
+                Eg : 
+
+                    void fun(const char* i){cout << "const called ";} 
+					void fun(char* i){cout << "non const called " ;} 
+					
+					const int *i = "Hello"; 
+					fun(i);
+
+					The above is valid
+					
+				
+				
+			    C++ allows functions to be overloaded on the basis of const-ness of parameters only if the const parameter is a reference or a pointer.
 	
 	
 What is operator overloading and how to do it with dynamic memory pointer in it?
+
+
+
 What is copy constructor and how to do it with dynamic memory pointer in it
 
 
-Difference between List and vector?
+Difference between List(linked list) and vector?
 	Allocation of list is non contigous  - Allocation of vector is contigous
 	Accessing an element is O(n)	     - Accesing an element is O(1)
 	Insertion of element is O(1)         - Insertion of element is O(n) if it is not end else O(1)
@@ -204,11 +309,31 @@ What is the difference between returning int& and int ?
 			 int   -  (x3 = x2) = x1; is same as x3 = x2 = x1;
 	
 	
+Why is it easy to access stack memory than heap memroy?
+	Stack memory can be accessed faster compared to heap because of access pattern.
+	For stack memory pointer/var(array) can be quickly accessed by incrementing/decrementing.as they are mostly contigous
+	
+	where as heap is little complex and mostly will not be contigous... so it will manage bookkeeping infomcation and it has overhead to read such data
+	
+	Note : heap address memory size is smaller in length than stack memory size
+	
+Why is stack size limited..? and heap size unlimited (i.e till the end of computer resources availble) ?
+
+	One of the reason for this is... if suppose stack size is unlimited.. then it will be difficult to find out infinite recursive loops.. since there wont be stack overflow till all the computer resources gets exhausted.
+    
+Why the length of heap memory address is smaller compared to stack memory address ?
+
+    This could be because(can be different in different arch) of positioning of stack and heap in memory architecture.
+    Generally stack is initiated at higher memory location and grows downwards.. so it has higher memory address.
+    Where as heap is initiated at lower memory and grows upwards.. so it has relatively lower memory address.. so the length of address is less.	
 	
 Difference between string and char array?
 	String is a class and its identifiers are objects      -   Char array is an array datatype and identifiers are variables
 	String needs header inclusion ie <string>	       -   It comes inbuild
 	String is slower to access			       -   Char is faster to access
+ 
+ 
+
  
 
 Can we do this?
@@ -272,6 +397,25 @@ What are smart pointers?
 What are different types of constructors ?
 	conv,explicit,move,copy,param,default
 
+	
+What is the difference between thread and a process?
+
+	Process										Thread
+	
+	Process is heavy weight						Thread is light weight
+	Process is part of application/program		Thread is part of a process
+
+	Creation of process will take more time		Creation of thread will take less time
+	Deletion of process will take more time		Deletion of thread will take less time
+
+	Process will have its own memory			Thread will share the process'es memory
+	So Cost of process comm will be more		So Cost of thread comm will be less
+	
+	if one process halts all other next process If one thread halts all other next threads will not be halted
+	will be also halted						
+	Hence more prefereble for CPU bound tasks	Hence More preferable for I/O user tasks
+	
+	
 
 What is Multi threading?
 	A thread is a light weight process.i.e a part of process which can be executed individually.
@@ -385,7 +529,12 @@ What is valgrind tool?
 		3. It provides the root cause of the segmentation fault/crash of the application
 
 What is a core dump?
-		 
+	A core dump is a file which is generated at times when application is crashed
+	This core dump files help us to know the cause of the segmentation fault.
+	The file can be loaded into gdb debugger/valgrind tool to analyze the root cause
+	The significance of this file is.. that even though the application is deployed in customer environment we can analyze the root cause without replicating it again..
+	This is also useful in conditions where we cant access the customer live server.In simple words, it acts like a log for segmentation fault 
+	To enable core dump file use command "ulimit -c unlimited"  	 
 
 What is a kernel?
 	A kernel is the core part of Operating system. which deals as a mediater between software and hardware 
@@ -491,12 +640,244 @@ What are the different types of mutex available?
 5. shared_timed_mutex
 
 
+What is Static and dynamic linking?
 
+Generally, when we want to use some functions/members of another file then we can include them as header files
+BUt sometimes it may be necessary that, the header file needs to be included many files or we may find its application multiple times.So why not make it a library like we do in python(same concept as design pattern - reusability)
+So such files are called libraries
+
+                       Libraries
+					   
+					   
+			    Static                  Dynamic
+				
+		Windows        Linux     Windows        Linux
+		(.lib)         (.a)      (.dll)         (.so)
+		
+		
+		.a  - archive
+		.so - Shared object 
+  
+
+
+  So now what is static linking?
+    linking of static libraries at compile time itself.. i.e during the linking stage... when combining all the .o files 
+	
+	Disad :
+	
+	Disadvantage is that since every library inclusion will copy its code in each file.. the final executable file will become large. Eg : stdio.h is widely used.. and if we static link it, it will copy everything then lenght will be more
+	As the size of executable during linking increases.. loading also will take time
+	Another disadvantage is that, if we change any thing in library file after compilation, then we need to recompile again..
+	
+	Advan :
+	
+	But the execution time will be reduced i.e runtime
+	
+	How to create static library?
+	    ar rc liball.a dog.o cat.o bird.o
+		(The “ar” stands for archive and it is used to create the static library. All the files ending in “.o” will be added to the liball.a library and they are the object files in this case.)
+	
+  So now what is dynamic linking?
+    Inorder to avoid this, we dont have to include complete code of lib function. we can point to the library using pointer.and is only used at runtime (only when needed)
+	
+	Disad :
+	But here the start up will be slow as it has to check if the library is already loaded in main memory via another file.
+	
+	Advan :
+	
+	As no need of copy, the executable size will be less.
+	So faster loading
+	if we change any thing in library afer compilation.. as it points to memoey where program is residing.. it will have latest changes
+
+    How to create dyanamic library?
+	gcc main.c -L l<file_name>
+
+What happens if we throw an exception outside the try block?
+	When we throw any exception outside try block.. then it cant have any catch block to handle exception.So in such cases it will call terminate().
+	
+
+
+
+Can we write continue in switch case
+
+  No we cant write a continue in switch case since it is not a loop and will execute from top to bottom only once.. In general continue will skip next statements and go to next iteration.. which is not the case here. so no need of while loop
+  It will yield error as follows :
+      continue statement not within a loop
+
+What happens if we dont have break statement in switch
+
+If we dont write break in switch case.. it will go through all the case body's regardless whether case condition is met or not..
+  But one thing to remember is the flow will be from the position where the case condition met till next break/default statement occured
+
+    int choice = 1;
+    switch(choice)
+    {
+        case 2:cout << "Hello 2" << endl;
+        case 1:cout << "Hello 1" << endl;
+        case 3:cout << "Hello 3" << endl;
+        default: cout << "In default" << endl; 
+    }
+
+    O/P : Hello 1
+	      Hello 3
+		  In default
+		  
+What are DDL and DML commands?
+What is truncate command?
+What is an operating system
+
+What is a dangling pointer
+HOw to avoid dangling pointer
+What is a memory leak
+What is a smart pointer
+
+What is a linked list
+Difference between array and linked list
+
+What is IPC
+
+What is thread pool?
+What is thread spawning?
+What is context switching?
+WHat is priority inversion?
+
+
+What is Deadlock?
+
+Acquiring a resource which is needed by another resource which inturn needs a resource which is hold by another resource is called deadlock situation
+
+Eg : A acquires mutex m1 object and needs m2 object whereas B acquires mutex m2 and needs m1 object.
+
+
+
+What are four conditions for deadlock to occur?
+
+	Mutual Exclusion - The resource which the two threads/processess trying to access a resource must not be shareable
+						if the resource is shareable then bothe can access and there cant be a deadlock
+						
+					   Eg : P1 acquires R1
+                            P2 requires R1 so here R1 should not be shareable
+
+    Hold and wait    - The process/thread involving in deadlock should atleast acquire one resource i.e hold and should wait for another resource.
+                        Otherwise if the process release the previous resources then the other process can use it then there wont be a deadlock ofcourse releasing resources is one of the remedy to avoid deadlock
+         
+                        Eg : P1 acquires R1 and R2
+                             P2 acquires R3, now P1 needs R3 but P2 is holding and waiting without release. so deadlock can occur
+
+    
+
+    No preemption    - The resource acquired should not be forcefully taken from process by OS.
+                       Process itself should release then process will have only one chance to release the resource i.e when it completed its work	
+						
+						Eg : P1 acquires R1 
+						     P2 also wants R1 so based on priority P2 should not be preempted and acquire resource forcefully
+							 
+    Circuilar wait   - General explanation of deadlock i.e traffic scenario
+	
+	
+
+How to prevent dead locks?
+	SImple answer is to prevent any of the above 4 condtions
+	   i.e hold and wait/ no premption/ circular wait/mutual exclusion
+	   
+	care should be taken in the order of resource allocation.
+	
+	Don't request another resource while holding one resource.
+	
+	If you ever need to acquire two locks at once acquire locks in a fixed order.
+	   i.e m1.lock();m2.lock() for thread 1         m1.lock();m2.lock() for thread 2
+	   
+	Don't wait for another thread if there's a chance it's waiting for you.
+	Try to avoid holding locks for longer than we need to
+	   i.e we can use timed_mutex
+
+
+What are the ways to handle deadlock/deadlock recovery?
+
+	1. Avoid deadlock : prevention is better than cure
+						Make strategies in the code such that the system wont go into deadlock state
+
+	2. Kill a process : This is easiest of all and it works but since once process is killed it has to restart its work
+	3. Preemption     : We can take the resource forcefully from one process and give it to the other process requiring it (usually high priority)
+	4. Rollback       : Here we will put a check point where we will record state of each process, in the code.. if we face a deadlock we roll back to last check point and restart.. but this time we will allocate resource differently so as to prevent reoccurence.
+	
+	
+	
+
+How to detect a deadlock?
+
+	We can detect a deadlock via Resource allocatino graph..
+	   i.e we have to check if there is any cycle in resource allocation graph.. (i.e normal deadlock example images are resource allocation graph)
+       Now it has two chances if it detects a cycle in graph:
+		if it has single instance - then yes it is deadlock
+		       Eg ; R1 → P1 → R2 → P2.
+		if it has multiple instance - though there is cycle it may not lead to deadlock
+
+What is a livelock?
+	A livelock is a special condition of deadlock..
+		The primary difference between deadlock and livelock is the the processess inolving in a deadlock are put into wait/sleep state.
+		whereas the processess involed in livelock is not put in wait state instead it will continously change their states making none of the processess involvved to progress
+
+        Sometimes when a deadlock occurs then we may try to fix the issue and again we make changes/retry the attempt.. but again it fails such phenomemon is called livelock
+		
+	Eg : two mobile users trying to call each other at the same time will get engage
+	     when they both stop/wait for each other anticipating other to call it is deadlock.. i.e here process are rude and want their work to be completed first
+		 If they both try again in the sametime again they will get engage it is livelock.. i.e here process let other do their work
+		 
+		 In simple terms deadlock is single event livelock can be continous/infinite event
+		 
+    Another example is In dining philosophers problem... each philosopher will take a left fork and wait for right fork for five mins.
+	    After 5 mins all the philosophers will put the left fork down trying to take right.. so now all will get right but all lefts are now taken up
+		 SO it is a circuit problem
+		 
+How a block/waiting threads will be invoked when thread is waiting upon a lock to be unlocked?
+	When a thread tries to acquire a lock on a mutex, if that mutex is already held then typically it will use a call to the OS kernel to indicate that it is waiting, 
+	and then when t
+	The same applies to a semaphore, except it only blocks if the count is decremented below zero, and threads are only woken when the count is increased back above zero.
+	the thread that currently holds the lock unlocks the mutex then it will make a call to the OS kernel to wake one of the waiting threads.
+
+
+What is a spin lock?
+	A spin lock is a lock which continously polls upon the condition till the condition becomes true.
+	So a spin-lock is implemented using busy-waiting.
+	In this case the process are not kept in wait/hold state in contrary to mutex lock
+	It is used in some critical application where we use ISR i.e in case of embedded systems
+	It is generally used where expected wait time is less
+	
+	Note the difference between spin lock and busy waiting is that.. spin lock is implemented using busy wait mechanism..
+	      as busy wait mechanism is a mechanism that which involes in a tight loop(continous loop) but no where it is related to lock
+	
 Difference between binary semaphore and mutex
 What are thread synchronization mechanisms
+
+
 what is the difference between mutex and semaphore
+		        MUTEX															SEMAPHORE
+		
+    Mutex is a locking mechanism									Semaphore is a signalling mechanism
+	So it has ownership over the resource							Id dont have ownership over the resource it acquired
+	It allows only one thread/process to enter into CS				It allows one or more than one thread/process to enter into Critical Section 
+	Only the entering thread shold open mutex lock					Any of the multiple thread/process can signal 
+	Mutex is an object and required header							It is not an object it is just a code implementation
+	A mutex cant be implemented as binary semaphore					A binary semaphore can be implemented as a mutex
+	has lock/unlock mechanism										we have to write methods using if conditions <0
+	Mutex provide priority inversion safety							Semaphore do not
+	Mutex provide deletion safety									Semaphore do not
+	
+What is a monitor?
+
+A monitor is similart to that of mutex/semaphore.. i.e it will allow one process to go through the section of code which it is monitoring
+	
+	
+	
+
 Difference between list and tuple,applications (i.e where we have to use)
+
 How to access bits in a byte
+
+	Using bitwise operators <<,>>,&,|,^,~
+	We can do setting and unsetting a bit or toggling a bit using different bitwise operators using & and | logics
+
 What are the difference between Little Endian & Big Endian processors
 What is a copy constructor/Move constructor and its applications
 Can we hae a pointer to register variable

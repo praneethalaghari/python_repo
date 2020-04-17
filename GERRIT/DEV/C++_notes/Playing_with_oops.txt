@@ -149,6 +149,10 @@ try_catch :
 friend
 
 
+Note : if a virtual function is not overrided in derived class.. i.e if it is not redeclared.. then it will call base class function (according to vtable matching)
+       if a virtual function is overrided but the method is private in derived class then it wont be a problem.. if will call like in normal cases
+	   But the reverse is not possible i.e if the virtual function is private in base class then it will generate compiler error. since if base class virtual function is private then override is not possible
+
 
 Variables :
 

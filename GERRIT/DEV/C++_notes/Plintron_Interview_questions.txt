@@ -1,0 +1,103 @@
+What are thread synchronization mechanisms
+
+what is the difference between mutex and semaphore
+
+Difference between list and tuple,applications (i.e where we have to use)
+	List is mutable;tuple is immutable
+	Size of list is more;tuple is less;
+	Access of list is slower when compared to tuple
+	
+	Application : Used in function call by value.. i.e value is for reference; tuple is for const reference
+
+
+How to access bits in a byte
+	We can access bits in a number via bitwise operators.
+	
+	1. & (and)	2. | (or) 
+	3. <<	    4. >>	
+	5. ^        6. ~
+
+What are the difference between Little Endian & Big Endian processors
+	In little endian the value is stored in reverse order.. i.e from right to left
+	In Big Endian the value is stored in same order of insertion.. i.e from left to right
+	
+	Eg 0001 will be stored as 1000 in little endian
+	   0001 will be stored as 0001 in Big endian
+	 
+	All the intel processors are little endian, Motorola is an example for Big endian.
+	
+	Test : int i = 1;
+		   char* p = (char*) (&i);
+		   if(*p)
+		     cout << "Little Endian";
+		   else
+		     cout << "Big Endian";
+
+
+What is a copy constructor/Move constructor and its applications
+
+Can we have a pointer to register variable
+	No, it is not possible to point to an register variable.. because.. register variable will be residing in CPU registers not in RAM
+	Hence it is not possible to fetch/point to a variable in register.
+
+Storage classes in C/C++
+	auto,extern,register,static.. In C++ typedef and mutable storage classes are added
+
+What are the differnces between structure and union
+
+Where we can use union ?
+	Union will take the size of maximum datatype residing in the union declaration.
+	It will reside only in that one address space
+	
+	Application : Union is used, when we dont know the result of an expression.. i.e the result could be int,float,double,long double.
+	              So instead of using a struct(alocating) different variables for each.. we can go with union to fill any of one..as we know only one variable will get filled.
+				  So in simple words, struct is used when all variables needs to be used.. where as union is used when only one that too any of the variable might be used.
+	
+	              If we want to insert identity information of data of a person.. the persion identity can be either ID or name..
+				  So we can create union named details and we can insert either ID/name. 
+	
+Which STL container is better ?
+	
+	
+
+What happens if vector/STL is there in copy constructor >
+	Though the memory of elements inside vector/list etc.. are dynamically allocated.. 
+	there is no need of defining copy/assignment constructors explicitly.. i.e via a default constructor itself
+	A new vector copy is allocated in new object in a new memory location and copy all the contents inside it
+	Even one vector's value is changed, the other wont be changed.
+
+Difference between auto and shared pointer
+
+What are the differences between different types of pointers
+	Despite of the type of pointer, all the pointers will consume same memory i.e  4 bytes for 32 bit processor and 8 bytes for 64 bit processor.
+	The primary difference is iteration steps.. i.e int will advance to 4 bytes when incremented by 1; char by 1 byte; double by 8 and struct depends on data members. 
+
+Why the size of list is more than that of a tuple
+
+What is the difference between string of C++/string of python
+	String is mutable in C++(char arr[]) where as string is immutable in python
+
+What is the primary difference between C++ and python
+	Interpreter/Compiler
+	Security
+	Speed of execution
+	Automatic garbage collection
+	library support
+	Access specifiers
+
+If we put static in header file and is included in some source file will it be same address in each of file.. or seperate i.e change in one will affect another?
+
+if we have same param but we expect different return type what should we use? 
+
+why we want copy constructor if we can do it via assignment operator?
+
+Why to go for vector if deque can add elements at beginning and end at O(1)
+
+
+How to add two numbers without arithmetic operators i.e using XOR operation
+
+How to sub two numbers without arithmetic operators i.e using XOR operation
+
+How to find MSB/Least significant bit in a number
+
+
